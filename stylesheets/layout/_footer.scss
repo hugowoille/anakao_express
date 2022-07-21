@@ -1,0 +1,122 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+footer{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: $dark_grey;
+    color:$jaune;
+    font-size: 1rem;
+    font-family: $font-titre-montserrat;
+    padding:70px;
+    .separate_footer{
+        width:1px;
+        background-color: #fdfedb;
+        height: auto;
+    }
+    @media (max-width:870px) {
+    flex-direction: column;
+    align-items: center;
+    padding:20px;
+    .separate_footer{
+        width:100%;
+        background-color: #fdfedb;
+        height: 1px;
+        margin:50px 0 50px 0;
+    }
+    }
+    .adress, .summary, .useful_links{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-basis: 200px;
+        @media (max-width:870px) {
+            
+            
+            padding:0;
+            
+            flex-basis: 300px;
+            align-self:stretch;
+            &:last-child{
+                border:none;
+            }
+            }
+        li{
+            margin-bottom: 15px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+           
+
+        }
+        a{
+            
+            display:block;
+            &:hover{
+                color:#fdfedb;
+
+            }
+        }
+    }
+    .adress{
+        li{
+            &:first-child{
+                font-weight: 900;
+                font-size: 1.5rem;
+        
+            }
+            &:nth-child(5){
+                width:90px;
+               
+            }
+        }
+    }
+    .summary{
+        li{
+            &:first-child{
+                font-weight: 900;
+                font-size: 1.5rem;
+            }
+            a{
+                &::before{
+                    font-family: FontAwesome;
+                    content:"\f054";
+                    float:right;
+                    display:block;
+                }
+                &:hover{
+                    color:rgba($jaune, 0.5);
+                }
+                
+            }
+        }
+    }
+    .useful_links{
+        li{
+            &:first-child{
+                font-weight: 900;
+                font-size: 1.5rem;
+            }
+            &:last-child{
+                width:30px;
+            }
+            &:nth-child(2){
+                &::before{
+                    font-family: FontAwesome;
+                    content:"\f054";
+                    float:right;
+                    display:block;
+                }
+            }
+            &:nth-child(3){
+                &::before{
+                    font-family: FontAwesome;
+                    content:"\f054";
+                    float:right;
+                    display:block;
+                }
+            }
+        }
+    }
+}
