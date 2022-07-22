@@ -799,8 +799,6 @@ nav .main-navlinks .navlinks-container a:hover:after {
 }
 
 .rsv_button, .esp_button {
-  color: #222222;
-  border: 1px solid #222222;
   font-family: "Montserrat", sans-serif;
   text-align: center;
   line-height: 40px;
@@ -809,6 +807,9 @@ nav .main-navlinks .navlinks-container a:hover:after {
   text-decoration: none !important;
   padding: 0 2vw;
   font-weight: 600;
+  color: #fdfedb;
+  border-radius: 10px;
+  background-color: #3f5168;
 }
 
 .bg {
@@ -995,14 +996,6 @@ h2:after {
           flex-direction: row;
   width: 100%;
   margin: 20px 0;
-}
-
-.buttons a {
-  background-color: #fdfedb;
-  color: #fdfedb;
-  border-radius: 10px;
-  border: none;
-  background-color: #3f5168;
 }
 
 .apropos_home {

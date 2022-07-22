@@ -2,8 +2,6 @@
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
 .rsv_button, .esp_button{
-        color: $dark_grey;
-        border: 1px solid $dark_grey;
         font-family: $font-titre-montserrat;
         text-align: center;
         line-height: 40px;
@@ -12,4 +10,8 @@
         text-decoration: none!important;
         padding:0 2vw;
         font-weight: 600;
+        color: $jaune;
+        border-radius: 10px;
+        background-color: $bleu;
+
 }

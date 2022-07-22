@@ -4,6 +4,11 @@
 body {
     
 }
+
+
+        ////////////////// BACKGROUND //////////////////
+
+
 .bg{
     background-color: $jaune;
     margin-bottom:390.05px;
@@ -31,6 +36,10 @@ h2 {
         display: block;
     }
 }
+
+
+        ////////////////// SPLASHSCREEN //////////////////
+
 
 .splashscreen_home {
     position: relative;
@@ -106,6 +115,9 @@ h2 {
 }
 
 
+        ////////////////// TRAJETS //////////////////
+
+
 .trajets_home {
     display: flex;
     flex-direction: column;
@@ -165,16 +177,11 @@ h2 {
     flex-direction: row;
     width: 100%;
     margin: 20px 0;
-
-    a {
-        background-color: $jaune;
-        color: $jaune;
-        border-radius: 10px;
-        border: none;
-        background-color: $bleu;
-
-    }
 }
+
+
+        ////////////////// A PROPOS //////////////////
+
 
 .apropos_home {
     width: 100%;
@@ -190,6 +197,10 @@ h2 {
         max-width: 80%;
     }
 }
+
+
+        //////////////////  BATEAUX //////////////////
+
 
 .boat_home {
     width: 90vw;

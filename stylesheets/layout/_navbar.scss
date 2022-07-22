@@ -15,6 +15,9 @@ nav{
     height:80px;
     justify-content: space-around;
     z-index: 20;
+
+        ////////////////// LOGO //////////////////
+
     .nav-icon{
         display:flex;
         align-items: center;
@@ -27,11 +30,16 @@ nav{
         }
     }
     .main-navlinks{
+
+        ////////////////// HAMBURGER //////////////////
         
         .hamburger{
             display:none;
             
         }
+
+        ////////////////// LES LIENS DE LA NAV //////////////////
+
         .navlinks-container{
             display:flex;
             column-gap: 5vw;
@@ -62,6 +70,9 @@ nav{
         }
     }
 }
+
+        ////////////////// MEDIA QUERIES 900PX //////////////////
+
 @media (max-width: 900px){
     nav{
         position:fixed;
