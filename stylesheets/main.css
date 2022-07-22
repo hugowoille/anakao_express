@@ -468,6 +468,10 @@ body {
 }
 
 footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  z-index: -10;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -478,7 +482,7 @@ footer {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  background-color: #222222;
+  background-color: #3f5168;
   color: #fdfedb;
   font-size: 1rem;
   font-family: "Montserrat", sans-serif;
@@ -491,7 +495,7 @@ footer .separate_footer {
   height: auto;
 }
 
-@media (max-width: 870px) {
+@media (max-width: 1024px) {
   footer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -501,6 +505,7 @@ footer .separate_footer {
         -ms-flex-align: center;
             align-items: center;
     padding: 20px;
+    position: unset;
   }
   footer .separate_footer {
     width: 100%;
@@ -525,7 +530,7 @@ footer .adress, footer .summary, footer .useful_links {
       flex-basis: 200px;
 }
 
-@media (max-width: 870px) {
+@media (max-width: 1024px) {
   footer .adress, footer .summary, footer .useful_links {
     padding: 0;
     -ms-flex-preferred-size: 300px;
@@ -659,9 +664,9 @@ nav .main-navlinks .navlinks-container {
 
 nav .main-navlinks .navlinks-container a {
   font-family: "Montserrat", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   text-decoration: none;
-  color: #222222;
+  color: #3f5168;
   font-size: 1em;
   display: inline-block;
   position: relative;
@@ -678,7 +683,7 @@ nav .main-navlinks .navlinks-container a:after {
           transform: scale(0);
   -webkit-transform-origin: left;
           transform-origin: left;
-  background: #222222;
+  background: #3f5168;
   -webkit-transition: -webkit-transform 0.3s ease-out;
   transition: -webkit-transform 0.3s ease-out;
   transition: transform 0.3s ease-out;
@@ -699,9 +704,6 @@ nav .main-navlinks .navlinks-container a:hover:after {
   }
   nav .nav-icon {
     width: 90px;
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
   }
   nav .nav-icon span {
     font-size: 22px;
@@ -745,13 +747,13 @@ nav .main-navlinks .navlinks-container a:hover:after {
         -ms-flex-align: center;
             align-items: center;
     position: relative;
-    margin-left: 25px;
+    margin-right: 25px;
   }
   nav .main-navlinks .hamburger span {
     display: block;
     width: 100%;
     height: 2px;
-    background: #222222;
+    background: #3f5168;
     position: absolute;
     pointer-events: none;
     -webkit-transition: opacity 0.3s 0.15s ease-out;
@@ -796,6 +798,47 @@ nav .main-navlinks .navlinks-container a:hover:after {
   }
 }
 
+.rsv_button, .esp_button {
+  color: #222222;
+  border: 1px solid #222222;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  line-height: 40px;
+  height: 40px;
+  font-size: 1rem;
+  text-decoration: none !important;
+  padding: 0 2vw;
+  font-weight: 600;
+}
+
+.bg {
+  background-color: #fdfedb;
+  margin-bottom: 390.05px;
+}
+
+@media (max-width: 1024px) {
+  .bg {
+    margin-bottom: 0;
+  }
+}
+
+h2 {
+  margin: 50px 0;
+  padding: 10px 0;
+  font-family: "Cinzel", serif;
+  font-size: 1.2em;
+  color: #3f5168;
+  margin-left: 5vw;
+}
+
+h2:after {
+  content: "";
+  height: 1px;
+  width: 50%;
+  background-color: #3f5168;
+  display: block;
+}
+
 .splashscreen_home {
   position: relative;
   width: 100vw;
@@ -804,7 +847,7 @@ nav .main-navlinks .navlinks-container a:hover:after {
 }
 
 .splashscreen_home .sidebar_home {
-  background-color: #222222;
+  background-color: #3f5168;
   width: 400px;
   height: 100%;
   position: absolute;
@@ -871,12 +914,147 @@ nav .main-navlinks .navlinks-container a:hover:after {
      object-fit: cover;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1024px) {
   .body_home .splashscreen_home .sidebar_home {
     width: 100vw;
     max-width: 100%;
     background-color: #222222a9;
   }
+}
+
+.trajets_home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.trajets_home section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 90vw;
+  margin: 20px 0;
+  max-height: 660px;
+  -webkit-box-shadow: 10px 10px 23px -7px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 23px -7px rgba(0, 0, 0, 0.75);
+}
+
+.trajets_home section:nth-child(1) {
+  margin-top: 0;
+}
+
+.trajets_home section:last-child {
+  margin-bottom: 0;
+}
+
+.trajets_home section h3 {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+  padding: 10px 0;
+  color: #3f5168;
+}
+
+.trajets_home section p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8em;
+  color: #3f5168;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  padding-bottom: 0;
+}
+
+.trajets_home section img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  max-height: 450px;
+}
+
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.buttons a {
+  background-color: #fdfedb;
+  color: #fdfedb;
+  border-radius: 10px;
+  border: none;
+  background-color: #3f5168;
+}
+
+.apropos_home {
+  width: 100%;
+  background-color: #3f5168;
+}
+
+.apropos_home p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8em;
+  width: 80%;
+  margin: 0 auto;
+  padding: 100px 0;
+  color: #fdfedb;
+  max-width: 80%;
+}
+
+.boat_home {
+  width: 90vw;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.boat_home a {
+  z-index: 1;
+}
+
+.boat_home a img {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.boat_home span {
+  position: absolute;
+  height: 60vw;
+  width: 70vw;
+  border: 5px solid #3f5168;
+  left: 18vw;
+  top: 6vw;
+  z-index: 0;
+}
+
+.boat_home .buttons .esp_button {
+  margin-top: 7vw;
+  margin-bottom: 3vw;
 }
 
 html {

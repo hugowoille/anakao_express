@@ -2,26 +2,31 @@
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
 footer{
+    position: fixed;
+    width:100%;
+    bottom:0;
+    z-index:-10;
     display:flex;
     flex-direction: row;
     justify-content: space-evenly;
-    background-color: $dark_grey;
+    background-color: $bleu;
     color:$jaune;
     font-size: 1rem;
     font-family: $font-titre-montserrat;
     padding:70px;
     .separate_footer{
         width:1px;
-        background-color: #fdfedb;
+        background-color: $jaune;
         height: auto;
     }
-    @media (max-width:870px) {
+    @media (max-width:1024px) {
     flex-direction: column;
     align-items: center;
     padding:20px;
+    position: unset;
     .separate_footer{
         width:100%;
-        background-color: #fdfedb;
+        background-color: $jaune;
         height: 1px;
         margin:50px 0 50px 0;
     }
@@ -31,7 +36,7 @@ footer{
         flex-direction: column;
         justify-content: space-between;
         flex-basis: 200px;
-        @media (max-width:870px) {
+        @media (max-width:1024px) {
             
             
             padding:0;
@@ -54,7 +59,7 @@ footer{
             
             display:block;
             &:hover{
-                color:#fdfedb;
+                color:$jaune;
 
             }
         }
