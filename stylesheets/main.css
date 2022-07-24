@@ -663,8 +663,8 @@ nav .main-navlinks .navlinks-container {
 }
 
 nav .main-navlinks .navlinks-container a {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
+  font-family: "Cinzel", serif;
+  font-weight: 600;
   text-decoration: none;
   color: #3f5168;
   font-size: 1em;
@@ -695,7 +695,7 @@ nav .main-navlinks .navlinks-container a:hover:after {
           transform: scaleX(1);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
   nav {
     position: fixed;
     -webkit-box-pack: justify;
@@ -971,7 +971,6 @@ h2:after {
   font-size: 0.8em;
   color: #3f5168;
   width: 100%;
-  padding: 20px;
   text-align: center;
   padding-bottom: 0;
 }
@@ -982,6 +981,148 @@ h2:after {
      object-fit: cover;
   width: 100%;
   max-height: 450px;
+}
+
+@media (min-width: 600px) {
+  .trajets_home section {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100vw;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .trajets_home section img {
+    width: 70%;
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  .trajets_home section .sidebar-section_home {
+    width: 30%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #3f5168;
+  }
+  .trajets_home section .sidebar-section_home h3 {
+    display: inline;
+    margin: 0;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    color: #fdfedb;
+  }
+  .trajets_home section .sidebar-section_home p {
+    width: 20vw;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    color: #fdfedb;
+  }
+  .trajets_home section .sidebar-section_home .buttons {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    width: 20%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: auto;
+  }
+  .trajets_home section .sidebar-section_home .buttons a {
+    background-color: #fdfedb;
+    color: #3f5168;
+  }
+  .trajets_home section .sidebar-section_home .buttons .esp_button {
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .trajets_home {
+    overflow: hidden;
+    background-color: #3f5168;
+  }
+  .trajets_home section {
+    max-width: 100%;
+    width: 100%;
+    position: relative;
+    left: 50%;
+    -webkit-transform: translate(-40%, 0);
+            transform: translate(-40%, 0);
+    margin-bottom: 75px;
+  }
+  .trajets_home section .sidebar-section_home {
+    position: absolute;
+    height: 350px;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    padding: 0 20px;
+    -webkit-box-shadow: -8px 9px 26px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: -8px 9px 26px 0px rgba(0, 0, 0, 0.75);
+    background-color: #fdfedb;
+  }
+  .trajets_home section .sidebar-section_home h3, .trajets_home section .sidebar-section_home p {
+    color: #3f5168;
+  }
+  .trajets_home section .sidebar-section_home .buttons {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 100%;
+  }
+  .trajets_home section .sidebar-section_home .buttons a {
+    padding: 0;
+    width: 150px;
+    background-color: #3f5168;
+    color: #fdfedb;
+  }
+  .trajets_home section .sidebar-section_home .buttons .esp_button {
+    margin-bottom: 0;
+    margin-right: 10px;
+  }
+  .trajets_home section img {
+    max-height: 700px;
+    --webkit-box-shadow: 7px 10px 22px -3px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 7px 10px 22px -3px rgba(0, 0, 0, 0.75);
+            box-shadow: 7px 10px 22px -3px rgba(0, 0, 0, 0.75);
+  }
+  .trajets_home .trajet_2,
+  .trajets_home .excursion_1 {
+    left: 60%;
+  }
+  .trajets_home .trajet_2 img,
+  .trajets_home .excursion_1 img {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .trajets_home .trajet_2 .sidebar-section_home,
+  .trajets_home .excursion_1 .sidebar-section_home {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    left: 0;
+    -webkit-box-shadow: 10px 10px 23px -7px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 23px -7px rgba(0, 0, 0, 0.75);
+  }
 }
 
 .buttons {
@@ -1033,6 +1174,10 @@ h2:after {
 .boat_home a img {
   width: 80vw;
   margin: 0 auto;
+  max-height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 1200px;
 }
 
 .boat_home span {
@@ -1043,6 +1188,8 @@ h2:after {
   left: 18vw;
   top: 6vw;
   z-index: 0;
+  max-height: 500px;
+  max-width: 1200px;
 }
 
 .boat_home .buttons .esp_button {
@@ -1054,10 +1201,6 @@ html {
   scroll-behavior: smooth;
 }
 
-.body_bateaux {
-  background-color: #fdfedb;
-}
-
 .splashscreen_bateaux {
   position: relative;
   width: 100vw;
@@ -1066,7 +1209,7 @@ html {
 }
 
 .splashscreen_bateaux .sidebar_boat {
-  background-color: #222222;
+  background-color: #3f5168;
   width: 400px;
   height: 100%;
   position: absolute;
@@ -1133,6 +1276,11 @@ html {
      object-fit: cover;
 }
 
+.bateaux_content {
+  background-color: #fdfedb;
+  margin-bottom: 390.05px;
+}
+
 .bateaux_content .boat_stuff {
   padding: 100px 0 100px 0;
 }
@@ -1140,7 +1288,7 @@ html {
 .bateaux_content .boat_stuff .separate_boat {
   height: 3px;
   width: 300px;
-  background-color: #222222;
+  background-color: #3f5168;
   margin: 0 auto;
 }
 
@@ -1149,6 +1297,11 @@ html {
   font-family: "Playfair Display", serif;
   font-size: 2rem;
   margin: 50px 0 50px 0;
+  text-decoration: none;
+}
+
+.bateaux_content .boat_stuff h2::after {
+  display: none;
 }
 
 .bateaux_content .boat_stuff p {
@@ -1159,6 +1312,7 @@ html {
   margin-bottom: 50px;
   margin-top: 30px;
   width: 80%;
+  color: #3f5168;
 }
 
 .picto_boat {
@@ -1190,6 +1344,7 @@ html {
   text-align: center;
   font-family: "Playfair Display", serif;
   font-size: 1.4rem;
+  color: #3f5168;
 }
 
 @media (max-width: 1000px) {
@@ -1217,7 +1372,7 @@ html {
 
 .boat_list .sambobe .sidebar_left {
   width: 25vw;
-  background-color: #222222;
+  background-color: #3f5168;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1287,7 +1442,7 @@ html {
 
 .boat_list .sambokely .sidebar_right {
   width: 25vw;
-  background-color: #222222;
+  background-color: #3f5168;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1357,7 +1512,7 @@ html {
 
 .boat_list .sambovezo .sidebar_left2 {
   width: 25vw;
-  background-color: #222222;
+  background-color: #3f5168;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

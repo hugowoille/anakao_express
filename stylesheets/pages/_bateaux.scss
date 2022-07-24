@@ -1,16 +1,13 @@
 html{
     scroll-behavior: smooth;
 }
-.body_bateaux {
-    background-color: #fdfedb;
-}
 .splashscreen_bateaux {
     position: relative;
     width: 100vw;
     max-width: 100%;
     z-index: 0;
     .sidebar_boat {
-        background-color: #222222;
+        background-color: $bleu;
         width: 400px;
         height: 100%;
         position: absolute;
@@ -18,7 +15,7 @@ html{
         grid-template-rows: repeat(10, 1fr);
         grid-template-columns: repeat(6, 1fr);
         h1 {
-            color: #fdfedb;
+            color: $jaune;
             font-family: $font-titre-montserrat;
             font-weight: 900;
             font-size: 40px;
@@ -27,7 +24,7 @@ html{
             left: 9vw;
         }
         p {
-            color: #fdfedb;
+            color: $jaune;
             font-family: $font-titre-montserrat;
             grid-row: 5 / 6;
             grid-column: 2 / 6;
@@ -35,8 +32,8 @@ html{
             font-weight: 300;
         }
         a {
-            color: #fdfedb;
-            border: 1px solid #fdfedb;
+            color: $jaune;
+            border: 1px solid $jaune;
             font-family: $font-titre-montserrat;
             grid-row: 8 / 9;
             grid-column: 2 / 4;
@@ -60,12 +57,14 @@ html{
     }
 }
 .bateaux_content {
+    background-color: $jaune;
+    margin-bottom: 390.05px;
     .boat_stuff {  
         padding:100px 0 100px 0;  
         .separate_boat {
             height: 3px;
             width: 300px;
-            background-color: #222222;
+            background-color: $bleu;
             margin: 0 auto;
         }
         h2 {
@@ -73,6 +72,10 @@ html{
             font-family: $font-p;
             font-size: 2rem;
             margin: 50px 0 50px 0;
+            text-decoration: none;
+            &::after{
+                display:none;
+            }
         }
         p {
             font-family: $font-titre-montserrat;
@@ -82,11 +85,10 @@ html{
             margin-bottom: 50px;
             margin-top: 30px;
             width:80%;
-            
+            color:$bleu;
         }
     }
 }
-
 .picto_boat {
     width: 100vw;
     max-width: 100%;
@@ -108,8 +110,10 @@ html{
             text-align: center;
             font-family: $font-p;
             font-size: 1.4rem;
+            color:$bleu;
             
         }
+       
     }
 }
 @media (max-width: 1000px) {
@@ -140,22 +144,22 @@ html{
 
         .sidebar_left {
             width: 25vw;
-            background-color: #222222;
+            background-color: $bleu;
             display: flex;
             flex-direction: column;
             padding: 2vw;
             justify-content: space-around;
             h2 {
                 font-family: $font-titre-montserrat;
-                color: #fdfedb;
+                color: $jaune;
                 font-size: 2rem;
-                border-bottom: 3px solid #fdfedb;
+                border-bottom: 3px solid $jaune;
                 margin-top: 3vw;
                 
             }
             p {
                 font-family: $font-titre-montserrat;
-                color: #fdfedb;
+                color: $jaune;
                 font-size: 1.2rem;
                 margin-bottom: 5vw;
                 
@@ -164,9 +168,9 @@ html{
                 width:40px;
                 height:40px;
                 font-size: 20px;
-                color: #fdfedb;
+                color: $jaune;
                 align-self: center;
-                border:1px solid #fdfedb;
+                border:1px solid $jaune;
                 border-radius: 100%;
                 margin-bottom: 30px;
                 span{
@@ -195,21 +199,21 @@ html{
         max-width: 100%;
         .sidebar_right {
             width: 25vw;
-            background-color: #222222;
+            background-color: $bleu;
             display: flex;
             flex-direction: column;
             padding: 2vw;
             justify-content: space-around;
             h2 {
                 font-family: $font-titre-montserrat;
-                color: #fdfedb;
+                color: $jaune;
                 font-size: 2rem;
-                border-bottom: 3px solid #fdfedb;
+                border-bottom: 3px solid $jaune;
                 margin-top: 3vw;
             }
             p {
                 font-family: $font-titre-montserrat;
-                color: #fdfedb;
+                color: $jaune;
                 font-size: 1.2rem;
                 margin-bottom: 5vw;
             }
@@ -217,9 +221,9 @@ html{
                 width:40px;
                 height:40px;
                 font-size: 20px;
-                color: #fdfedb;
+                color: $jaune;
                 align-self: center;
-                border:1px solid #fdfedb;
+                border:1px solid $jaune;
                 border-radius: 100%;
                 margin-bottom: 30px;
                 span{
@@ -249,21 +253,21 @@ html{
         max-width: 100%;
         .sidebar_left2 {
             width: 25vw;
-            background-color: #222222;
+            background-color: $bleu;
             display: flex;
             flex-direction: column;
             padding: 2vw;
             justify-content: space-around;
             h2 {
                 font-family: $font-titre-montserrat;
-                color: #fdfedb;
+                color: $jaune;
                 font-size: 2rem;
-                border-bottom: 3px solid #fdfedb;
+                border-bottom: 3px solid $jaune;
                 margin-top: 3vw;
             }
             p {
                 font-family: $font-titre-montserrat;
-                color: #fdfedb;
+                color: $jaune;
                 font-size: 1.2rem;
                 margin-bottom: 5vw;
             }

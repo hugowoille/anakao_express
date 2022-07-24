@@ -1,20 +1,19 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
-body {
-    
-}
+body {}
 
 
-        ////////////////// BACKGROUND //////////////////
+////////////////// BACKGROUND //////////////////
 
 
-.bg{
+.bg {
     background-color: $jaune;
-    margin-bottom:390.05px;
+    margin-bottom: 390.05px;
 }
+
 @media (max-width:1024px) {
-    .bg{
+    .bg {
         margin-bottom: 0;
     }
 }
@@ -38,7 +37,7 @@ h2 {
 }
 
 
-        ////////////////// SPLASHSCREEN //////////////////
+////////////////// SPLASHSCREEN //////////////////
 
 
 .splashscreen_home {
@@ -115,7 +114,7 @@ h2 {
 }
 
 
-        ////////////////// TRAJETS //////////////////
+////////////////// TRAJETS //////////////////
 
 
 .trajets_home {
@@ -155,8 +154,6 @@ h2 {
             font-size: 0.8em;
             color: $bleu;
             width: 100%;
-
-            padding: 20px;
             text-align: center;
             padding-bottom: 0;
         }
@@ -164,9 +161,149 @@ h2 {
         img {
             display: block;
             object-fit: cover;
-            width:100%;
+            width: 100%;
             max-height: 450px;
 
+        }
+    }
+}
+
+
+////////////////// TRAJETS 900px //////////////////
+
+
+@media (min-width: 600px) {
+    .trajets_home {
+        section {
+            flex-direction: row;
+            width: 100vw;
+            box-shadow: none;
+
+            img {
+                width: 70%;
+                order: 4;
+            }
+
+            .sidebar-section_home {
+                width: 30%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                background-color: $bleu;
+
+                h3 {
+                    display: inline;
+                    margin: 0;
+                    order: 1;
+                    color: $jaune;
+
+                }
+
+                p {
+                    width: 20vw;
+                    order: 2;
+                    color: $jaune;
+                }
+
+                .buttons {
+                    order: 3;
+                    width: 20%;
+                    flex-direction: column;
+                    width: auto;
+
+                    a {
+                        background-color: $jaune;
+                        color: $bleu;
+                    }
+
+                    .esp_button {
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+////////////////// TRAJETS 1024px //////////////////
+
+
+@media (min-width: 1024px) {
+    .bg{
+       
+    }
+    .trajets_home {
+        overflow: hidden;
+        //background-image: url(/img/factice/bgnuage.jpg);
+        background-color: $bleu;
+        section {
+            max-width: 100%;
+            width: 100%;
+            position: relative;
+            left: 50%;
+            transform: translate(-40%, 0);
+            margin-bottom: 75px;
+            
+
+            .sidebar-section_home {
+                position: absolute;
+                height: 350px;
+                right: 0;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                padding: 0 20px;
+                -webkit-box-shadow: -8px 9px 26px 0px rgba(0, 0, 0, 0.75);
+                -moz-box-shadow: -8px 9px 26px 0px rgba(0, 0, 0, 0.75);
+                box-shadow: -8px 9px 26px 0px rgba(0, 0, 0, 0.75);
+                background-color: $jaune;
+                h3, p{
+                    color:$bleu;
+                }
+                .buttons {
+                    flex-direction: row;
+                    justify-content: space-around;
+                    width: 100%;
+                    
+                    a {
+                        padding: 0;
+                        width: 150px;
+                        background-color: $bleu;
+                        color:$jaune;
+                    }
+
+                    .esp_button {
+                        margin-bottom: 0;
+                        margin-right: 10px;
+                    }
+                }
+            }
+
+            img {
+                max-height: 700px;
+                --webkit-box-shadow: 7px 10px 22px -3px rgba(0,0,0,0.75);
+                -moz-box-shadow: 7px 10px 22px -3px rgba(0,0,0,0.75);
+                box-shadow: 7px 10px 22px -3px rgba(0,0,0,0.75);
+            }
+        }
+
+        .trajet_2,
+        .excursion_1 {
+
+            left: 60%;
+
+            img {
+                order: 2;
+            }
+
+            .sidebar-section_home {
+                order: 1;
+                left: 0;
+                -webkit-box-shadow: 10px 10px 23px -7px rgba(0, 0, 0, 0.75);
+                -moz-box-shadow: 10px 10px 23px -7px rgba(0, 0, 0, 0.75);
+                box-shadow: 10px 10px 23px -7px rgba(0, 0, 0, 0.75);
+            }
         }
     }
 }
@@ -180,7 +317,7 @@ h2 {
 }
 
 
-        ////////////////// A PROPOS //////////////////
+////////////////// A PROPOS //////////////////
 
 
 .apropos_home {
@@ -199,7 +336,7 @@ h2 {
 }
 
 
-        //////////////////  BATEAUX //////////////////
+//////////////////  BATEAUX //////////////////
 
 
 .boat_home {
@@ -208,13 +345,16 @@ h2 {
     display: flex;
     flex-direction: column;
     position: relative;
-
+    
     a {
         z-index: 1;
+
         img {
             width: 80vw;
             margin: 0 auto;
-            
+            max-height: 500px;
+            object-fit: cover;
+            max-width: 1200px;
         }
     }
 
@@ -226,6 +366,8 @@ h2 {
         left: 18vw;
         top: 6vw;
         z-index: 0;
+        max-height: 500px;
+        max-width: 1200px;
     }
 
     .buttons {

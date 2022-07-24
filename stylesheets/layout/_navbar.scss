@@ -44,8 +44,8 @@ nav{
             display:flex;
             column-gap: 5vw;
             a{
-                font-family: $font-titre-montserrat;
-                font-weight:400;
+                font-family: $font-navbar-cinzel;
+                font-weight:600;
                 text-decoration: none;
                 color:$bleu;
                 font-size: 1em;
@@ -73,7 +73,7 @@ nav{
 
         ////////////////// MEDIA QUERIES 900PX //////////////////
 
-@media (max-width: 900px){
+@media (max-width: 1024px){
     nav{
         position:fixed;
         justify-content: space-between;
