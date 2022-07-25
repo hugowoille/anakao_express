@@ -1064,6 +1064,12 @@ h2:after {
             transform: translate(-40%, 0);
     margin-bottom: 75px;
   }
+  .trajets_home section:nth-child(1) {
+    margin-top: 100px;
+  }
+  .trajets_home section:nth-child(4) {
+    margin-bottom: 100px;
+  }
   .trajets_home section .sidebar-section_home {
     position: absolute;
     height: 350px;
@@ -1165,6 +1171,12 @@ h2:after {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .boat_home a {
@@ -1185,7 +1197,7 @@ h2:after {
   height: 60vw;
   width: 70vw;
   border: 5px solid #3f5168;
-  left: 18vw;
+  left: 17vw;
   top: 6vw;
   z-index: 0;
   max-height: 500px;
