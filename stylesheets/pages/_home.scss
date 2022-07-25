@@ -234,16 +234,17 @@ h2 {
     .trajets_home {
         overflow: hidden;
         //background-image: url(/img/factice/bgnuage.jpg);
-        background-color: $bleu;
+        
        flex-direction: row;
-       justify-content: space-around;
+       justify-content: space-evenly;
+       padding:0 40px;
        section {
            max-width: 100%;
-            width:30%;
+            width:300px;
             flex-direction: column;
             margin: 0;
-            justify-content: space-around;
-            margin:120px 0!important;
+            justify-content: flex-start;
+            margin:30px 0!important;
             
             img{
                 height:300px;
@@ -257,27 +258,34 @@ h2 {
                 order:2;
                 width:100%;
                 padding: 0 20px;
-                
-                background-color: $jaune;
+                justify-content: flex-start;
+                align-items: flex-start;
+                background-color: transparent;
+                padding:0;
                 
                 h3, p{
                     color:$bleu;
+                    text-align:left;
+                    padding:15px 0;
+
                 }
                 .buttons {
                     flex-direction: row;
-                    justify-content: space-around;
-                    width: 100%;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    
                    
                     a {
                         padding: 0;
                         width: 150px;
-                        background-color: $bleu;
-                        color:$jaune;
+                        background-color: $jaune;
+                        color:$bleu;
+                        text-align: left;
                     }
 
                     .esp_button {
                         margin-bottom: 0;
-                        margin-right: 10px;
+                        margin-right: 0;
                     }
                 }
             }

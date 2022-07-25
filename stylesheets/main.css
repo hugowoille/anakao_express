@@ -1053,25 +1053,27 @@ h2:after {
 @media (min-width: 1024px) {
   .trajets_home {
     overflow: hidden;
-    background-color: #3f5168;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    padding: 0 40px;
   }
   .trajets_home section {
     max-width: 100%;
-    width: 30%;
+    width: 300px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     margin: 0;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    margin: 120px 0 !important;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin: 30px 0 !important;
   }
   .trajets_home section img {
     height: 300px;
@@ -1087,29 +1089,42 @@ h2:after {
             order: 2;
     width: 100%;
     padding: 0 20px;
-    background-color: #fdfedb;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    background-color: transparent;
+    padding: 0;
   }
   .trajets_home section .sidebar-section_home h3, .trajets_home section .sidebar-section_home p {
     color: #3f5168;
+    text-align: left;
+    padding: 15px 0;
   }
   .trajets_home section .sidebar-section_home .buttons {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    width: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   .trajets_home section .sidebar-section_home .buttons a {
     padding: 0;
     width: 150px;
-    background-color: #3f5168;
-    color: #fdfedb;
+    background-color: #fdfedb;
+    color: #3f5168;
+    text-align: left;
   }
   .trajets_home section .sidebar-section_home .buttons .esp_button {
     margin-bottom: 0;
-    margin-right: 10px;
+    margin-right: 0;
   }
 }
 
