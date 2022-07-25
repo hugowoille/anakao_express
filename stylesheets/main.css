@@ -1054,32 +1054,39 @@ h2:after {
   .trajets_home {
     overflow: hidden;
     background-color: #3f5168;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .trajets_home section {
     max-width: 100%;
+    width: 30%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 120px 0 !important;
+  }
+  .trajets_home section img {
+    height: 300px;
     width: 100%;
-    position: relative;
-    left: 50%;
-    -webkit-transform: translate(-40%, 0);
-            transform: translate(-40%, 0);
-    margin-bottom: 75px;
-  }
-  .trajets_home section:nth-child(1) {
-    margin-top: 100px;
-  }
-  .trajets_home section:nth-child(4) {
-    margin-bottom: 100px;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    max-height: 700px;
   }
   .trajets_home section .sidebar-section_home {
-    position: absolute;
-    height: 350px;
-    right: 0;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 100%;
     padding: 0 20px;
-    -webkit-box-shadow: -8px 9px 26px 0px rgba(0, 0, 0, 0.75);
-    box-shadow: -8px 9px 26px 0px rgba(0, 0, 0, 0.75);
     background-color: #fdfedb;
   }
   .trajets_home section .sidebar-section_home h3, .trajets_home section .sidebar-section_home p {
@@ -1104,31 +1111,91 @@ h2:after {
     margin-bottom: 0;
     margin-right: 10px;
   }
-  .trajets_home section img {
-    max-height: 700px;
-    --webkit-box-shadow: 7px 10px 22px -3px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 7px 10px 22px -3px rgba(0, 0, 0, 0.75);
-            box-shadow: 7px 10px 22px -3px rgba(0, 0, 0, 0.75);
-  }
-  .trajets_home .trajet_2,
-  .trajets_home .excursion_1 {
-    left: 60%;
-  }
-  .trajets_home .trajet_2 img,
-  .trajets_home .excursion_1 img {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-  }
-  .trajets_home .trajet_2 .sidebar-section_home,
-  .trajets_home .excursion_1 .sidebar-section_home {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-    left: 0;
-    -webkit-box-shadow: 10px 10px 23px -7px rgba(0, 0, 0, 0.75);
-    box-shadow: 10px 10px 23px -7px rgba(0, 0, 0, 0.75);
-  }
+}
+
+/* @media (min-width: 1024px) {
+     .trajets_home {
+         overflow: hidden;
+         //background-image: url(/img/factice/bgnuage.jpg);
+         background-color: $bleu;
+        
+        section {
+            max-width: 100%;
+             width: 100%;
+             position: relative;
+             left: 50%;
+             transform: translate(-40%, 0);
+             margin-bottom: 75px;
+            
+             &:nth-child(1){
+                 margin-top: 100px;
+             }
+             &:nth-child(4){
+                 margin-bottom: 100px;
+             }
+             .sidebar-section_home {
+                 position: absolute;
+                 height: 350px;
+                 right: 0;
+                 top: 50%;
+                 transform: translate(-50%, -50%);
+                 padding: 0 20px;
+                 -webkit-box-shadow: -8px 9px 26px 0px rgba(0, 0, 0, 0.75);
+                 -moz-box-shadow: -8px 9px 26px 0px rgba(0, 0, 0, 0.75);
+                 box-shadow: -8px 9px 26px 0px rgba(0, 0, 0, 0.75);
+                 background-color: $jaune;
+                 h3, p{
+                     color:$bleu;
+                 }
+                 .buttons {
+                     flex-direction: row;
+                     justify-content: space-around;
+                     width: 100%;
+                    
+                     a {
+                         padding: 0;
+                         width: 150px;
+                         background-color: $bleu;
+                         color:$jaune;
+                     }
+
+                     .esp_button {
+                         margin-bottom: 0;
+                         margin-right: 10px;
+                     }
+                 }
+             }
+
+             img {
+                 max-height: 700px;
+                 --webkit-box-shadow: 7px 10px 22px -3px rgba(0,0,0,0.75);
+                 -moz-box-shadow: 7px 10px 22px -3px rgba(0,0,0,0.75);
+                 box-shadow: 7px 10px 22px -3px rgba(0,0,0,0.75);
+             }
+         }
+
+         .trajet_2,
+         .excursion_1 {
+
+             left: 60%;
+
+             img {
+                 order: 2;
+             }
+
+             .sidebar-section_home {
+                 order: 1;
+                 left: 0;
+                 -webkit-box-shadow: 10px 10px 23px -7px rgba(0, 0, 0, 0.75);
+                 -moz-box-shadow: 10px 10px 23px -7px rgba(0, 0, 0, 0.75);
+                 box-shadow: 10px 10px 23px -7px rgba(0, 0, 0, 0.75);
+             }
+         }
+     }
+ }
+  */
+.excursion_1 {
+  display: none;
 }
 
 .buttons {
