@@ -1093,8 +1093,12 @@ h2:after {
     background-color: transparent;
     padding: 0;
   }
+  .trajets_home section .sidebar-section_home p {
+    font-size: 0.7em;
+  }
   .trajets_home section .sidebar-section_home h3, .trajets_home section .sidebar-section_home p {
     color: #3f5168;
+    text-align: left;
     padding: 15px 0;
     width: 100%;
   }
@@ -1108,10 +1112,11 @@ h2:after {
   }
   .trajets_home section .sidebar-section_home .buttons a {
     padding: 0;
+    width: 150px;
     background-color: #fdfedb;
     color: #3f5168;
     border-radius: 0;
-    border: 1px solid red;
+    border: 1px solid #3f5168;
   }
   .trajets_home section .sidebar-section_home .buttons .esp_button {
     margin-bottom: 0;
@@ -1201,7 +1206,34 @@ h2:after {
  }
   */
 .excursion_1 {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.excursion_1 img {
+  height: 450px;
+  width: 90%;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 50px;
+}
+
+.excursion_1 p {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-size: 0.8em;
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 50px;
 }
 
 .buttons {
@@ -1221,6 +1253,23 @@ h2:after {
 .apropos_home {
   width: 100%;
   background-color: #3f5168;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.apropos_home img {
+  display: none;
 }
 
 .apropos_home p {
@@ -1231,6 +1280,17 @@ h2:after {
   padding: 100px 0;
   color: #fdfedb;
   max-width: 80%;
+}
+
+@media (min-width: 1024px) {
+  .apropos_home img {
+    display: block;
+    width: 50%;
+  }
+  .apropos_home p {
+    width: 50%;
+    padding: 50px;
+  }
 }
 
 .boat_home {
