@@ -1,18 +1,27 @@
-.splashscreen_bateaux {
+
+
+
+
+////////////////// SPLASHSCREEN //////////////////
+
+
+.splashscreen_trajets {
     position: relative;
     width: 100vw;
     max-width: 100%;
     z-index: 0;
-    .sidebar_boat {
-        background-color: #222222;
+
+    .sidebar_trajets {
+        background-color: $bleu;
         width: 400px;
         height: 100%;
         position: absolute;
         display: grid;
         grid-template-rows: repeat(10, 1fr);
         grid-template-columns: repeat(6, 1fr);
+
         h1 {
-            color: #fdfedb;
+            color: $jaune;
             font-family: $font-titre-montserrat;
             font-weight: 900;
             font-size: 40px;
@@ -20,17 +29,19 @@
             grid-column: 2 / 8;
             left: 9vw;
         }
+
         p {
-            color: #fdfedb;
+            color: $jaune;
             font-family: $font-titre-montserrat;
             grid-row: 5 / 6;
             grid-column: 2 / 6;
             font-size: 1rem;
             font-weight: 300;
         }
+
         a {
-            color: #fdfedb;
-            border: 1px solid #fdfedb;
+            color: $jaune;
+            border: 1px solid $jaune;
             font-family: $font-titre-montserrat;
             grid-row: 8 / 9;
             grid-column: 2 / 4;
@@ -42,6 +53,7 @@
             text-decoration: none;
         }
     }
+
     figure {
         img {
             width: 100vw;
@@ -53,14 +65,73 @@
         }
     }
 }
-@media (max-width: 1100px) {
-    .body_bateaux {
-        .splashscreen_bateaux {
-            .sidebar_boat {
-                width:100vw;
-               max-width: 100%;
-               background-color:#222222a9 ;
+
+@media (max-width: 1024px) {
+    .body_trajets {
+        .splashscreen_trajets {
+            .sidebar_trajets {
+                width: 100vw;
+                max-width: 100%;
+                background-color: #222222a9;
             }
+        }
+    }
+}
+
+
+////////////////// TRAJETS //////////////////
+
+
+.trajets_trajets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    section {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100vw;
+        margin: 20px 0;
+        max-height: 660px;
+        -webkit-box-shadow: 10px 10px 23px -7px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 10px 10px 23px -7px rgba(0, 0, 0, 0.75);
+        box-shadow: 10px 10px 23px -7px rgba(0, 0, 0, 0.75);
+
+        &:nth-child(1) {
+            margin-top: 0;
+        }
+
+        h3 {
+            text-align: center;
+            display: block;
+            margin: 0 auto;
+            font-family: $font-titre-montserrat;
+            padding: 10px 0;
+            color: $bleu;
+            font-size: 1em;
+        }
+
+        p {
+            font-family: $font-titre-montserrat;
+            font-size: 0.7em;
+            color: $bleu;
+            width: 100%;
+            text-align: center;
+            padding-bottom: 0;
+            margin-bottom: 15px;
+        }
+
+        img {
+            display: block;
+            object-fit: cover;
+            width: 100%;
+            max-height: 450px;
+
+        }
+
+        .rsv_button {
+            display: block;
+            margin: 0 auto;
         }
     }
 }

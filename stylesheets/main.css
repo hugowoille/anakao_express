@@ -808,13 +808,15 @@ nav .main-navlinks .navlinks-container a:hover:after {
   padding: 0 2vw;
   font-weight: 600;
   color: #fdfedb;
-  border-radius: 10px;
   background-color: #3f5168;
 }
 
 .bg {
   background-color: #fdfedb;
   margin-bottom: 390.05px;
+  margin-top: 0;
+  -webkit-box-shadow: 10px 10px 23px -7px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 23px -7px rgba(0, 0, 0, 0.75);
 }
 
 @media (max-width: 1024px) {
@@ -824,8 +826,7 @@ nav .main-navlinks .navlinks-container a:hover:after {
 }
 
 h2 {
-  margin: 50px 0;
-  padding: 10px 0;
+  padding: 60px 0;
   font-family: "Cinzel", serif;
   font-size: 1.2em;
   color: #3f5168;
@@ -942,7 +943,7 @@ h2:after {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 90vw;
+  width: 100vw;
   margin: 20px 0;
   max-height: 660px;
   -webkit-box-shadow: 10px 10px 23px -7px rgba(0, 0, 0, 0.75);
@@ -1117,6 +1118,38 @@ h2:after {
     color: #3f5168;
     border-radius: 0;
     border: 1px solid #3f5168;
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+  }
+  .trajets_home section .sidebar-section_home .buttons a:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #3f5168;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  .trajets_home section .sidebar-section_home .buttons a:hover {
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    color: #fdfedb;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+  .trajets_home section .sidebar-section_home .buttons a:hover:after {
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    z-index: -10;
+  }
+  .trajets_home section .sidebar-section_home .buttons a:hover:after:not(:hover) {
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
   }
   .trajets_home section .sidebar-section_home .buttons .esp_button {
     margin-bottom: 0;
@@ -1793,15 +1826,15 @@ html {
   }
 }
 
-.splashscreen_bateaux {
+.splashscreen_trajets {
   position: relative;
   width: 100vw;
   max-width: 100%;
   z-index: 0;
 }
 
-.splashscreen_bateaux .sidebar_boat {
-  background-color: #222222;
+.splashscreen_trajets .sidebar_trajets {
+  background-color: #3f5168;
   width: 400px;
   height: 100%;
   position: absolute;
@@ -1813,7 +1846,7 @@ html {
       grid-template-columns: repeat(6, 1fr);
 }
 
-.splashscreen_bateaux .sidebar_boat h1 {
+.splashscreen_trajets .sidebar_trajets h1 {
   color: #fdfedb;
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
@@ -1827,7 +1860,7 @@ html {
   left: 9vw;
 }
 
-.splashscreen_bateaux .sidebar_boat p {
+.splashscreen_trajets .sidebar_trajets p {
   color: #fdfedb;
   font-family: "Montserrat", sans-serif;
   -ms-grid-row: 5;
@@ -1840,7 +1873,7 @@ html {
   font-weight: 300;
 }
 
-.splashscreen_bateaux .sidebar_boat a {
+.splashscreen_trajets .sidebar_trajets a {
   color: #fdfedb;
   border: 1px solid #fdfedb;
   font-family: "Montserrat", sans-serif;
@@ -1858,7 +1891,7 @@ html {
   text-decoration: none;
 }
 
-.splashscreen_bateaux figure img {
+.splashscreen_trajets figure img {
   width: 100vw;
   max-width: 100%;
   height: 100vh;
@@ -1868,23 +1901,86 @@ html {
      object-fit: cover;
 }
 
-@media (max-width: 1100px) {
-  .body_bateaux .splashscreen_bateaux .sidebar_boat {
+@media (max-width: 1024px) {
+  .body_trajets .splashscreen_trajets .sidebar_trajets {
     width: 100vw;
     max-width: 100%;
     background-color: #222222a9;
   }
 }
 
-.splashscreen_bateaux {
+.trajets_trajets {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.trajets_trajets section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100vw;
+  margin: 20px 0;
+  max-height: 660px;
+  -webkit-box-shadow: 10px 10px 23px -7px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 23px -7px rgba(0, 0, 0, 0.75);
+}
+
+.trajets_trajets section:nth-child(1) {
+  margin-top: 0;
+}
+
+.trajets_trajets section h3 {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+  padding: 10px 0;
+  color: #3f5168;
+  font-size: 1em;
+}
+
+.trajets_trajets section p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.7em;
+  color: #3f5168;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 0;
+  margin-bottom: 15px;
+}
+
+.trajets_trajets section img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  max-height: 450px;
+}
+
+.trajets_trajets section .rsv_button {
+  display: block;
+  margin: 0 auto;
+}
+
+.splashscreen_trajets {
   position: relative;
   width: 100vw;
   max-width: 100%;
   z-index: 0;
 }
 
-.splashscreen_bateaux .sidebar_boat {
-  background-color: #222222;
+.splashscreen_trajets .sidebar_trajets {
+  background-color: #3f5168;
   width: 400px;
   height: 100%;
   position: absolute;
@@ -1896,7 +1992,7 @@ html {
       grid-template-columns: repeat(6, 1fr);
 }
 
-.splashscreen_bateaux .sidebar_boat h1 {
+.splashscreen_trajets .sidebar_trajets h1 {
   color: #fdfedb;
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
@@ -1910,7 +2006,7 @@ html {
   left: 9vw;
 }
 
-.splashscreen_bateaux .sidebar_boat p {
+.splashscreen_trajets .sidebar_trajets p {
   color: #fdfedb;
   font-family: "Montserrat", sans-serif;
   -ms-grid-row: 5;
@@ -1923,7 +2019,7 @@ html {
   font-weight: 300;
 }
 
-.splashscreen_bateaux .sidebar_boat a {
+.splashscreen_trajets .sidebar_trajets a {
   color: #fdfedb;
   border: 1px solid #fdfedb;
   font-family: "Montserrat", sans-serif;
@@ -1941,7 +2037,7 @@ html {
   text-decoration: none;
 }
 
-.splashscreen_bateaux figure img {
+.splashscreen_trajets figure img {
   width: 100vw;
   max-width: 100%;
   height: 100vh;

@@ -1,10 +1,10 @@
-.splashscreen_bateaux {
+.splashscreen_trajets {
     position: relative;
     width: 100vw;
     max-width: 100%;
     z-index: 0;
-    .sidebar_boat {
-        background-color: #222222;
+    .sidebar_trajets {
+        background-color: $bleu;
         width: 400px;
         height: 100%;
         position: absolute;
@@ -12,7 +12,7 @@
         grid-template-rows: repeat(10, 1fr);
         grid-template-columns: repeat(6, 1fr);
         h1 {
-            color: #fdfedb;
+            color: $jaune;
             font-family: $font-titre-montserrat;
             font-weight: 900;
             font-size: 40px;
@@ -21,7 +21,7 @@
             left: 9vw;
         }
         p {
-            color: #fdfedb;
+            color: $jaune;
             font-family: $font-titre-montserrat;
             grid-row: 5 / 6;
             grid-column: 2 / 6;
@@ -29,8 +29,8 @@
             font-weight: 300;
         }
         a {
-            color: #fdfedb;
-            border: 1px solid #fdfedb;
+            color: $jaune;
+            border: 1px solid $jaune;
             font-family: $font-titre-montserrat;
             grid-row: 8 / 9;
             grid-column: 2 / 4;
