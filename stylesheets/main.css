@@ -2069,21 +2069,11 @@ html {
     -webkit-box-shadow: none;
             box-shadow: none;
   }
-  .trajets_trajets section:nth-child(2n) .sidebar_article_trajets {
+  .trajets_trajets section img {
+    width: 70%;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
-  }
-  .trajets_trajets section:nth-child(2n) img {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-  }
-  .trajets_trajets section img {
-    width: 70%;
-    -webkit-box-ordinal-group: 5;
-        -ms-flex-order: 4;
-            order: 4;
   }
   .trajets_trajets section .sidebar_article_trajets {
     width: 30%;
@@ -2100,6 +2090,9 @@ html {
         -ms-flex-align: center;
             align-items: center;
     background-color: #3f5168;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
   .trajets_trajets section .sidebar_article_trajets h3 {
     display: inline;
@@ -2114,6 +2107,47 @@ html {
     background-color: #fdfedb;
     color: #3f5168;
     margin-bottom: 10px;
+  }
+  .trajets_trajets section:nth-child(3) .sidebar_article_trajets {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+@media (min-width: 1024px) {
+  .trajets_trajets {
+    overflow: hidden;
+  }
+  .trajets_trajets section {
+    width: 90%;
+    height: 500px;
+    -webkit-transform: translateX(10%);
+            transform: translateX(10%);
+  }
+  .trajets_trajets section .sidebar_article_trajets {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  .trajets_trajets section img {
+    height: 70%;
+    width: 40%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -webkit-transform: translateX(-30%);
+            transform: translateX(-30%);
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .trajets_trajets section:nth-child(3) {
+    -webkit-transform: translateX(-10%);
+            transform: translateX(-10%);
+  }
+  .trajets_trajets section:nth-child(3) img {
+    -webkit-transform: translateX(30%);
+            transform: translateX(30%);
   }
 }
 
