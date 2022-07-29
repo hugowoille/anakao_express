@@ -1097,7 +1097,8 @@ h2:after {
   .trajets_home section .sidebar-section_home p {
     font-size: 0.7em;
   }
-  .trajets_home section .sidebar-section_home h3, .trajets_home section .sidebar-section_home p {
+  .trajets_home section .sidebar-section_home h3,
+  .trajets_home section .sidebar-section_home p {
     color: #3f5168;
     text-align: left;
     padding: 15px 0;
@@ -1121,8 +1122,8 @@ h2:after {
     position: relative;
     overflow: hidden;
     z-index: 10;
-    -webkit-transition: all 0.45s;
-    transition: all 0.45s;
+    -webkit-transition: color 0.45s;
+    transition: color 0.45s;
   }
   .trajets_home section .sidebar-section_home .buttons a:after {
     content: "";
@@ -1263,6 +1264,44 @@ h2:after {
   margin-bottom: 50px;
 }
 
+.excursion_1 a {
+  padding: 0;
+  width: 150px;
+  background-color: #fdfedb;
+  color: #3f5168;
+  border-radius: 0;
+  border: 1px solid #3f5168;
+  position: relative;
+  overflow: hidden;
+  z-index: 10;
+  -webkit-transition: all 0.45s;
+  transition: all 0.45s;
+}
+
+.excursion_1 a:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #3f5168;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: all 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition: all 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  z-index: -10;
+}
+
+.excursion_1 a:hover {
+  color: #fdfedb;
+}
+
+.excursion_1 a:hover:after {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
 .buttons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1362,6 +1401,44 @@ h2:after {
   z-index: 0;
   max-height: 500px;
   max-width: 1200px;
+}
+
+.boat_home .buttons a {
+  padding: 0;
+  width: 150px;
+  background-color: #fdfedb;
+  color: #3f5168;
+  border-radius: 0;
+  border: 1px solid #3f5168;
+  position: relative;
+  overflow: hidden;
+  z-index: 10;
+  -webkit-transition: all 0.45s;
+  transition: all 0.45s;
+}
+
+.boat_home .buttons a:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #3f5168;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: all 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition: all 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  z-index: -10;
+}
+
+.boat_home .buttons a:hover {
+  color: #fdfedb;
+}
+
+.boat_home .buttons a:hover:after {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .boat_home .buttons .esp_button {
@@ -1916,6 +1993,14 @@ html {
           align-items: center;
 }
 
+.trajets_trajets .separate_trajets {
+  height: 1px;
+  width: 80%;
+  background-color: #3f5168;
+  margin: 50px 0;
+  display: none;
+}
+
 .trajets_trajets section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1925,8 +2010,8 @@ html {
   width: 100vw;
   margin: 20px 0;
   max-height: 660px;
-  -webkit-box-shadow: 10px 10px 23px -7px rgba(0, 0, 0, 0.75);
-  box-shadow: 10px 10px 23px -7px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+          box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 
 .trajets_trajets section:nth-child(1) {
@@ -1964,6 +2049,72 @@ html {
 .trajets_trajets section .rsv_button {
   display: block;
   margin: 0 auto;
+  height: 50px;
+  line-height: 50px;
+}
+
+@media (min-width: 600px) {
+  .trajets_trajets {
+    padding-bottom: 100px;
+  }
+  .trajets_trajets .separate_trajets {
+    display: block;
+  }
+  .trajets_trajets section {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100vw;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .trajets_trajets section:nth-child(2n) .sidebar_article_trajets {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .trajets_trajets section:nth-child(2n) img {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .trajets_trajets section img {
+    width: 70%;
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  .trajets_trajets section .sidebar_article_trajets {
+    width: 30%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #3f5168;
+  }
+  .trajets_trajets section .sidebar_article_trajets h3 {
+    display: inline;
+    margin: 0;
+    color: #fdfedb;
+  }
+  .trajets_trajets section .sidebar_article_trajets p {
+    width: 20vw;
+    color: #fdfedb;
+  }
+  .trajets_trajets section .sidebar_article_trajets .rsv_button {
+    background-color: #fdfedb;
+    color: #3f5168;
+    margin-bottom: 10px;
+  }
 }
 
 .splashscreen_trajets {
