@@ -292,7 +292,7 @@ h2 {
                         position: relative;
                         overflow: hidden;
                         z-index: 10;
-                        
+                        transition: all 0.45s;
                         &:after{
                             content:"";
                             position: absolute;
@@ -302,26 +302,20 @@ h2 {
                             width:100%;
                             height:100%;
                             transform: translateX(-100%);
- 
+                            transition: all 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+                            z-index: -10;
                             
                         }
                         &:hover{
-                            transition: all 0.2s;
                             color:$jaune;
-                            transition: 0.2s ;
+                            
                             &:after{
-                                transition: all 0.2s;
                                 transform: translateX(0);
-                                z-index: -10;
-                                &:not(:hover){
-                                    transition: all 0.2s;
-                                    
-                                }
+                                
+                              
                             }
                         }
-                        &:not(:hover){
-                           
-                        }
+                       
                     }
 
                     .esp_button {

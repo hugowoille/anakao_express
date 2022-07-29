@@ -1121,6 +1121,8 @@ h2:after {
     position: relative;
     overflow: hidden;
     z-index: 10;
+    -webkit-transition: all 0.45s;
+    transition: all 0.45s;
   }
   .trajets_home section .sidebar-section_home .buttons a:after {
     content: "";
@@ -1132,24 +1134,16 @@ h2:after {
     height: 100%;
     -webkit-transform: translateX(-100%);
             transform: translateX(-100%);
-  }
-  .trajets_home section .sidebar-section_home .buttons a:hover {
-    -webkit-transition: all 0.2s;
-    transition: all 0.2s;
-    color: #fdfedb;
-    -webkit-transition: 0.2s;
-    transition: 0.2s;
-  }
-  .trajets_home section .sidebar-section_home .buttons a:hover:after {
-    -webkit-transition: all 0.2s;
-    transition: all 0.2s;
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    -webkit-transition: all 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    transition: all 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
     z-index: -10;
   }
-  .trajets_home section .sidebar-section_home .buttons a:hover:after:not(:hover) {
-    -webkit-transition: all 0.2s;
-    transition: all 0.2s;
+  .trajets_home section .sidebar-section_home .buttons a:hover {
+    color: #fdfedb;
+  }
+  .trajets_home section .sidebar-section_home .buttons a:hover:after {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   .trajets_home section .sidebar-section_home .buttons .esp_button {
     margin-bottom: 0;
