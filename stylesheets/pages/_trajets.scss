@@ -143,6 +143,7 @@
 }
 @media (min-width: 600px) {
     .trajets_trajets {
+        padding-top: 100px;
         padding-bottom: 100px;
         .separate_trajets{
             display: block;
@@ -198,25 +199,87 @@
         section{
             width:90%;
             height:500px;
-            transform: translateX(10%);
+            transform: translateX(15%);
             
             .sidebar_article_trajets{
                 flex-grow: 1;
-                
+               align-items: flex-start;
+               padding-left: 100px;
+               p{
+                text-align: left;
+               }
+                .rsv_button {
+                    padding: 0;
+                    width: 150px;
+                    background-color: $jaune;
+                    color: $bleu;
+                    border-radius: 0;
+                    border: 1px solid $jaune;
+                    position: relative;
+                    overflow: hidden;
+                    z-index: 10;
+                    transition: color 0.45s;
+                    margin:0;
+                    
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        background-color: $bleu;
+                        width: 100%;
+                        height: 100%;
+                        transform: translateX(-100%);
+                        transition: all 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+                        z-index: -10;
+
+                    }
+
+                    &:hover {
+                        color: $jaune;
+
+                        &:after {
+                            transform: translateX(0);
+                            
+
+                        }
+                    }
+
+                }
             }
             img{
                 height:70%;
                 width:40%;
                 align-self: center;
-                transform: translateX(-30%);
+                transform: translateX(-60%);
                 object-fit: contain;
+                transition: all .5s ;
+                &:hover{
+                    transform: scale(160%);
+                    flex-grow: 2;
+                    margin-right: 100px;
+                }
             }
             &:nth-child(3){
                 transform: translateX(-10%);
                 img{
-                    transform: translateX(30%);
+                    transform: translateX(60%);
+                    &:hover{
+                        transform: scale(160%);
+                        flex-grow: 1;
+                        margin-left: 150px;
+                    }
+                }
+                .sidebar_article_trajets{
+                    align-items: flex-end;
+                    padding-left: 0;
+                    padding-right: 100px;
+                    p{
+                        text-align: right;
+                    }
                 }
             }
+            
         }
     }
 }

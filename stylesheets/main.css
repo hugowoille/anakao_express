@@ -2055,6 +2055,7 @@ html {
 
 @media (min-width: 600px) {
   .trajets_trajets {
+    padding-top: 100px;
     padding-bottom: 100px;
   }
   .trajets_trajets .separate_trajets {
@@ -2122,13 +2123,55 @@ html {
   .trajets_trajets section {
     width: 90%;
     height: 500px;
-    -webkit-transform: translateX(10%);
-            transform: translateX(10%);
+    -webkit-transform: translateX(15%);
+            transform: translateX(15%);
   }
   .trajets_trajets section .sidebar_article_trajets {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-left: 100px;
+  }
+  .trajets_trajets section .sidebar_article_trajets p {
+    text-align: left;
+  }
+  .trajets_trajets section .sidebar_article_trajets .rsv_button {
+    padding: 0;
+    width: 150px;
+    background-color: #fdfedb;
+    color: #3f5168;
+    border-radius: 0;
+    border: 1px solid #fdfedb;
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+    -webkit-transition: color 0.45s;
+    transition: color 0.45s;
+    margin: 0;
+  }
+  .trajets_trajets section .sidebar_article_trajets .rsv_button:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #3f5168;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    -webkit-transition: all 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    transition: all 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    z-index: -10;
+  }
+  .trajets_trajets section .sidebar_article_trajets .rsv_button:hover {
+    color: #fdfedb;
+  }
+  .trajets_trajets section .sidebar_article_trajets .rsv_button:hover:after {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   .trajets_trajets section img {
     height: 70%;
@@ -2136,29 +2179,57 @@ html {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
-    -webkit-transform: translateX(-30%);
-            transform: translateX(-30%);
+    -webkit-transform: translateX(-60%);
+            transform: translateX(-60%);
     -o-object-fit: contain;
        object-fit: contain;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+  }
+  .trajets_trajets section img:hover {
+    -webkit-transform: scale(160%);
+            transform: scale(160%);
+    -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2;
+    margin-right: 100px;
   }
   .trajets_trajets section:nth-child(3) {
     -webkit-transform: translateX(-10%);
             transform: translateX(-10%);
   }
   .trajets_trajets section:nth-child(3) img {
-    -webkit-transform: translateX(30%);
-            transform: translateX(30%);
+    -webkit-transform: translateX(60%);
+            transform: translateX(60%);
+  }
+  .trajets_trajets section:nth-child(3) img:hover {
+    -webkit-transform: scale(160%);
+            transform: scale(160%);
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    margin-left: 150px;
+  }
+  .trajets_trajets section:nth-child(3) .sidebar_article_trajets {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    padding-left: 0;
+    padding-right: 100px;
+  }
+  .trajets_trajets section:nth-child(3) .sidebar_article_trajets p {
+    text-align: right;
   }
 }
 
-.splashscreen_trajets {
+.splashscreen_excursions {
   position: relative;
   width: 100vw;
   max-width: 100%;
   z-index: 0;
 }
 
-.splashscreen_trajets .sidebar_trajets {
+.splashscreen_excursions .sidebar_excursions {
   background-color: #3f5168;
   width: 400px;
   height: 100%;
@@ -2171,7 +2242,7 @@ html {
       grid-template-columns: repeat(6, 1fr);
 }
 
-.splashscreen_trajets .sidebar_trajets h1 {
+.splashscreen_excursions .sidebar_excursions h1 {
   color: #fdfedb;
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
@@ -2185,7 +2256,7 @@ html {
   left: 9vw;
 }
 
-.splashscreen_trajets .sidebar_trajets p {
+.splashscreen_excursions .sidebar_excursions p {
   color: #fdfedb;
   font-family: "Montserrat", sans-serif;
   -ms-grid-row: 5;
@@ -2198,7 +2269,7 @@ html {
   font-weight: 300;
 }
 
-.splashscreen_trajets .sidebar_trajets a {
+.splashscreen_excursions .sidebar_excursions a {
   color: #fdfedb;
   border: 1px solid #fdfedb;
   font-family: "Montserrat", sans-serif;
@@ -2216,7 +2287,7 @@ html {
   text-decoration: none;
 }
 
-.splashscreen_trajets figure img {
+.splashscreen_excursions figure img {
   width: 100vw;
   max-width: 100%;
   height: 100vh;
@@ -2226,8 +2297,8 @@ html {
      object-fit: cover;
 }
 
-@media (max-width: 1100px) {
-  .body_bateaux .splashscreen_bateaux .sidebar_boat {
+@media (max-width: 1024px) {
+  .body_excursions .splashscreen_excursions .sidebar_excursions {
     width: 100vw;
     max-width: 100%;
     background-color: #222222a9;
