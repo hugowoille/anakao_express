@@ -1,6 +1,25 @@
 html{
     scroll-behavior: smooth;
 }
+
+.bateaux_content {
+    
+    overflow: hidden;
+    background-color: $jaune;
+    margin-bottom: 390.05px;
+    margin-top: 0;
+    -webkit-box-shadow: 10px 10px 23px -7px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 23px -7px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 23px -7px rgba(0, 0, 0, 0.75);
+    @media (max-width:1024px) {
+        
+            margin-bottom: 0!important;
+        
+    }
+}
+
+////////////////// SPLASHSCREEN //////////////////
+
 .splashscreen_bateaux {
     position: relative;
     width: 100vw;
@@ -57,35 +76,45 @@ html{
     }
 }
 .bateaux_content {
-    background-color: $jaune;
+    
     margin-bottom: 390.05px;
+
+
+
+
+////////////////// PICTOS //////////////////
+
+
     .boat_stuff {  
         padding:100px 0 100px 0;  
         .separate_boat {
             height: 3px;
-            width: 300px;
+            width: 60%;
             background-color: $bleu;
             margin: 0 auto;
         }
-        h2 {
+        h3 {
             text-align: center;
-            font-family: $font-p;
-            font-size: 2rem;
+            font-family: $font-titre-montserrat;
+            font-size: 1.7rem;
+            font-weight: normal;
             margin: 50px 0 50px 0;
             text-decoration: none;
+            color:$bleu;
             &::after{
                 display:none;
             }
         }
         p {
             font-family: $font-titre-montserrat;
-            font-size: 1rem;
+            font-size: 1em;
             text-align: center;
             margin:0 auto;
             margin-bottom: 50px;
             margin-top: 30px;
             width:80%;
             color:$bleu;
+            text-decoration: underline;
         }
     }
 }
@@ -109,17 +138,17 @@ html{
             margin-bottom: 20px;
             text-align: center;
             font-family: $font-p;
-            font-size: 1.4rem;
+            font-size: 1em!important;
             color:$bleu;
             
         }
        
     }
 }
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
     .bateaux_content {
         .boat_stuff {
-            h2 {
+            h3 {
                 font-size: 1.5rem;
             }
             .picto_boat {
@@ -134,34 +163,42 @@ html{
     }
 }
 
+
+////////////////// LISTE DES BATEAUX //////////////////
+
+
 .boat_list {
+    width:100%;
+    max-width: 100%;
     .sambobe {
         display: flex;
-        height: 800px;
+        max-height: 600px;
         margin-bottom: 100px;
         max-width: 100%;
         flex-direction: row;
 
         .sidebar_left {
-            width: 25vw;
+            width: 35%;
             background-color: $bleu;
             display: flex;
             flex-direction: column;
             padding: 2vw;
             justify-content: space-around;
-            h2 {
-                font-family: $font-titre-montserrat;
+            h3 {
+                font-family: $font-navbar-cinzel;
+                font-weight: 300;
                 color: $jaune;
                 font-size: 2rem;
-                border-bottom: 3px solid $jaune;
-                margin-top: 3vw;
+                border-bottom: 2px solid $jaune;
+                margin: 2vw 0;
+
                 
             }
             p {
                 font-family: $font-titre-montserrat;
                 color: $jaune;
-                font-size: 1.2rem;
-                margin-bottom: 5vw;
+                font-size: 0.8em;
+                margin-bottom: 2vw;
                 
             }
             a{
@@ -172,7 +209,7 @@ html{
                 align-self: center;
                 border:1px solid $jaune;
                 border-radius: 100%;
-                margin-bottom: 30px;
+                
                 span{
                     text-align: center;
                     display:block;
@@ -183,39 +220,46 @@ html{
             }
         }
         figure {
-            width: 75vw;
+            width: 65%;
             img {
                 object-fit: cover;
+                width: 100%;
                 max-width: 100%;
-                height: 800px;
+                max-height: 600px;
                 display:block;
+                
             }
         }
     }
     .sambokely {
         display: flex;
-        height: 800px;
+        max-height: 600px;
         margin-bottom: 100px;
         max-width: 100%;
         .sidebar_right {
-            width: 25vw;
+            width: 35%;
             background-color: $bleu;
             display: flex;
             flex-direction: column;
             padding: 2vw;
             justify-content: space-around;
-            h2 {
-                font-family: $font-titre-montserrat;
+            max-height: 600px;
+            h3 {
+                font-family: $font-navbar-cinzel;
+                font-weight: 300;
                 color: $jaune;
                 font-size: 2rem;
-                border-bottom: 3px solid $jaune;
-                margin-top: 3vw;
+                border-bottom: 2px solid $jaune;
+                margin: 2vw 0;
+
+                
             }
             p {
                 font-family: $font-titre-montserrat;
                 color: $jaune;
-                font-size: 1.2rem;
-                margin-bottom: 5vw;
+                font-size: 0.8em;
+                margin-bottom: 2vw;
+                
             }
             a{
                 width:40px;
@@ -225,7 +269,7 @@ html{
                 align-self: center;
                 border:1px solid $jaune;
                 border-radius: 100%;
-                margin-bottom: 30px;
+                
                 span{
                     text-align: center;
                     display:block;
@@ -237,54 +281,61 @@ html{
             
         }
         figure {
-            width: 75vw;
+            width: 65%;
             img {
                 object-fit: cover;
                 max-width: 100%;
-                height: 800px;
+                max-height: 600px;
+                width: 100%;
                 display:block;
+
             }
         }
     }
     .sambovezo {
         display: flex;
-        height: 800px;
+        max-height: 600px;
         margin-bottom: 100px;
         max-width: 100%;
         .sidebar_left2 {
-            width: 25vw;
+            width: 35%;
             background-color: $bleu;
             display: flex;
             flex-direction: column;
             padding: 2vw;
-            justify-content: space-around;
-            h2 {
-                font-family: $font-titre-montserrat;
+            justify-content: space-evenly;
+            h3 {
+                font-family: $font-navbar-cinzel;
+                font-weight: 300;
                 color: $jaune;
                 font-size: 2rem;
-                border-bottom: 3px solid $jaune;
-                margin-top: 3vw;
+                border-bottom: 2px solid $jaune;
+                margin: 2vw 0;
+
+                
             }
             p {
                 font-family: $font-titre-montserrat;
                 color: $jaune;
-                font-size: 1.2rem;
-                margin-bottom: 5vw;
+                font-size: 0.8em;
+                margin-bottom: 2vw;
+                
             }
         }
         figure {
-            width: 75vw;
+            width: 65%;
             img {
                 object-fit: cover;
                 max-width: 100%;
-                height: 800px;
+                max-height: 600px;
                 display:block;
+                width: 100%;
             }
         }
     }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1024px) {
     .body_bateaux {
         .splashscreen_bateaux {
             .sidebar_boat {
@@ -304,7 +355,7 @@ html{
             .sidebar_left {
                 width: 100vw;
                 max-width: 100%;
-                h2{
+                h3{
                     margin-bottom:50px;
                 }
                 p{
@@ -330,7 +381,7 @@ html{
             .sidebar_right {
                 width: 100vw;
                 max-width: 100%;
-                h2{
+                h3{
                     margin-bottom:50px;
                 }
                 p{
@@ -354,7 +405,7 @@ html{
             .sidebar_left2 {
                 width: 100vw;
                 max-width: 100%;
-                h2{
+                h3{
                     margin-bottom:50px;
                 }
                 p{

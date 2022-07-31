@@ -664,7 +664,7 @@ nav .main-navlinks .navlinks-container {
 
 nav .main-navlinks .navlinks-container a {
   font-family: "Cinzel", serif;
-  font-weight: 600;
+  font-weight: 500;
   text-decoration: none;
   color: #3f5168;
   font-size: 1em;
@@ -962,7 +962,8 @@ h2:after {
   text-align: center;
   display: block;
   margin: 0 auto;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Cinzel", serif;
+  font-weight: 500;
   padding: 10px 0;
   color: #3f5168;
 }
@@ -1450,6 +1451,21 @@ html {
   scroll-behavior: smooth;
 }
 
+.bateaux_content {
+  overflow: hidden;
+  background-color: #fdfedb;
+  margin-bottom: 390.05px;
+  margin-top: 0;
+  -webkit-box-shadow: 10px 10px 23px -7px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 23px -7px rgba(0, 0, 0, 0.75);
+}
+
+@media (max-width: 1024px) {
+  .bateaux_content {
+    margin-bottom: 0 !important;
+  }
+}
+
 .splashscreen_bateaux {
   position: relative;
   width: 100vw;
@@ -1526,7 +1542,6 @@ html {
 }
 
 .bateaux_content {
-  background-color: #fdfedb;
   margin-bottom: 390.05px;
 }
 
@@ -1536,32 +1551,35 @@ html {
 
 .bateaux_content .boat_stuff .separate_boat {
   height: 3px;
-  width: 300px;
+  width: 60%;
   background-color: #3f5168;
   margin: 0 auto;
 }
 
-.bateaux_content .boat_stuff h2 {
+.bateaux_content .boat_stuff h3 {
   text-align: center;
-  font-family: "Playfair Display", serif;
-  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.7rem;
+  font-weight: normal;
   margin: 50px 0 50px 0;
   text-decoration: none;
+  color: #3f5168;
 }
 
-.bateaux_content .boat_stuff h2::after {
+.bateaux_content .boat_stuff h3::after {
   display: none;
 }
 
 .bateaux_content .boat_stuff p {
   font-family: "Montserrat", sans-serif;
-  font-size: 1rem;
+  font-size: 1em;
   text-align: center;
   margin: 0 auto;
   margin-bottom: 50px;
   margin-top: 30px;
   width: 80%;
   color: #3f5168;
+  text-decoration: underline;
 }
 
 .picto_boat {
@@ -1592,12 +1610,12 @@ html {
   margin-bottom: 20px;
   text-align: center;
   font-family: "Playfair Display", serif;
-  font-size: 1.4rem;
+  font-size: 1em !important;
   color: #3f5168;
 }
 
-@media (max-width: 1000px) {
-  .bateaux_content .boat_stuff h2 {
+@media (max-width: 1024px) {
+  .bateaux_content .boat_stuff h3 {
     font-size: 1.5rem;
   }
   .bateaux_content .boat_stuff .picto_boat li h3 {
@@ -1606,11 +1624,16 @@ html {
   }
 }
 
+.boat_list {
+  width: 100%;
+  max-width: 100%;
+}
+
 .boat_list .sambobe {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 800px;
+  max-height: 600px;
   margin-bottom: 100px;
   max-width: 100%;
   -webkit-box-orient: horizontal;
@@ -1620,7 +1643,7 @@ html {
 }
 
 .boat_list .sambobe .sidebar_left {
-  width: 25vw;
+  width: 35%;
   background-color: #3f5168;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1634,19 +1657,20 @@ html {
       justify-content: space-around;
 }
 
-.boat_list .sambobe .sidebar_left h2 {
-  font-family: "Montserrat", sans-serif;
+.boat_list .sambobe .sidebar_left h3 {
+  font-family: "Cinzel", serif;
+  font-weight: 300;
   color: #fdfedb;
   font-size: 2rem;
-  border-bottom: 3px solid #fdfedb;
-  margin-top: 3vw;
+  border-bottom: 2px solid #fdfedb;
+  margin: 2vw 0;
 }
 
 .boat_list .sambobe .sidebar_left p {
   font-family: "Montserrat", sans-serif;
   color: #fdfedb;
-  font-size: 1.2rem;
-  margin-bottom: 5vw;
+  font-size: 0.8em;
+  margin-bottom: 2vw;
 }
 
 .boat_list .sambobe .sidebar_left a {
@@ -1659,7 +1683,6 @@ html {
       align-self: center;
   border: 1px solid #fdfedb;
   border-radius: 100%;
-  margin-bottom: 30px;
 }
 
 .boat_list .sambobe .sidebar_left a span {
@@ -1669,14 +1692,15 @@ html {
 }
 
 .boat_list .sambobe figure {
-  width: 75vw;
+  width: 65%;
 }
 
 .boat_list .sambobe figure img {
   -o-object-fit: cover;
      object-fit: cover;
+  width: 100%;
   max-width: 100%;
-  height: 800px;
+  max-height: 600px;
   display: block;
 }
 
@@ -1684,13 +1708,13 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 800px;
+  max-height: 600px;
   margin-bottom: 100px;
   max-width: 100%;
 }
 
 .boat_list .sambokely .sidebar_right {
-  width: 25vw;
+  width: 35%;
   background-color: #3f5168;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1702,21 +1726,23 @@ html {
   padding: 2vw;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  max-height: 600px;
 }
 
-.boat_list .sambokely .sidebar_right h2 {
-  font-family: "Montserrat", sans-serif;
+.boat_list .sambokely .sidebar_right h3 {
+  font-family: "Cinzel", serif;
+  font-weight: 300;
   color: #fdfedb;
   font-size: 2rem;
-  border-bottom: 3px solid #fdfedb;
-  margin-top: 3vw;
+  border-bottom: 2px solid #fdfedb;
+  margin: 2vw 0;
 }
 
 .boat_list .sambokely .sidebar_right p {
   font-family: "Montserrat", sans-serif;
   color: #fdfedb;
-  font-size: 1.2rem;
-  margin-bottom: 5vw;
+  font-size: 0.8em;
+  margin-bottom: 2vw;
 }
 
 .boat_list .sambokely .sidebar_right a {
@@ -1729,7 +1755,6 @@ html {
       align-self: center;
   border: 1px solid #fdfedb;
   border-radius: 100%;
-  margin-bottom: 30px;
 }
 
 .boat_list .sambokely .sidebar_right a span {
@@ -1739,14 +1764,15 @@ html {
 }
 
 .boat_list .sambokely figure {
-  width: 75vw;
+  width: 65%;
 }
 
 .boat_list .sambokely figure img {
   -o-object-fit: cover;
      object-fit: cover;
   max-width: 100%;
-  height: 800px;
+  max-height: 600px;
+  width: 100%;
   display: block;
 }
 
@@ -1754,13 +1780,13 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 800px;
+  max-height: 600px;
   margin-bottom: 100px;
   max-width: 100%;
 }
 
 .boat_list .sambovezo .sidebar_left2 {
-  width: 25vw;
+  width: 35%;
   background-color: #3f5168;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1770,38 +1796,41 @@ html {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 2vw;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
-.boat_list .sambovezo .sidebar_left2 h2 {
-  font-family: "Montserrat", sans-serif;
+.boat_list .sambovezo .sidebar_left2 h3 {
+  font-family: "Cinzel", serif;
+  font-weight: 300;
   color: #fdfedb;
   font-size: 2rem;
-  border-bottom: 3px solid #fdfedb;
-  margin-top: 3vw;
+  border-bottom: 2px solid #fdfedb;
+  margin: 2vw 0;
 }
 
 .boat_list .sambovezo .sidebar_left2 p {
   font-family: "Montserrat", sans-serif;
   color: #fdfedb;
-  font-size: 1.2rem;
-  margin-bottom: 5vw;
+  font-size: 0.8em;
+  margin-bottom: 2vw;
 }
 
 .boat_list .sambovezo figure {
-  width: 75vw;
+  width: 65%;
 }
 
 .boat_list .sambovezo figure img {
   -o-object-fit: cover;
      object-fit: cover;
   max-width: 100%;
-  height: 800px;
+  max-height: 600px;
   display: block;
+  width: 100%;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1024px) {
   .body_bateaux .splashscreen_bateaux .sidebar_boat {
     width: 100vw;
     max-width: 100%;
@@ -1820,7 +1849,7 @@ html {
     width: 100vw;
     max-width: 100%;
   }
-  .boat_list .sambobe .sidebar_left h2 {
+  .boat_list .sambobe .sidebar_left h3 {
     margin-bottom: 50px;
   }
   .boat_list .sambobe .sidebar_left p {
@@ -1850,7 +1879,7 @@ html {
     width: 100vw;
     max-width: 100%;
   }
-  .boat_list .sambokely .sidebar_right h2 {
+  .boat_list .sambokely .sidebar_right h3 {
     margin-bottom: 50px;
   }
   .boat_list .sambokely .sidebar_right p {
@@ -1878,7 +1907,7 @@ html {
     width: 100vw;
     max-width: 100%;
   }
-  .boat_list .sambovezo .sidebar_left2 h2 {
+  .boat_list .sambovezo .sidebar_left2 h3 {
     margin-bottom: 50px;
   }
   .boat_list .sambovezo .sidebar_left2 p {
@@ -2219,6 +2248,237 @@ html {
   }
   .trajets_trajets section:nth-child(3) .sidebar_article_trajets p {
     text-align: right;
+  }
+}
+
+.excursions_trajets {
+  display: -ms-grid;
+  display: grid;
+  max-width: 100%;
+  -ms-grid-columns: (50%)[auto-fit];
+      grid-template-columns: repeat(auto-fit, 50%);
+}
+
+.excursions_trajets section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  max-height: 600px;
+}
+
+.excursions_trajets section img {
+  width: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 600px;
+}
+
+.excursions_trajets section h3 {
+  font-family: "Cinzel", serif;
+  color: #3f5168;
+  font-weight: 400;
+}
+
+.excursions_trajets section .separate_exc {
+  width: 70%;
+  background: #3f5168;
+  height: 2px;
+  margin-bottom: 2vw;
+}
+
+.excursions_trajets section p {
+  color: #3f5168;
+  text-align: right;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.7em;
+  margin-top: 2vw;
+}
+
+.excursions_trajets .nosi_txt {
+  background: #3f5168;
+  padding: 0 100px;
+}
+
+.excursions_trajets .nosi_txt .rsv_button {
+  margin-top: 40px;
+  background-color: #3f5168;
+  color: #3f5168;
+  padding: 0;
+  width: 150px;
+  color: #fdfedb;
+  border-radius: 0;
+  border: 1px solid #fdfedb;
+  position: relative;
+  overflow: hidden;
+  z-index: 10;
+  -webkit-transition: color 0.45s;
+  transition: color 0.45s;
+}
+
+.excursions_trajets .nosi_txt .rsv_button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fdfedb;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: all 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition: all 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  z-index: -10;
+}
+
+.excursions_trajets .nosi_txt .rsv_button:hover {
+  color: #3f5168;
+}
+
+.excursions_trajets .nosi_txt .rsv_button:hover:after {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.excursions_trajets .nosi_txt h3,
+.excursions_trajets .nosi_txt p {
+  color: #fdfedb;
+}
+
+.excursions_trajets .nosi_txt .separate_exc {
+  background: #fdfedb;
+}
+
+.excursions_trajets .dmd_txt {
+  background: #fdfedb;
+  padding: 0 100px;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.excursions_trajets .dmd_txt .rsv_button {
+  margin-top: 40px;
+  padding: 0;
+  width: 150px;
+  background-color: #fdfedb;
+  color: #3f5168;
+  border-radius: 0;
+  border: 1px solid #3f5168;
+  position: relative;
+  overflow: hidden;
+  z-index: 10;
+  -webkit-transition: color 0.45s;
+  transition: color 0.45s;
+}
+
+.excursions_trajets .dmd_txt .rsv_button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #3f5168;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: all 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition: all 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  z-index: -10;
+}
+
+.excursions_trajets .dmd_txt .rsv_button:hover {
+  color: #fdfedb;
+}
+
+.excursions_trajets .dmd_txt .rsv_button:hover:after {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.excursions_trajets .dmd_txt .rsv_button:hover {
+  color: #fdfedb;
+}
+
+.excursions_trajets .dmd_txt h3,
+.excursions_trajets .dmd_txt p {
+  color: #3f5168;
+  text-align: left;
+}
+
+.excursions_trajets .dmd_txt .separate_exc {
+  background: #3f5168;
+}
+
+@media (max-width: 1024px) {
+  .excursions_trajets {
+    -ms-grid-columns: (100%)[auto-fit];
+        grid-template-columns: repeat(auto-fit, 100%);
+  }
+  .excursions_trajets .nos_img {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .excursions_trajets .nosi_txt {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    padding: 0 20px;
+    padding-bottom: 20px;
+  }
+  .excursions_trajets .nosi_txt .rsv_button {
+    background-color: #fdfedb;
+    color: #3f5168;
+    margin: 0 auto;
+  }
+  .excursions_trajets .dmd_img {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .excursions_trajets .dmd_txt {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 0;
+    padding: 0 20px;
+    padding-bottom: 20px;
+  }
+  .excursions_trajets .dmd_txt p {
+    text-align: center;
+  }
+  .excursions_trajets .dmd_txt h3 {
+    text-align: center;
+  }
+  .excursions_trajets section {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .excursions_trajets section p {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .excursions_trajets section h3 {
+    margin: 20px 0;
   }
 }
 

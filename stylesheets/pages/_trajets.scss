@@ -1,7 +1,3 @@
-
-
-
-
 ////////////////// SPLASHSCREEN //////////////////
 
 
@@ -86,13 +82,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    .separate_trajets{
-        height:1px;
-        width:80%;
+
+    .separate_trajets {
+        height: 1px;
+        width: 80%;
         background-color: $bleu;
-        margin:50px 0;
-        display:none;
+        margin: 50px 0;
+        display: none;
     }
+
     section {
         display: flex;
         flex-wrap: wrap;
@@ -132,30 +130,35 @@
             max-height: 450px;
 
         }
-        
+
         .rsv_button {
             display: block;
             margin: 0 auto;
-            height:50px;
+            height: 50px;
             line-height: 50px;
         }
     }
 }
+
 @media (min-width: 600px) {
     .trajets_trajets {
         padding-top: 100px;
         padding-bottom: 100px;
-        .separate_trajets{
+
+        .separate_trajets {
             display: block;
         }
+
         section {
             flex-direction: row;
             width: 100vw;
             box-shadow: none;
+
             img {
                 width: 70%;
-                order:2;
+                order: 2;
             }
+
             .sidebar_article_trajets {
                 width: 30%;
                 display: flex;
@@ -163,7 +166,8 @@
                 justify-content: space-around;
                 align-items: center;
                 background-color: $bleu;
-                order:1;
+                order: 1;
+
                 h3 {
                     display: inline;
                     margin: 0;
@@ -173,41 +177,47 @@
 
                 p {
                     width: 20vw;
-                    
+
                     color: $jaune;
                 }
-                .rsv_button{
+
+                .rsv_button {
                     background-color: $jaune;
-                    color:$bleu;
+                    color: $bleu;
                     margin-bottom: 10px;
                 }
-                
+
             }
-            &:nth-child(3){
-                .sidebar_article_trajets{
-                    order:2;
+
+            &:nth-child(3) {
+                .sidebar_article_trajets {
+                    order: 2;
                 }
             }
-            
+
         }
-        
+
     }
 }
+
 @media (min-width: 1024px) {
-    .trajets_trajets{
+    .trajets_trajets {
         overflow: hidden;
-        section{
-            width:90%;
-            height:500px;
+
+        section {
+            width: 90%;
+            height: 500px;
             transform: translateX(15%);
-            
-            .sidebar_article_trajets{
+
+            .sidebar_article_trajets {
                 flex-grow: 1;
-               align-items: flex-start;
-               padding-left: 100px;
-               p{
-                text-align: left;
-               }
+                align-items: flex-start;
+                padding-left: 100px;
+
+                p {
+                    text-align: left;
+                }
+
                 .rsv_button {
                     padding: 0;
                     width: 150px;
@@ -219,8 +229,8 @@
                     overflow: hidden;
                     z-index: 10;
                     transition: color 0.45s;
-                    margin:0;
-                    
+                    margin: 0;
+
                     &:after {
                         content: "";
                         position: absolute;
@@ -240,46 +250,282 @@
 
                         &:after {
                             transform: translateX(0);
-                            
+
 
                         }
                     }
 
                 }
             }
-            img{
-                height:70%;
-                width:40%;
+
+            img {
+                height: 70%;
+                width: 40%;
                 align-self: center;
                 transform: translateX(-60%);
                 object-fit: contain;
-                transition: all .5s ;
-                &:hover{
+                transition: all .5s;
+
+                &:hover {
                     transform: scale(160%);
                     flex-grow: 2;
                     margin-right: 100px;
                 }
             }
-            &:nth-child(3){
+
+            &:nth-child(3) {
                 transform: translateX(-10%);
-                img{
+
+                img {
                     transform: translateX(60%);
-                    &:hover{
+
+                    &:hover {
                         transform: scale(160%);
                         flex-grow: 1;
                         margin-left: 150px;
                     }
                 }
-                .sidebar_article_trajets{
+
+                .sidebar_article_trajets {
                     align-items: flex-end;
                     padding-left: 0;
                     padding-right: 100px;
-                    p{
+
+                    p {
                         text-align: right;
                     }
                 }
             }
-            
+
         }
+    }
+}
+
+
+////////////////// EXCURSIONS //////////////////
+
+
+
+.excursions_trajets {
+    display: grid;
+    max-width: 100%;
+    grid-template-columns: repeat(auto-fit, 50%);
+
+
+
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        max-height: 600px;
+
+        img {
+            width: 100%;
+            display: block;
+            object-fit: cover;
+            max-height: 600px;
+        }
+
+        h3 {
+            font-family: $font-navbar-cinzel;
+            color: $bleu;
+            font-weight: 400;
+
+
+        }
+
+        .separate_exc {
+            width: 70%;
+            background: $bleu;
+            height: 2px;
+            margin-bottom: 2vw;
+        }
+
+        p {
+            color: $bleu;
+            text-align: right;
+            font-family: $font-titre-montserrat;
+            font-size: 0.7em;
+            margin-top: 2vw;
+
+        }
+    }
+
+    .nosi_txt {
+        background: $bleu;
+        padding: 0 100px;
+
+        .rsv_button {
+            margin-top: 40px;
+            background-color: $bleu;
+            color: $bleu;
+            padding: 0;
+            width: 150px;
+            color: $jaune;
+            border-radius: 0;
+            border: 1px solid $jaune;
+            position: relative;
+            overflow: hidden;
+            z-index: 10;
+            transition: color 0.45s;
+
+
+            &:after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: $jaune;
+                width: 100%;
+                height: 100%;
+                transform: translateX(-100%);
+                transition: all 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+                z-index: -10;
+
+            }
+
+            &:hover {
+                color: $bleu;
+
+                &:after {
+                    transform: translateX(0);
+
+
+                }
+            }
+
+        }
+
+        h3,
+        p {
+            color: $jaune;
+
+        }
+
+        .separate_exc {
+            background: $jaune;
+        }
+    }
+
+    .dmd_txt {
+        background: $jaune;
+        padding: 0 100px;
+        order: 2;
+        align-items: flex-start;
+
+        .rsv_button {
+            margin-top: 40px;
+            padding: 0;
+            width: 150px;
+            background-color: $jaune;
+            color: $bleu;
+            border-radius: 0;
+            border: 1px solid $bleu;
+            position: relative;
+            overflow: hidden;
+            z-index: 10;
+            transition: color 0.45s;
+
+            &:after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: $bleu;
+                width: 100%;
+                height: 100%;
+                transform: translateX(-100%);
+                transition: all 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+                z-index: -10;
+
+            }
+
+            &:hover {
+                color: $jaune;
+
+                &:after {
+                    transform: translateX(0);
+
+
+                }
+            }
+
+            &:hover {
+                color: $jaune;
+            }
+        }
+
+        h3,
+        p {
+            color: $bleu;
+            text-align: left;
+
+        }
+
+        .separate_exc {
+            background: $bleu;
+
+        }
+    }
+
+    @media (max-width: 1024px) {
+        grid-template-columns: repeat(auto-fit, 100%);
+
+        .nos_img {
+            order: 1;
+        }
+
+        .nosi_txt {
+            order: 2;
+            padding: 0 20px;
+            padding-bottom: 20px;
+
+
+            .rsv_button {
+                background-color: $jaune;
+                color: $bleu;
+                margin: 0 auto;
+
+            }
+        }
+
+        .dmd_img {
+            order: 3;
+        }
+
+        .dmd_txt {
+            order: 4;
+            align-items: center;
+            padding-top: 0;
+            padding: 0 20px;
+            padding-bottom: 20px;
+
+            p {
+                text-align: center;
+
+            }
+
+            h3 {
+                text-align: center;
+            }
+
+        }
+
+        section {
+            align-items: center;
+
+            p {
+                text-align: center;
+                margin: 0;
+                margin-bottom: 20px;
+            }
+
+            h3 {
+                margin: 20px 0;
+            }
+
+        }
+
     }
 }
