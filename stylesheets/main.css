@@ -2038,7 +2038,6 @@ html {
       flex-wrap: wrap;
   width: 100vw;
   margin: 20px 0;
-  max-height: 660px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
           box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
@@ -2185,6 +2184,9 @@ html {
             justify-content: center;
     padding-left: 3vw;
   }
+  .trajets_trajets section .sidebar_article_trajets h3 {
+    font-size: 1.4em;
+  }
   .trajets_trajets section .sidebar_article_trajets p {
     text-align: left;
     width: 60%;
@@ -2242,8 +2244,8 @@ html {
   }
   .trajets_trajets section img:hover {
     height: 32vw;
-    -webkit-transform: scale(120%);
-            transform: scale(120%);
+    -webkit-transform: scale(115%);
+            transform: scale(115%);
   }
   .trajets_trajets section:nth-child(3) {
     margin-right: 25%;
@@ -2253,8 +2255,8 @@ html {
     left: 15%;
   }
   .trajets_trajets section:nth-child(3) img:hover {
-    -webkit-transform: scale(120%);
-            transform: scale(120%);
+    -webkit-transform: scale(115%);
+            transform: scale(115%);
     height: 32vw;
   }
   .trajets_trajets section:nth-child(3) .sidebar_article_trajets {
