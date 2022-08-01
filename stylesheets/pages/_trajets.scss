@@ -142,8 +142,7 @@
 
 @media (min-width: 600px) {
     .trajets_trajets {
-        padding-top: 100px;
-        padding-bottom: 100px;
+        
 
         .separate_trajets {
             display: block;
@@ -153,38 +152,50 @@
             flex-direction: row;
             width: 100vw;
             box-shadow: none;
-
+            
             img {
-                width: 70%;
+                width: 50%;
                 order: 2;
+                max-height: none;
+                object-position: 20%;
             }
 
             .sidebar_article_trajets {
-                width: 30%;
+                width: 50%;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-around;
-                align-items: center;
+                align-items: flex-start;
                 background-color: $bleu;
                 order: 1;
-
+                padding-left: 2vw;
+                
                 h3 {
-                    display: inline;
+                    
                     margin: 0;
                     color: $jaune;
-
+                    width: 100%;
+                    text-align: left;
+                    font-family: $font-navbar-cinzel;
+                    font-weight: normal;
+                    border-bottom: 1px solid $jaune;
+                    width:90%;
+                    margin-top: 20px;
                 }
 
                 p {
-                    width: 20vw;
-
+                    width: 90%;
+                    text-align: left;
                     color: $jaune;
+                    padding:30px 0;
                 }
 
                 .rsv_button {
                     background-color: $jaune;
                     color: $bleu;
-                    margin-bottom: 10px;
+                    margin:0;
+                    margin-bottom: 30px;
+                    
                 }
 
             }
@@ -192,6 +203,15 @@
             &:nth-child(3) {
                 .sidebar_article_trajets {
                     order: 2;
+                    align-items: flex-end;
+                    padding-left: 0;
+                    padding-right: 2vw;
+                    p{
+                        text-align: right;
+                    }
+                    h3{
+                        text-align: right;
+                    }
                 }
             }
 
@@ -203,19 +223,23 @@
 @media (min-width: 1024px) {
     .trajets_trajets {
         overflow: hidden;
+       padding: 100px 0;
 
         section {
             width: 90%;
-            height: 500px;
-            transform: translateX(15%);
-
+            min-height: 600px;
+            margin-left:15%;
+            
             .sidebar_article_trajets {
-                flex-grow: 1;
+                width:60%;
                 align-items: flex-start;
-                padding-left: 100px;
+                justify-content: center;
+                padding-left: 3vw;
+                
 
                 p {
                     text-align: left;
+                    width:60%;
                 }
 
                 .rsv_button {
@@ -230,6 +254,7 @@
                     z-index: 10;
                     transition: color 0.45s;
                     margin: 0;
+                    margin-bottom: 20px;
 
                     &:after {
                         content: "";
@@ -259,37 +284,40 @@
             }
 
             img {
-                height: 70%;
+                height: 27vw;
                 width: 40%;
                 align-self: center;
-                transform: translateX(-60%);
-                object-fit: contain;
+                min-height: 400px;
+                position: relative;
+                left:-15%;
+                display:block;
+                object-fit: cover;
                 transition: all .5s;
-
+                
                 &:hover {
-                    transform: scale(160%);
-                    flex-grow: 2;
-                    margin-right: 100px;
+                    height:32vw;
+                    transform: scale(120%);
+                    
                 }
             }
 
             &:nth-child(3) {
-                transform: translateX(-10%);
+                margin-right: 25%;
 
                 img {
-                    transform: translateX(60%);
-
+                    position: relative;
+                    left:15%;
                     &:hover {
-                        transform: scale(160%);
-                        flex-grow: 1;
-                        margin-left: 150px;
+                        transform: scale(120%);
+                        height:32vw;
+                       
                     }
                 }
 
                 .sidebar_article_trajets {
                     align-items: flex-end;
                     padding-left: 0;
-                    padding-right: 100px;
+                    padding-right: 3vw;
 
                     p {
                         text-align: right;

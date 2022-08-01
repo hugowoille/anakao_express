@@ -1,0 +1,92 @@
+.bg_galerie_contact {
+    background-color: $jaune;
+    margin-bottom: 390.05px;
+    margin-top: 80px;
+    -webkit-box-shadow: 10px 10px 23px -7px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 23px -7px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 23px -7px rgba(0, 0, 0, 0.75);
+
+}
+
+@media (max-width:1024px) {
+    .bg_galerie_contact {
+        margin-bottom: 0;
+    }
+}
+
+.contact_content {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    
+    section {
+        width: 100%;
+        background-color: $bleu;
+
+        h3 {
+            font-weight: normal;
+            font-family: $font-navbar-cinzel;
+            margin: 60px;
+            border-bottom: 1px solid $jaune;
+            width: 60%;
+            color: $jaune;
+
+        }
+
+        p {
+            color: $jaune;
+            font-family: $font-titre-montserrat;
+            font-size: 0.7em;
+            padding: 60px;
+        }
+
+        &:nth-child(2n) {
+            background-color: $jaune;
+
+            h3 {
+                color: $bleu;
+                border-bottom: 1px solid $bleu;
+            }
+        }
+        figure{
+            
+            height:100%;
+            img{
+                display:block;
+                height:100%;
+                width:100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    @media (min-width: 1024px) {
+        
+            section {
+                width: 50%;
+               
+            }
+
+            .tarifs_contact {
+                order: 1;
+
+            }
+
+            .rsv_trajets_contact {
+                order: 3;
+
+            }
+
+            .rsv_excursions_contact {
+                order: 4;
+
+            }
+
+            .map_bureau_contact {
+                order: 2;
+
+            }
+        }
+    }
