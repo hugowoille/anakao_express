@@ -339,7 +339,7 @@
     display: grid;
     max-width: 100%;
     grid-template-columns: repeat(auto-fit, 50%);
-
+    
 
 
     section {
@@ -380,13 +380,17 @@
 
         }
     }
-
+    .nos_img{
+        img{
+            min-height:453.38px ;
+        }
+    }
     .nosi_txt {
         background: $bleu;
-        padding: 0 100px;
-
+        padding: 0 4vw;
+        min-height: 453.38px;
         .rsv_button {
-            margin-top: 40px;
+            margin-top: 2vw;
             background-color: $bleu;
             color: $bleu;
             padding: 0;
@@ -439,7 +443,7 @@
 
     .dmd_txt {
         background: $jaune;
-        padding: 0 100px;
+        padding: 0 4vw;
         order: 2;
         align-items: flex-start;
 
@@ -503,6 +507,7 @@
 
         .nos_img {
             order: 1;
+            
         }
 
         .nosi_txt {

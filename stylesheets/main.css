@@ -2267,13 +2267,18 @@ html {
   margin-top: 2vw;
 }
 
+.excursions_trajets .nos_img img {
+  min-height: 453.38px;
+}
+
 .excursions_trajets .nosi_txt {
   background: #445061;
-  padding: 0 100px;
+  padding: 0 4vw;
+  min-height: 453.38px;
 }
 
 .excursions_trajets .nosi_txt .rsv_button {
-  margin-top: 40px;
+  margin-top: 2vw;
   background-color: #445061;
   color: #445061;
   padding: 0;
@@ -2323,7 +2328,7 @@ html {
 
 .excursions_trajets .dmd_txt {
   background: #fdfedb;
-  padding: 0 100px;
+  padding: 0 4vw;
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
@@ -2641,7 +2646,7 @@ html {
 .contact_content section h3 {
   font-weight: normal;
   font-family: "Cinzel", serif;
-  margin: 60px;
+  margin: 2vw;
   border-bottom: 1px solid #fdfedb;
   width: 60%;
   color: #fdfedb;
@@ -2651,7 +2656,7 @@ html {
   color: #fdfedb;
   font-family: "Montserrat", sans-serif;
   font-size: 0.7em;
-  padding: 60px;
+  padding: 2vw;
 }
 
 .contact_content section:nth-child(2n) {
