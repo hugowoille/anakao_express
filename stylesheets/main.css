@@ -1000,6 +1000,7 @@ h2:after {
     -webkit-box-ordinal-group: 5;
         -ms-flex-order: 4;
             order: 4;
+    height: auto;
   }
   .trajets_home section .sidebar-section_home {
     width: 30%;
@@ -1026,11 +1027,13 @@ h2:after {
     color: #fdfedb;
   }
   .trajets_home section .sidebar-section_home p {
-    width: 20vw;
+    font-size: 0.7em;
+    width: 100%;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
     color: #fdfedb;
+    text-align: left;
   }
   .trajets_home section .sidebar-section_home .buttons {
     -webkit-box-ordinal-group: 4;
@@ -1073,9 +1076,7 @@ h2:after {
             flex-direction: column;
     margin: 0;
     width: 30%;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    max-height: none;
     margin: 30px 0 !important;
   }
   .trajets_home section img {
@@ -1097,6 +1098,7 @@ h2:after {
   }
   .trajets_home section .sidebar-section_home p {
     font-size: 0.7em;
+    min-height: 170px;
   }
   .trajets_home section .sidebar-section_home h3,
   .trajets_home section .sidebar-section_home p {
@@ -1149,91 +1151,10 @@ h2:after {
   }
   .trajets_home section .sidebar-section_home .buttons .esp_button {
     margin-bottom: 0;
-    margin-right: 20px;
+    margin-right: 1vw;
   }
 }
 
-/* @media (min-width: 1024px) {
-     .trajets_home {
-         overflow: hidden;
-         //background-image: url(/img/factice/bgnuage.jpg);
-         background-color: $bleu;
-        
-        section {
-            max-width: 100%;
-             width: 100%;
-             position: relative;
-             left: 50%;
-             transform: translate(-40%, 0);
-             margin-bottom: 75px;
-            
-             &:nth-child(1){
-                 margin-top: 100px;
-             }
-             &:nth-child(4){
-                 margin-bottom: 100px;
-             }
-             .sidebar-section_home {
-                 position: absolute;
-                 height: 350px;
-                 right: 0;
-                 top: 50%;
-                 transform: translate(-50%, -50%);
-                 padding: 0 20px;
-                 -webkit-box-shadow: -8px 9px 26px 0px rgba(0, 0, 0, 0.75);
-                 -moz-box-shadow: -8px 9px 26px 0px rgba(0, 0, 0, 0.75);
-                 box-shadow: -8px 9px 26px 0px rgba(0, 0, 0, 0.75);
-                 background-color: $jaune;
-                 h3, p{
-                     color:$bleu;
-                 }
-                 .buttons {
-                     flex-direction: row;
-                     justify-content: space-around;
-                     width: 100%;
-                    
-                     a {
-                         padding: 0;
-                         width: 150px;
-                         background-color: $bleu;
-                         color:$jaune;
-                     }
-
-                     .esp_button {
-                         margin-bottom: 0;
-                         margin-right: 10px;
-                     }
-                 }
-             }
-
-             img {
-                 max-height: 700px;
-                 --webkit-box-shadow: 7px 10px 22px -3px rgba(0,0,0,0.75);
-                 -moz-box-shadow: 7px 10px 22px -3px rgba(0,0,0,0.75);
-                 box-shadow: 7px 10px 22px -3px rgba(0,0,0,0.75);
-             }
-         }
-
-         .trajet_2,
-         .excursion_1 {
-
-             left: 60%;
-
-             img {
-                 order: 2;
-             }
-
-             .sidebar-section_home {
-                 order: 1;
-                 left: 0;
-                 -webkit-box-shadow: 10px 10px 23px -7px rgba(0, 0, 0, 0.75);
-                 -moz-box-shadow: 10px 10px 23px -7px rgba(0, 0, 0, 0.75);
-                 box-shadow: 10px 10px 23px -7px rgba(0, 0, 0, 0.75);
-             }
-         }
-     }
- }
-  */
 .excursion_1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1254,6 +1175,8 @@ h2:after {
   -o-object-fit: cover;
      object-fit: cover;
   margin-bottom: 50px;
+  -o-object-position: bottom;
+     object-position: bottom;
 }
 
 .excursion_1 p {
@@ -1263,6 +1186,7 @@ h2:after {
   width: 70%;
   margin: 0 auto;
   margin-bottom: 50px;
+  color: #445061;
 }
 
 .excursion_1 a {
@@ -1301,6 +1225,12 @@ h2:after {
 .excursion_1 a:hover:after {
   -webkit-transform: translateX(0);
           transform: translateX(0);
+}
+
+@media (min-width: 1024px) {
+  .excursion_1 img {
+    width: 75%;
+  }
 }
 
 .buttons {
@@ -1347,16 +1277,28 @@ h2:after {
   padding: 100px 0;
   color: #fdfedb;
   max-width: 80%;
+  text-align: center;
 }
 
 @media (min-width: 1024px) {
+  .apropos_home {
+    max-height: 700px;
+  }
   .apropos_home img {
     display: block;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: right;
+       object-position: right;
+    max-height: 691.09px;
     width: 50%;
+    min-height: 691.09px;
   }
   .apropos_home p {
+    font-size: 0.7em;
     width: 50%;
-    padding: 50px;
+    padding: 6vw;
+    text-align: left;
   }
 }
 
