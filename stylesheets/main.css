@@ -1644,6 +1644,7 @@ html {
   max-width: 100%;
   max-height: 600px;
   display: block;
+  min-height: 413.2px;
 }
 
 .boat_list .sambokely {
@@ -1716,6 +1717,7 @@ html {
   max-height: 600px;
   width: 100%;
   display: block;
+  min-height: 368.42px;
 }
 
 .boat_list .sambovezo {
@@ -1770,6 +1772,7 @@ html {
   max-height: 600px;
   display: block;
   width: 100%;
+  min-height: 373.2px;
 }
 
 @media (max-width: 1024px) {
