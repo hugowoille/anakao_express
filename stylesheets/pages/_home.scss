@@ -129,13 +129,17 @@ h2 {
     section {
         display: flex;
         flex-wrap: wrap;
-        width: 100vw;
+        width: 95vw;
         margin: 20px 0;
-        max-height: 660px;
         -webkit-box-shadow: 10px 10px 23px -7px rgba(0, 0, 0, 0.75);
         -moz-box-shadow: 10px 10px 23px -7px rgba(0, 0, 0, 0.75);
-        box-shadow: 10px 10px 23px -7px rgba(0, 0, 0, 0.75);
-
+        box-shadow: 10px 10px 23px -7px rgba(0, 0, 0, 0.75); 
+        .sidebar-section_home{
+            span{
+                font-size: 0.8em;
+                
+            }
+        }
         &:nth-child(1) {
             margin-top: 0;
         }
@@ -278,7 +282,7 @@ h2 {
 
                 p {
                     font-size: 0.7em;
-                    min-height: 170px;
+                    min-height: 186px;
                    
                 }
 
@@ -293,8 +297,9 @@ h2 {
 
                 .buttons {
                     flex-direction: row;
-                    
+                  
                     align-self: flex-start;
+                    margin:0;
 
 
 
@@ -309,6 +314,7 @@ h2 {
                         overflow: hidden;
                         z-index: 10;
                         transition: color 0.45s;
+                        justify-self: flex-end!important;
 
                         &:after {
                             content: "";
@@ -340,6 +346,17 @@ h2 {
                         margin-bottom: 0;
                         margin-right: 1vw;
 
+                    }
+                }
+            }
+        }
+    }
+    @media (min-width: 1600px) {
+        .trajets_home{
+            section{
+                .sidebar-section_home{
+                    p{
+                        min-height: 150px;
                     }
                 }
             }

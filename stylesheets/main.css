@@ -943,11 +943,14 @@ h2:after {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 100vw;
+  width: 95vw;
   margin: 20px 0;
-  max-height: 660px;
   -webkit-box-shadow: 10px 10px 23px -7px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 10px 23px -7px rgba(0, 0, 0, 0.75);
+}
+
+.trajets_home section .sidebar-section_home span {
+  font-size: 0.8em;
 }
 
 .trajets_home section:nth-child(1) {
@@ -1101,7 +1104,7 @@ h2:after {
   }
   .trajets_home section .sidebar-section_home p {
     font-size: 0.7em;
-    min-height: 170px;
+    min-height: 186px;
   }
   .trajets_home section .sidebar-section_home h3,
   .trajets_home section .sidebar-section_home p {
@@ -1117,6 +1120,7 @@ h2:after {
             flex-direction: row;
     -ms-flex-item-align: start;
         align-self: flex-start;
+    margin: 0;
   }
   .trajets_home section .sidebar-section_home .buttons a {
     padding: 0;
@@ -1130,6 +1134,7 @@ h2:after {
     z-index: 10;
     -webkit-transition: color 0.45s;
     transition: color 0.45s;
+    justify-self: flex-end !important;
   }
   .trajets_home section .sidebar-section_home .buttons a:after {
     content: "";
@@ -1155,6 +1160,12 @@ h2:after {
   .trajets_home section .sidebar-section_home .buttons .esp_button {
     margin-bottom: 0;
     margin-right: 1vw;
+  }
+}
+
+@media (min-width: 1024px) and (min-width: 1600px) {
+  .trajets_home section .sidebar-section_home p {
+    min-height: 150px;
   }
 }
 
