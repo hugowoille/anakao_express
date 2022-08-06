@@ -40,6 +40,9 @@
             font-family: $font-titre-montserrat;
             font-size: 0.7em;
             padding: 2vw;
+            span{
+                font-size: 2em;
+            }
         }
 
         &:nth-child(2n) {

@@ -308,6 +308,7 @@
                 img {
                     position: relative;
                     left:15%;
+                    object-position: bottom;
                     &:hover {
                         transform: scale(115%);
                         height:32vw;
@@ -323,6 +324,11 @@
                     p {
                         text-align: right;
                     }
+                }
+            }
+            &:nth-child(5){
+                img{
+                    object-position: top;
                 }
             }
 

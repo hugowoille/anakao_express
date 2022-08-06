@@ -188,6 +188,8 @@ h2 {
                 width: 70%;
                 order: 4;
                 height:auto;
+                min-height: 540.05px;
+                
             }
 
             .sidebar-section_home {
@@ -212,6 +214,7 @@ h2 {
                     order: 2;
                     color: $jaune;
                     text-align: left;
+                    padding:2vw;
                 }
 
                 .buttons {
@@ -241,7 +244,6 @@ h2 {
 @media (min-width: 1024px) {
     .trajets_home {
         overflow: hidden;
-        //background-image: url(/img/factice/bgnuage.jpg);
 
         flex-direction: row;
         justify-content: space-evenly;
@@ -261,6 +263,7 @@ h2 {
                 width: 100%;
                 order: 1;
                 max-height: 700px;
+                min-height: 350px;
                 
 
             }

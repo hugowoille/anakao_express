@@ -1001,6 +1001,7 @@ h2:after {
         -ms-flex-order: 4;
             order: 4;
     height: auto;
+    min-height: 540.05px;
   }
   .trajets_home section .sidebar-section_home {
     width: 30%;
@@ -1034,6 +1035,7 @@ h2:after {
             order: 2;
     color: #fdfedb;
     text-align: left;
+    padding: 2vw;
   }
   .trajets_home section .sidebar-section_home .buttons {
     -webkit-box-ordinal-group: 4;
@@ -1086,6 +1088,7 @@ h2:after {
         -ms-flex-order: 1;
             order: 1;
     max-height: 700px;
+    min-height: 350px;
   }
   .trajets_home section .sidebar-section_home {
     -webkit-box-ordinal-group: 3;
@@ -2198,6 +2201,8 @@ html {
   .trajets_trajets section:nth-child(3) img {
     position: relative;
     left: 15%;
+    -o-object-position: bottom;
+       object-position: bottom;
   }
   .trajets_trajets section:nth-child(3) img:hover {
     -webkit-transform: scale(115%);
@@ -2213,6 +2218,10 @@ html {
   }
   .trajets_trajets section:nth-child(3) .sidebar_article_trajets p {
     text-align: right;
+  }
+  .trajets_trajets section:nth-child(5) img {
+    -o-object-position: top;
+       object-position: top;
   }
 }
 
@@ -2660,6 +2669,10 @@ html {
   font-family: "Montserrat", sans-serif;
   font-size: 0.7em;
   padding: 2vw;
+}
+
+.contact_content section p span {
+  font-size: 2em;
 }
 
 .contact_content section:nth-child(2n) {
