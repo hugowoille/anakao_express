@@ -125,21 +125,23 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
     section {
         display: flex;
         flex-wrap: wrap;
-        width: 95vw;
+        width: 100vw;
         margin: 20px 0;
-        -webkit-box-shadow: 10px 10px 23px -7px rgba(0, 0, 0, 0.75);
-        -moz-box-shadow: 10px 10px 23px -7px rgba(0, 0, 0, 0.75);
-        box-shadow: 10px 10px 23px -7px rgba(0, 0, 0, 0.75); 
-        .sidebar-section_home{
-            span{
+        border-top: 10px solid $bleu;
+        border-bottom: 10px solid $bleu;
+        
+
+        .sidebar-section_home {
+            span {
                 font-size: 0.8em;
-                
+
             }
         }
+
         &:nth-child(1) {
             margin-top: 0;
         }
@@ -165,6 +167,7 @@ h2 {
             width: 100%;
             text-align: center;
             padding-bottom: 0;
+            padding: 3vw;
         }
 
         img {
@@ -187,13 +190,13 @@ h2 {
             flex-direction: row;
             width: 100vw;
             box-shadow: none;
-
+            border:none;
             img {
                 width: 70%;
                 order: 4;
-                height:auto;
+                height: auto;
                 min-height: 540.05px;
-                
+
             }
 
             .sidebar-section_home {
@@ -218,7 +221,7 @@ h2 {
                     order: 2;
                     color: $jaune;
                     text-align: left;
-                    padding:2vw;
+                    padding: 2vw;
                 }
 
                 .buttons {
@@ -261,14 +264,14 @@ h2 {
             width: 30%;
             max-height: none;
             margin: 30px 0 !important;
-            
+
             img {
                 height: 300px;
                 width: 100%;
                 order: 1;
                 max-height: 700px;
                 min-height: 350px;
-                
+
 
             }
 
@@ -278,12 +281,12 @@ h2 {
                 padding: 0 20px;
                 background-color: transparent;
                 padding: 0;
-                
+
 
                 p {
                     font-size: 0.7em;
                     min-height: 186px;
-                   
+
                 }
 
                 h3,
@@ -297,9 +300,9 @@ h2 {
 
                 .buttons {
                     flex-direction: row;
-                  
+
                     align-self: flex-start;
-                    margin:0;
+                    margin: 0;
 
 
 
@@ -314,7 +317,7 @@ h2 {
                         overflow: hidden;
                         z-index: 10;
                         transition: color 0.45s;
-                        justify-self: flex-end!important;
+                        justify-self: flex-end !important;
 
                         &:after {
                             content: "";
@@ -351,11 +354,12 @@ h2 {
             }
         }
     }
+
     @media (min-width: 1600px) {
-        .trajets_home{
-            section{
-                .sidebar-section_home{
-                    p{
+        .trajets_home {
+            section {
+                .sidebar-section_home {
+                    p {
                         min-height: 150px;
                     }
                 }
@@ -388,7 +392,7 @@ h2 {
         width: 70%;
         margin: 0 auto;
         margin-bottom: 50px;
-        color:$bleu;
+        color: $bleu;
     }
 
     a {
@@ -428,9 +432,10 @@ h2 {
             }
         }
     }
+
     @media (min-width:1024px) {
-        img{
-            width:75%;
+        img {
+            width: 75%;
         }
     }
 }
@@ -457,9 +462,8 @@ h2 {
     justify-content: center;
     align-items: center;
 
-    img {
-        display: none;
-        
+    .mon_slider{
+        display:none;
     }
 
     p {
@@ -475,14 +479,20 @@ h2 {
 
     @media (min-width: 1024px) {
         max-height: 700px;
-        img {
-            display: block;
-            object-fit: cover;
-            object-position: right;
-            max-height:691.09px;
+
+        .mon_slider {
             width:50%;
-            min-height: 691.09px;
+            display:flex;
+            overflow: hidden;
             
+            img {
+                display: block;
+                object-fit: cover;
+                object-position: right;
+                width: 100%;
+                min-height: 691.09px;
+                animation: slider 20s infinite;
+            }
         }
 
         p {
@@ -491,6 +501,20 @@ h2 {
             padding: 6vw;
             text-align: left;
         }
+    }
+}
+@keyframes slider{
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-100%);
     }
 }
 
@@ -534,39 +558,42 @@ h2 {
     .buttons {
         a {
             padding: 0;
-          width:150px;
+            width: 150px;
             background-color: $jaune;
-            color:$bleu;
+            color: $bleu;
             border-radius: 0;
-            border:1px solid $bleu;
+            border: 1px solid $bleu;
             position: relative;
             overflow: hidden;
             z-index: 10;
             transition: all 0.45s;
-            &:after{
-                content:"";
+
+            &:after {
+                content: "";
                 position: absolute;
-                top:0;
-                left:0;
+                top: 0;
+                left: 0;
                 background-color: $bleu;
-                width:100%;
-                height:100%;
+                width: 100%;
+                height: 100%;
                 transform: translateX(-100%);
                 transition: all 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
                 z-index: -10;
-                
+
             }
-            &:hover{
-                color:$jaune;
-                
-                &:after{
+
+            &:hover {
+                color: $jaune;
+
+                &:after {
                     transform: translateX(0);
-                    
-                  
+
+
                 }
             }
-           
+
         }
+
         .esp_button {
             margin-top: 7vw;
             margin-bottom: 3vw;

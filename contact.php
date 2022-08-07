@@ -9,7 +9,7 @@
     <!-- Font awesome -->
 
     <meta charset="utf-8">
-   
+
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -26,11 +26,35 @@
     <link rel="stylesheet" href="stylesheets/main.css">
 
     <meta name="theme-color" content="#fafafa">
+    <script src="https://www.google.com/recaptcha/api.js?render=6LcVjFUhAAAAAIYOHwKzylGjCbrZdHiNaYxrK1gQ"></script>
 
 </head>
 
 
+<?php
+if (isset($_POST['submit'])) {
+    $url = 'https://www.google.com/recaptcha/api/siteverify';
+    $secret = '6LcVjFUhAAAAAO1WOgHmU4Z3NJq6cI0RO2JWf3D7';
+    $response = $_POST['token_generate'];
+    $remoteip = $_SERVER['REMOTE_ADDR'];
 
+    $request = file_get_contents($url . '?secret=' . $secret . '&response=' . $response);
+
+    $result = json_decode($request);
+    //print_r($result);
+    if ($result->success == true) { ?>
+        <script>
+            alert("Data save successfully");
+        </script>
+    <?php } else {
+    ?>
+        <script>
+            alert("Data not saved");
+        </script>
+<?php
+    }
+}
+?>
 
 <body>
 
@@ -66,31 +90,54 @@
 
                     <span>70 000 Ar pour un aller simple<br></span>
                     <span>140 000 Ar pour l’aller-retour<br><br></span>
-                    
-                    Les enfants âgés de moins de 12 ans bénéficient d’une réduction de 50 %. Le transfert est gratuit pour les moins de 5 ans.
-                    Tous les trajets ou excursions à la demande nécessitent de contacter d’abord le gérant, qui vous fera un devis personnalisé. Les prix varient selon la distance et la durée de la location.
+
+                    Les enfants âgés de moins de 12 ans bénéficient d’une réduction de 50 %. Le transfert est gratuit
+                    pour les moins de 5 ans.
+                    Tous les trajets ou excursions à la demande nécessitent de contacter d’abord le gérant, qui vous
+                    fera un devis personnalisé. Les prix varient selon la distance et la durée de la location.
                     La capacité de transfert habituelle des bateaux est de 62 personnes.<br><br>
-                    
+
                     Vous pouvez nous contacter :<br>
                     par e-mail : anakaoexpress@gmail.com ou à l’aide des formulaires ci-dessous ;<br>
                     par téléphone :<br>
                     Odilia est joignable au 034 60 072 61 62, <br>
                     Fredo au 034 21 673 20.<br><br>
-                    
+
                     Notre bureau est situé à l’adresse suivante :<br>
                     Boulevard Lyautey,<br>
                     Mahavates 2,<br>
                     601, Tuléar.
-                    </p>
+                </p>
             </section>
-            <section class="rsv_trajets_contact">
+
+            <div class="container">
+                <h1>Contact Me</h1>
+
+                <form action="mail.php" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+                    <label for="subject">Subject:</label>
+                    <input type="text" name="subject" id="subject">
+                    <label for="message">Message</label>
+                    <textarea name="message" cols="30" rows="10"></textarea>
+                    <input type="hidden" name="token_generate" id="token_generate">
+                    <input type="submit" id="submit" value="Submit" class="btn btn success">
+
+                </form>
+
+
+
+            </div>
+            <!-- <section class="rsv_trajets_contact">
                 <h3>Réservation d'un trajet</h3>
                 <form action=""></form>
             </section>
             <section class="rsv_excursions_contact">
                 <h3>Réservation d'une excursions</h3>
                 <form action=""></form>
-            </section>
+            </section> -->
             <section class="map_bureau_contact">
                 <h3>Le bureau</h3>
                 <figure><img src="img/trajets/map.svg" alt=""></figure>
@@ -132,6 +179,16 @@
     </footer>
 
     <script type="text/javascript" src="js/navbar.js"></script>
+    <script>
+        grecaptcha.ready(function() {
+            grecaptcha.execute('6LcVjFUhAAAAAIYOHwKzylGjCbrZdHiNaYxrK1gQ', {
+                action: 'submit'
+            }).then(function(token) {
+                var response = document.getElementById('token_generate');
+                reponse.value = token;
+            });
+        });
+    </script>
 
     <body>
 

@@ -943,10 +943,10 @@ h2:after {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 95vw;
+  width: 100vw;
   margin: 20px 0;
-  -webkit-box-shadow: 10px 10px 23px -7px rgba(0, 0, 0, 0.75);
-  box-shadow: 10px 10px 23px -7px rgba(0, 0, 0, 0.75);
+  border-top: 10px solid #445061;
+  border-bottom: 10px solid #445061;
 }
 
 .trajets_home section .sidebar-section_home span {
@@ -978,6 +978,7 @@ h2:after {
   width: 100%;
   text-align: center;
   padding-bottom: 0;
+  padding: 3vw;
 }
 
 .trajets_home section img {
@@ -997,6 +998,7 @@ h2:after {
     width: 100vw;
     -webkit-box-shadow: none;
             box-shadow: none;
+    border: none;
   }
   .trajets_home section img {
     width: 70%;
@@ -1279,7 +1281,7 @@ h2:after {
           align-items: center;
 }
 
-.apropos_home img {
+.apropos_home .mon_slider {
   display: none;
 }
 
@@ -1298,21 +1300,67 @@ h2:after {
   .apropos_home {
     max-height: 700px;
   }
-  .apropos_home img {
+  .apropos_home .mon_slider {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+  }
+  .apropos_home .mon_slider img {
     display: block;
     -o-object-fit: cover;
        object-fit: cover;
     -o-object-position: right;
        object-position: right;
-    max-height: 691.09px;
-    width: 50%;
+    width: 100%;
     min-height: 691.09px;
+    -webkit-animation: slider 20s infinite;
+            animation: slider 20s infinite;
   }
   .apropos_home p {
     font-size: 0.7em;
     width: 50%;
     padding: 6vw;
     text-align: left;
+  }
+}
+
+@-webkit-keyframes slider {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  25% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  50% {
+    -webkit-transform: translateX(-200%);
+            transform: translateX(-200%);
+  }
+  75% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+@keyframes slider {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  25% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  50% {
+    -webkit-transform: translateX(-200%);
+            transform: translateX(-200%);
+  }
+  75% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
   }
 }
 
