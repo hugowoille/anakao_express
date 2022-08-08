@@ -1299,6 +1299,7 @@ h2:after {
 @media (min-width: 1024px) {
   .apropos_home {
     max-height: 700px;
+    overflow: hidden;
   }
   .apropos_home .mon_slider {
     width: 50%;

@@ -479,7 +479,7 @@ h2 {
 
     @media (min-width: 1024px) {
         max-height: 700px;
-
+        overflow: hidden;
         .mon_slider {
             width:50%;
             display:flex;
@@ -492,6 +492,7 @@ h2 {
                 width: 100%;
                 min-height: 691.09px;
                 animation: slider 20s infinite;
+                
             }
         }
 
