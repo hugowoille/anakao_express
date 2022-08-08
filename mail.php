@@ -31,27 +31,5 @@ echo'
 </body>
 </html>
 ';
-if (isset($_POST['submit'])) {
-    $url = 'https://www.google.com/recaptcha/api/siteverify';
-    $secret = '6LcVjFUhAAAAAO1WOgHmU4Z3NJq6cI0RO2JWf3D7';
-    $response = $_POST['token_generate'];
-    $remoteip = $_SERVER['REMOTE_ADDR'];
-
-    $request = file_get_contents($url . '?secret=' . $secret . '&response=' . $response);
-
-    $result = json_decode($request);
-    //print_r($result);
-    if ($result->success == true) { ?>
-        <script>
-            alert("Data save successfully");
-        </script>
-    <?php } else {
-    ?>
-        <script>
-            alert("Data not saved");
-        </script>
-<?php
-    }
-}
 
 ?>
