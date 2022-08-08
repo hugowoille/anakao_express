@@ -731,7 +731,7 @@ nav .main-navlinks .navlinks-container a:hover:after {
   }
   nav .main-navlinks .navlinks-container a {
     font-size: 18px;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Cinzel", serif;
     margin: 10px 0;
   }
   nav .main-navlinks .hamburger {
@@ -2058,10 +2058,12 @@ html {
   text-align: center;
   display: block;
   margin: 0 auto;
-  font-family: "Montserrat", sans-serif;
-  padding: 10px 0;
+  font-family: "Cinzel", serif;
+  font-weight: normal;
+  padding: 20px 0;
   color: #445061;
   font-size: 1em;
+  margin-top: 2vw;
 }
 
 .trajets_trajets section p {
@@ -2072,6 +2074,7 @@ html {
   text-align: center;
   padding-bottom: 0;
   margin-bottom: 15px;
+  padding: 2vw;
 }
 
 .trajets_trajets section img {
@@ -2140,7 +2143,7 @@ html {
     font-weight: normal;
     border-bottom: 1px solid #fdfedb;
     width: 90%;
-    margin-top: 20px;
+    margin-top: 2vw;
   }
   .trajets_trajets section .sidebar_article_trajets p {
     width: 90%;
@@ -2175,7 +2178,7 @@ html {
 @media (min-width: 1024px) {
   .trajets_trajets {
     overflow: hidden;
-    padding: 100px 0;
+    padding: 50px 0;
   }
   .trajets_trajets section {
     width: 90%;
@@ -2194,6 +2197,7 @@ html {
   }
   .trajets_trajets section .sidebar_article_trajets h3 {
     font-size: 1.4em;
+    margin-top: 0;
   }
   .trajets_trajets section .sidebar_article_trajets p {
     text-align: left;
