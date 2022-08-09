@@ -59,6 +59,11 @@
 
     <main class="bg_galerie_contact">
         <article class="contact_content">
+
+
+    <!-----------------  TARIFS & CONTACT  ---------------->
+
+
             <section class="tarifs_contact">
                 <h3>Nos tarifs & Contact</h3>
                 <p> Nous vous proposons le trajet quotidien d’Anakao à Tuléar à un prix de :<br><br>
@@ -86,31 +91,58 @@
             </section>
 
 
-
-            <form action="https://formsubmit.co/woille.hugo@gmail.com" method="POST">
-                <input type="text" name="name" required>
-                <input type="email" name="email" placeholder="Email Address" required>
-                <input type="text" name="message" placeholder="écrivez votre message ici" required>
-                <input type="hidden" name="_next" value="https://anakao-express.hw-code.fr/thanks.html">
-                <button type="submit">Send</button>
-            </form>
+    <!-----------------  FORMULAIRE TRAJET  ---------------->
 
 
-
-
-
-
-            <!-- <section class="rsv_trajets_contact">
-                <h3>Réservation d'un trajet</h3>
-                <form action=""></form>
+            <section class="rsv_trajets_contact">
+                <h3>Réservation <br> Anakao/tuléar</h3>
+                <form class="formBloc" action="https://formsubmit.co/woille.hugo@gmail.com" method="POST">
+                    <div class="formGroupe">
+                        <label for="name">Veuillez présicez votre nom + prénom </label>
+                        <input type="text" name="name" required>
+                    </div>
+                    <div class="formGroupe">
+                        <label for="email">Veuillez présicez votre email </label>
+                        <input type="email" name="email" required>
+                    </div>
+                    <div class="formGroupe">
+                        <label for="arrive">votre date d'arrivé </label>
+                        <input type="text" name="arrive" required>
+                    </div>
+                    <div class="formGroupe">
+                        <label for="depart">votre date de départ </label>
+                        <input type="text" name="depart" required>
+                    </div>
+                    <div class="formGroupe">
+                        <label for="destination">Indiquez le nom de votre hôtel</label>
+                        <input type="text" name="destination" required>
+                    </div>
+                    <div class="formGroupe" id="text_area">
+                        <input type="text" name="message" placeholder="écrivez votre message ici" required>
+                    </div>
+                    <input type="hidden" name="_next" value="https://anakao-express.hw-code.fr/thanks.html">
+                    <button type="submit">Envoyer</button>
+                </form>
             </section>
+
+
+    <!-----------------  FORMULAIRE EXCURSIONS  ---------------->
+
+
             <section class="rsv_excursions_contact">
-                <h3>Réservation d'une excursions</h3>
-                <form action=""></form>
-            </section> -->
+                
+                <p>Pour un autre trajet,<br> une excursion,<br> une demande de partenariat,<br> ou tout autre demande,<br>
+                    merci de contacter le gérant au 06.06.06.06.06 ou par mail à l'adresse : w.patrimoine@wanadoo.fr
+                </p>
+            </section>
+
+
+    <!-----------------  MAP BUREAU  ---------------->
+
+
             <section class="map_bureau_contact">
                 <h3>Le bureau</h3>
-                <figure><img src="img/trajets/map.svg" alt=""></figure>
+                <img src="img/trajets/map.svg" alt="">
             </section>
         </article>
     </main>
@@ -145,7 +177,25 @@
                 </a></li>
         </ul>
     </footer>
+    <script>
+        const inputs = document.querySelectorAll('input');
 
+        for (let i = 0; i < inputs.length; i++) {
+
+            let field = inputs[i];
+
+            field.addEventListener('input', (e) => {
+
+                if (e.target.value != "") {
+                    e.target.parentNode.classList.add('animation');
+                } else if (e.target.value == "") {
+                    e.target.parentNode.classList.remove('animation');
+                }
+
+            })
+
+        }
+    </script>
     <script type="text/javascript" src="js/navbar.js"></script>
 
     <body>
