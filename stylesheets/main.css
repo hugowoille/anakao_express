@@ -2866,6 +2866,7 @@ html {
 .contact_content .map_bureau_contact img {
   -o-object-fit: cover;
      object-fit: cover;
+  width: 100%;
 }
 
 @media (min-width: 1024px) {
