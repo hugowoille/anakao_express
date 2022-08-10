@@ -1,0 +1,48 @@
+.body_thanks{
+    background-color: $jaune;
+    display:flex;
+    height:100vh;
+    justify-content: flex-start;
+    flex-direction: column;
+   img{
+    width:200px;
+    margin: 0 auto;
+    margin-top: 10vw;
+   }
+    p{
+        margin-top: 50px;
+        text-align: center;
+        font-size: 1.2em;
+        font-family: $font-titre-montserrat;
+        font-weight: 900;
+        color:$bleu;
+    }
+    a{
+        margin-top: 50px;
+        text-align: center;
+        font-size: 0.8em;
+        font-family: $font-titre-montserrat;
+        font-weight: 900;
+        color: rgb(48, 184, 177);
+        
+
+    }
+    
+}
+@media (min-width:1024px){
+    .body_thanks{
+        img{
+            width:300px;
+        }
+        p{
+            font-size: 1.6em;
+        }
+        a{
+            font-size: 1.2em;
+            transition: .4s;
+            &:hover{
+                
+            }
+        }
+    }
+}

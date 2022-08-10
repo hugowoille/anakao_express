@@ -61,15 +61,15 @@
         <article class="contact_content">
 
 
-    <!-----------------  TARIFS & CONTACT  ---------------->
+            <!-----------------  TARIFS & CONTACT  ---------------->
 
 
             <section class="tarifs_contact">
                 <h3>Nos tarifs & Contact</h3>
                 <p> Nous vous proposons le trajet quotidien d’Anakao à Tuléar à un prix de :<br><br>
 
-                    <span>70 000 Ar pour un aller simple<br></span>
-                    <span>140 000 Ar pour l’aller-retour<br><br></span>
+                    <span>70 000 Ar : aller simple<br></span>
+                    <span>140 000 Ar : aller-retour<br><br></span>
 
                     Les enfants âgés de moins de 12 ans bénéficient d’une réduction de 50 %. Le transfert est gratuit
                     pour les moins de 5 ans.
@@ -77,21 +77,23 @@
                     fera un devis personnalisé. Les prix varient selon la distance et la durée de la location.
                     La capacité de transfert habituelle des bateaux est de 62 personnes.<br><br>
 
-                    Vous pouvez nous contacter :<br>
-                    par e-mail : anakaoexpress@gmail.com ou à l’aide des formulaires ci-dessous ;<br>
-                    par téléphone :<br>
-                    Odilia est joignable au 034 60 072 61 62, <br>
-                    Fredo au 034 21 673 20.<br><br>
+                    Notre bureau est situé à l’adresse suivante :<br> <br>
+                    <i> Boulevard Lyautey,<br>
+                        Mahavates 2,<br>
+                        601, Tuléar. <br><br></i>
 
-                    Notre bureau est situé à l’adresse suivante :<br>
-                    Boulevard Lyautey,<br>
-                    Mahavates 2,<br>
-                    601, Tuléar.
+                    Vous pouvez nous contacter :<br> <br>
+                    par téléphone :<br>
+                    Odilia au <i>034 60 072 61-62,</i> <br>
+                    Fredo au <i> 034 21 673 20.</i><br> <br>
+                    ou par e-mail à l’aide des formulaires ci-dessous :
+
+
                 </p>
             </section>
 
 
-    <!-----------------  FORMULAIRE TRAJET  ---------------->
+            <!-----------------  FORMULAIRE TRAJET  ---------------->
 
 
             <section class="rsv_trajets_contact">
@@ -120,40 +122,63 @@
                     <div class="formGroupe" id="text_area">
                         <input type="text" name="message" placeholder="écrivez votre message ici" required>
                     </div>
+                    <input type="hidden" name="_cc" value="hugo.woille@gmail.com">
+                    <input type="hidden" name="_subject" value="réservation trajet Anakao/Tuléar">
                     <input type="hidden" name="_next" value="https://anakao-express.hw-code.fr/thanks.html">
                     <button type="submit">Envoyer</button>
                 </form>
             </section>
 
 
-    <!-----------------  FORMULAIRE EXCURSIONS  ---------------->
+            <!-----------------  FORMULAIRE EXCURSIONS  ---------------->
 
 
             <section class="rsv_excursions_contact">
-                
-                <p>Pour un autre trajet,<br> une excursion,<br> une demande de partenariat,<br> ou tout autre demande,<br>
-                    merci de contacter le gérant au 06.06.06.06.06 ou par mail à l'adresse : w.patrimoine@wanadoo.fr
-                </p>
+
+                <h3>Pour un autre trajet,
+                    <br>une excursion,
+                    <br>une demande de partenariat,
+                    <br>ou tout autre demande,<br>
+                </h3>
+                <form class="formBloc" action="https://formsubmit.co/woille.hugo@gmail.com" method="POST">
+                    <div class="formGroupe">
+                        <label for="name">Veuillez présicer votre nom + prénom </label>
+                        <input type="text" name="name" required>
+                    </div>
+                    <div class="formGroupe">
+                        <label for="email">Veuillez présicer votre email </label>
+                        <input type="email" name="email" required>
+                    </div>
+
+                    <div class="formGroupe" id="text_area">
+                        <input type="text" name="message" placeholder="écrivez votre message ici" required>
+                    </div>
+                    <input type="hidden" name="_next" value="https://anakao-express.hw-code.fr/thanks.html">
+                    <button type="submit">Envoyer</button>
+                </form>
             </section>
 
 
-    <!-----------------  MAP BUREAU  ---------------->
+            <!-----------------  MAP BUREAU  ---------------->
 
 
             <section class="map_bureau_contact">
-                <h3>Le bureau</h3>
-                <img src="img/trajets/map.svg" alt="">
+
+                <img src="img/contact/map_bureau.svg" alt="">
             </section>
         </article>
     </main>
+
+
+            <!-----------------  FOOTER  ---------------->
 
 
     <footer>
         <ul class="adress">
             <li>Anakao Express</li>
             <li>Boulevard Lyautey <br>Mahavates 2<br>601 Tuléar</li>
-            <li>06.48.65.23.17</li>
-            <li>w.patrimoine@wanadoo.fr</li>
+            <li>Odilia : 034 60 072 61-62 <br> Fredo : 034 21 673 20</li>
+            <li>anakaoexpress@gmail.com</li>
             <li><a href="index.html">
                     <figure><img src="img/logo.svg" alt="logo anakao express"></figure>
                 </a></li>
@@ -164,7 +189,7 @@
             <li><a href="index.html">Accueil</a></li>
             <li><a href="trajets.html">Les trajets</a></li>
             <li><a href="bateaux.html">Les bateaux</a></li>
-            <li><a href="tarifs.html">Tarifs & réservations</a></li>
+            <li><a href="contact.html">Tarifs & réservations</a></li>
         </ul>
         <div class="separate_footer"></div>
         <ul class="useful_links">
@@ -177,6 +202,7 @@
                 </a></li>
         </ul>
     </footer>
+
     <script>
         const inputs = document.querySelectorAll('input');
 
@@ -196,6 +222,7 @@
 
         }
     </script>
+
     <script type="text/javascript" src="js/navbar.js"></script>
 
     <body>

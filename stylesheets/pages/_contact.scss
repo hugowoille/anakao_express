@@ -1,6 +1,4 @@
-
-
-    /////////////////// BACKGROUND ///////////////////
+/////////////////// BACKGROUND ///////////////////
 
 
 .bg_galerie_contact {
@@ -20,7 +18,7 @@
 }
 
 
-    /////////////////// CONTENEUR DES SECTIONS ///////////////////
+/////////////////// CONTENEUR DES SECTIONS ///////////////////
 
 
 .contact_content {
@@ -29,7 +27,7 @@
     justify-content: center;
     margin: 0 auto;
     flex-wrap: wrap;
-    
+
 
     /////////////////// SECTIONS ///////////////////
 
@@ -38,6 +36,7 @@
         width: 100%;
         background-color: $bleu;
         margin-bottom: 50px;
+
         h3 {
             font-weight: normal;
             font-family: $font-navbar-cinzel;
@@ -45,7 +44,6 @@
             border-bottom: 1px solid $jaune;
             width: 80%;
             color: $jaune;
-            
 
         }
 
@@ -53,9 +51,9 @@
             color: $jaune;
             font-family: $font-titre-montserrat;
             font-size: 0.7em;
-            
-            span{
-                font-size: 2em;
+
+            span {
+                font-size: 1.7em;
             }
         }
 
@@ -67,13 +65,15 @@
                 border-bottom: 1px solid $bleu;
             }
         }
-        figure{
-            
-            height:100%;
-            img{
-                display:block;
-                height:100%;
-                width:100%;
+
+        figure {
+
+            height: 100%;
+
+            img {
+                display: block;
+                height: 100%;
+                width: 100%;
                 object-fit: cover;
             }
         }
@@ -83,132 +83,227 @@
     /////////////////// TARIFS & CONTACTS ///////////////////
 
 
-    .tarifs_contact{
-        padding:3vw;
+    .tarifs_contact {
+        padding: 3vw;
     }
 
 
     /////////////////// FORMULAIRE TRAJETS ///////////////////
 
+    .rsv_trajets_contact {
 
-.rsv_trajets_contact{
-   
-    .formBloc{
-        display:flex;
-        flex-direction: column;
-        font-family: $font-titre-montserrat;
-        
-        .formGroupe.animation{
-            label{
-                top:0;
-                transform: translateY(-100%);
+        .formBloc {
+            display: flex;
+            flex-direction: column;
+            font-family: $font-titre-montserrat;
+
+
+
+            .formGroupe {
+                position: relative;
+                display: flex;
+                margin-bottom: 25px;
+
+                &:focus-within {
+                    label {
+                        top: 0;
+                        transform: translateY(-100%);
+                    }
+                }
+
+                input {
+                    z-index: 10;
+                    width: 100%;
+                    border: none;
+                    background: none;
+                    border-bottom: 1px solid rgb(117, 119, 102);
+                    padding: 5px 0;
+                    outline: none;
+                }
+
+                label {
+                    position: absolute;
+                    z-index: 0;
+                    color: $bleu;
+                    font-size: 0.7em;
+                    top: 50%;
+                    left: 0;
+                    transform: translateY(-50%);
+                    color: rgb(117, 119, 102);
+                    transition: 0.4s ease-out;
+                }
             }
-        }
-        .formGroupe{
-            position:relative;
-            display:flex;
-            margin-bottom: 25px;
-            &:focus-within{
-                label{
-                    top:0;
+
+            #text_area {
+                margin: 0;
+
+                input {
+                    border: 1px solid rgb(117, 119, 102);
+                    padding-bottom: 150px;
+                    border-radius: 3px;
+
+                    &::placeholder {
+                        font-size: 0.7em;
+                        padding-left: 10px;
+                    }
+                }
+            }
+
+            button {
+                color: $bleu;
+                margin-top: 25px;
+                width: 50%;
+                background: none;
+                border: 1px solid $bleu;
+                border-radius: 3px;
+                padding: 10px;
+                font-size: 0.8em;
+            }
+
+            .formGroupe.animation {
+                label {
+                    top: 0;
                     transform: translateY(-100%);
                 }
             }
-            
-            input{
-                z-index: 10;
-                width:100%;
-                border:none;
-                background: none;
-                border-bottom: 1px solid rgb(117, 119, 102);
-                padding:5px 0;
-            }
-            label{
-                position: absolute;
-                z-index: 0;
-                color:$bleu;
-                font-size: 0.7em;
-                top:50%;
-                left:0;
-                transform: translateY(-50%);
-                color:rgb(117, 119, 102);
-                transition: 0.4s ease-out;
-            }
         }
-        #text_area{
-            margin: 0;
-            input{
-                border:1px solid rgb(117, 119, 102);
-                padding-bottom:150px;
-                border-radius: 3px;
-                &::placeholder{
+    }
+
+    /////////////////// TOUT AUTRE DEMANDE ///////////////////
+
+
+
+    .rsv_excursions_contact {
+        padding: 30px;
+        h3{
+            font-size: 0.9em;
+        }
+        .formBloc {
+            display: flex;
+            flex-direction: column;
+            font-family: $font-titre-montserrat;
+
+
+
+            .formGroupe {
+                position: relative;
+                display: flex;
+                margin-bottom: 25px;
+
+                &:focus-within {
+                    label {
+                        top: 0;
+                        transform: translateY(-100%);
+                    }
+                }
+
+                input {
+                    z-index: 10;
+                    width: 100%;
+                    border: none;
+                    background: none;
+                    border-bottom: 1px solid $jaune;
+                    padding: 5px 0;
+                    outline: none;
+                }
+
+                label {
+                    position: absolute;
+                    z-index: 0;
+                    color: $bleu;
                     font-size: 0.7em;
-                    padding-left: 10px;
+                    top: 50%;
+                    left: 0;
+                    transform: translateY(-50%);
+                    color: $jaune;
+                    transition: 0.4s ease-out;
+                }
+            }
+
+            #text_area {
+                margin: 0;
+
+                input {
+                    border: 1px solid $jaune;
+                    padding-bottom: 150px;
+                    border-radius: 3px;
+
+                    &::placeholder {
+                        font-size: 0.7em;
+                        padding-left: 10px;
+                        color:$jaune;
+                    }
+                }
+            }
+
+            button {
+                color: $jaune;
+                margin-top: 25px;
+                width: 50%;
+                background: none;
+                border: 1px solid $jaune;
+                border-radius: 3px;
+                padding: 10px;
+                font-size: 0.8em;
+            }
+
+            .formGroupe.animation {
+                label {
+                    top: 0;
+                    transform: translateY(-100%);
                 }
             }
         }
-        button{
-            color:$bleu;
-            margin-top: 25px;
-            width:50%;
-            background: none;
-            border:1px solid $bleu;
-            border-radius: 3px;
-            padding:10px;
-            font-size: 0.8em;
-        }
     }
-}
 
 
-    /////////////////// TOUT AUTRE DEMANDE ///////////////////
-    
-
-
-.rsv_excursions_contact{
-    padding:30px;
-
-}
 
 
     /////////////////// MAP BUREAU ///////////////////
-   
 
-.map_bureau_contact{
-    img{
-        object-fit: cover;
-        width: 100%;
+
+    .map_bureau_contact {
+        img {
+            object-fit: cover;
+            width: 100%;
+        }
     }
-}
 
 
 
     @media (min-width: 1024px) {
-        
-            section {
-                width: 50%;
-               
-            }
 
-            .tarifs_contact {
-                order: 1;
+        section {
+            width: 50%;
+            margin:0;
 
-            }
+        }
 
-            .rsv_trajets_contact {
-                order: 3;
+        .tarifs_contact {
+            order: 1;
 
-            }
+        }
 
-            .rsv_excursions_contact {
-                order: 4;
+        .rsv_trajets_contact {
+            order: 3;
+            padding:30px;
 
-            }
+        }
 
-            .map_bureau_contact {
-                order: 2;
+        .rsv_excursions_contact {
+            order: 4;
+           
+            
+        }
 
+        .map_bureau_contact {
+            order: 2;
+            
+            img{
+                display:block;
+                height:100%;
+                object-position: 20%;
             }
         }
     }
-   
+}

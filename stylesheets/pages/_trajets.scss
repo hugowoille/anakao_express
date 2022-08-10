@@ -58,6 +58,7 @@
             margin: 0 auto;
             display: block;
             object-fit: cover;
+            object-position: top;
         }
     }
 }
@@ -237,7 +238,7 @@
                 align-items: flex-start;
                 justify-content: center;
                 padding-left: 3vw;
-                
+                max-height: 600px;
                 h3{
                     font-size: 1.4em;
                     margin-top: 0;
