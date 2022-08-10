@@ -2855,6 +2855,7 @@ html {
   border-radius: 3px;
   padding: 10px;
   font-size: 0.8em;
+  cursor: pointer;
 }
 
 .contact_content .rsv_trajets_contact .formBloc .formGroupe.animation label {
@@ -2963,6 +2964,7 @@ html {
   border-radius: 3px;
   padding: 10px;
   font-size: 0.8em;
+  cursor: pointer;
 }
 
 .contact_content .rsv_excursions_contact .formBloc .formGroupe.animation label {
