@@ -96,13 +96,25 @@
             display: flex;
             flex-direction: column;
             font-family: $font-titre-montserrat;
-
+            
 
 
             .formGroupe {
                 position: relative;
                 display: flex;
                 margin-bottom: 25px;
+                &:nth-child(3){
+                    
+                    input{
+                    text-align: right;
+                    
+                    }
+                }
+                &:nth-child(4){
+                    button, input, optgroup, select, textarea{
+                    text-align: right;
+                    }
+                }
 
                 &:focus-within {
                     label {
@@ -119,6 +131,10 @@
                     border-bottom: 1px solid rgb(117, 119, 102);
                     padding: 5px 0;
                     outline: none;
+                    font-size: 0.8em;
+                    color: $bleu;
+                    
+                    
                 }
 
                 label {
@@ -141,7 +157,7 @@
                     border: 1px solid rgb(117, 119, 102);
                     padding-bottom: 150px;
                     border-radius: 3px;
-
+                    
                     &::placeholder {
                         font-size: 0.7em;
                         padding-left: 10px;
@@ -166,6 +182,7 @@
                     top: 0;
                     transform: translateY(-100%);
                 }
+                
             }
         }
     }
@@ -176,8 +193,12 @@
 
     .rsv_excursions_contact {
         padding: 30px;
-        h3{
-            font-size: 0.9em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        p{
+            font-size: 0.7em;
+            
         }
         .formBloc {
             display: flex;

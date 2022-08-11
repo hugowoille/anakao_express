@@ -10,7 +10,8 @@
 
     <meta charset="utf-8">
 
-    <meta name="description" content="Contactez-nous pour réserver votre transfert par bateau d'Anakao à Tuléar. D'autres trajets et excursions sont possibles à la demande.">
+    <meta name="description"
+        content="Contactez-nous pour réserver votre transfert par bateau d'Anakao à Tuléar. D'autres trajets et excursions sont possibles à la demande.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <meta property="og:title" content="Anakao express">
@@ -18,7 +19,8 @@
     <meta property="og:url" content="http://anakaoexpress/contact.html">
     <meta property="og:image" content="https://anakao-express.hw-code.fr/img/logo.svg">
     <meta property="og:locale" content="fr_FR">
-    <meta property="og:description" content="Contactez-nous pour réserver votre transfert par bateau d'Anakao à Tuléar. D'autres trajets et excursions sont possibles à la demande.">
+    <meta property="og:description"
+        content="Contactez-nous pour réserver votre transfert par bateau d'Anakao à Tuléar. D'autres trajets et excursions sont possibles à la demande.">
 
     <link rel="manifest" href="site.webmanifest">
     <link rel="apple-touch-icon" href="icon.png">
@@ -67,17 +69,16 @@
 
 
             <section class="tarifs_contact">
-                <h3>Nos tarifs & Contact</h3>
+                <h3>Informations pour le trajets Ankao/tuléar</h3>
                 <p> Nous vous proposons le trajet quotidien d’Anakao à Tuléar à un prix de :<br><br>
 
                     <span>70 000 Ar : aller simple<br></span>
                     <span>140 000 Ar : aller-retour<br><br></span>
 
                     Les enfants âgés de moins de 12 ans bénéficient d’une réduction de 50 %. Le transfert est gratuit
-                    pour les moins de 5 ans.
-                    Tous les trajets ou excursions à la demande nécessitent de contacter d’abord le gérant, qui vous
-                    fera un devis personnalisé. Les prix varient selon la distance et la durée de la location.
-                    La capacité de transfert habituelle des bateaux est de 62 personnes.<br><br>
+                    pour les moins de 5 ans.Le départ d’Anakao a lieu à 7 h 30, et celui de Tuléar se déroule à 9 h 30.
+                    <br> <br>
+
 
                     Notre bureau est situé à l’adresse suivante :<br> <br>
                     <i> Boulevard Lyautey,<br>
@@ -99,7 +100,7 @@
 
 
             <section class="rsv_trajets_contact">
-                <h3>Réservation <br> Anakao/tuléar</h3>
+                <h3>Réservation Anakao/tuléar</h3>
                 <form class="formBloc" action="https://formsubmit.co/anakaoexpress@gmail.com.com" method="POST">
                     <div class="formGroupe">
                         <label for="name">Veuillez présicer votre nom + prénom </label>
@@ -110,19 +111,23 @@
                         <input type="email" name="email" required>
                     </div>
                     <div class="formGroupe">
-                        <label for="arrive">votre date d'arrivé </label>
-                        <input type="text" name="arrive" required>
+                        <label for="arrive">votre date de départ vers Anakao </label>
+                        <input type="date" name="arrive" required>
                     </div>
                     <div class="formGroupe">
-                        <label for="depart">votre date de départ </label>
-                        <input type="text" name="depart" required>
+                        <label for="depart">votre date de départ vers Tuléar </label>
+                        <input type="date" name="depart" required>
                     </div>
                     <div class="formGroupe">
-                        <label for="destination">Indiquez le nom de votre hôtel</label>
-                        <input type="text" name="destination" required>
+                        <label for="destination">Indiquez le nom de votre hôtel (facultatif)</label>
+                        <input type="text" name="destination">
+                    </div>
+                    <div class="formGroupe">
+                        <label for="destination">Indiquez le nombre de passager</label>
+                        <input type="text" name="nombre de passager" required>
                     </div>
                     <div class="formGroupe" id="text_area">
-                        <input type="text" name="message" placeholder="écrivez votre message ici" required>
+                        <input type="text" name="message" placeholder="écrivez votre message ici">
                     </div>
                     <input type="hidden" name="_subject" value="réservation trajet Anakao/Tuléar">
                     <input type="hidden" name="_next" value="https://anakaoexpress.com/thanks.html">
@@ -135,12 +140,19 @@
 
 
             <section class="rsv_excursions_contact">
-
-                <h3>Pour un autre trajet,
-                    <br>une excursion,
-                    <br>une demande de partenariat,
-                    <br>ou tout autre demande,<br>
-                </h3>
+                <h3>Autres demandes</h3>
+                <p>Toutes les demandes concernant un autre trajet que le transfert quotidien d’Anakao à Tuléar
+                    nécessitent de contacter au préalable le gérant :<br> <br>
+                
+                    - Partenariat ;<br>
+                    - Réservation pour un trajet vers Ambola ou Ifaty ;<br>
+                    - Réservation d’une excursion ;<br>
+                    - Autre demande.<br><br>
+                
+                Une fois le formulaire ci-dessous rempli, vous recevrez un devis personnalisé. Les prix varient selon la distance
+                et la durée de la location.
+                </p>
+                <br>
                 <form class="formBloc" action="https://formsubmit.co/anakaoexpress@gmail.com" method="POST">
                     <div class="formGroupe">
                         <label for="name">Veuillez présicer votre nom + prénom </label>
@@ -172,7 +184,7 @@
     </main>
 
 
-            <!-----------------  FOOTER  ---------------->
+    <!-----------------  FOOTER  ---------------->
 
 
     <footer>

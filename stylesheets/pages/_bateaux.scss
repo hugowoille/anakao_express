@@ -170,6 +170,7 @@ html{
 .boat_list {
     width:100%;
     max-width: 100%;
+    
     .sambobe {
         display: flex;
         max-height: 600px;
@@ -234,7 +235,7 @@ html{
     }
     .sambokely {
         display: flex;
-        max-height: 600px;
+        
         margin-bottom: 100px;
         max-width: 100%;
         .sidebar_right {
@@ -244,7 +245,7 @@ html{
             flex-direction: column;
             padding: 2vw;
             justify-content: space-around;
-            max-height: 600px;
+            
             h3 {
                 font-family: $font-navbar-cinzel;
                 font-weight: 300;
@@ -352,8 +353,8 @@ html{
         .sambobe {
             flex-direction: column-reverse;
             margin: 0;
-            height: auto;
-            margin-bottom:50px;
+            margin-bottom:25vw;
+            justify-content: center;
             .sidebar_left {
                 width: 100vw;
                 max-width: 100%;
@@ -367,19 +368,18 @@ html{
             figure {
                 width: 100vw;
                 max-width: 100%;
-                height: auto;
+                
                 img {
                     object-fit: contain;
-                    height: auto;
                     display: block;
+                    min-height: unset;
                 }
             }
         }
         .sambokely {
             flex-direction: column;
             margin: 0;
-            height: auto;
-            margin-bottom:50px;
+            margin-bottom:25vw;
             .sidebar_right {
                 width: 100vw;
                 max-width: 100%;
@@ -395,14 +395,16 @@ html{
                 max-width: 100%;
                 img {
                     object-fit: contain;
-                    height: auto;
+                    
                     display: block;
+                    min-height: unset;
+                    
                 }
             }
         }
         .sambovezo {
             flex-direction: column-reverse;
-            height: auto;
+            
             margin-bottom:50px;
             .sidebar_left2 {
                 width: 100vw;
@@ -417,11 +419,12 @@ html{
             figure {
                 width: 100vw;
                 max-width: 100%;
-                height: 100%;
+                
                 img {
                     object-fit: contain;
-                    height: auto;
                     display: block;
+                    min-height: unset;
+                    
                 }
             }
         }

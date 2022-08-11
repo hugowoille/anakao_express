@@ -1714,7 +1714,6 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-height: 600px;
   margin-bottom: 100px;
   max-width: 100%;
 }
@@ -1732,7 +1731,6 @@ html {
   padding: 2vw;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  max-height: 600px;
 }
 
 .boat_list .sambokely .sidebar_right h3 {
@@ -1850,8 +1848,10 @@ html {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
     margin: 0;
-    height: auto;
-    margin-bottom: 50px;
+    margin-bottom: 25vw;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .boat_list .sambobe .sidebar_left {
     width: 100vw;
@@ -1866,13 +1866,12 @@ html {
   .boat_list .sambobe figure {
     width: 100vw;
     max-width: 100%;
-    height: auto;
   }
   .boat_list .sambobe figure img {
     -o-object-fit: contain;
        object-fit: contain;
-    height: auto;
     display: block;
+    min-height: unset;
   }
   .boat_list .sambokely {
     -webkit-box-orient: vertical;
@@ -1880,8 +1879,7 @@ html {
         -ms-flex-direction: column;
             flex-direction: column;
     margin: 0;
-    height: auto;
-    margin-bottom: 50px;
+    margin-bottom: 25vw;
   }
   .boat_list .sambokely .sidebar_right {
     width: 100vw;
@@ -1900,15 +1898,14 @@ html {
   .boat_list .sambokely figure img {
     -o-object-fit: contain;
        object-fit: contain;
-    height: auto;
     display: block;
+    min-height: unset;
   }
   .boat_list .sambovezo {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-    height: auto;
     margin-bottom: 50px;
   }
   .boat_list .sambovezo .sidebar_left2 {
@@ -1924,13 +1921,12 @@ html {
   .boat_list .sambovezo figure {
     width: 100vw;
     max-width: 100%;
-    height: 100%;
   }
   .boat_list .sambovezo figure img {
     -o-object-fit: contain;
        object-fit: contain;
-    height: auto;
     display: block;
+    min-height: unset;
   }
 }
 
@@ -2786,6 +2782,14 @@ html {
   margin-bottom: 25px;
 }
 
+.contact_content .rsv_trajets_contact .formBloc .formGroupe:nth-child(3) input {
+  text-align: right;
+}
+
+.contact_content .rsv_trajets_contact .formBloc .formGroupe:nth-child(4) button, .contact_content .rsv_trajets_contact .formBloc .formGroupe:nth-child(4) input, .contact_content .rsv_trajets_contact .formBloc .formGroupe:nth-child(4) optgroup, .contact_content .rsv_trajets_contact .formBloc .formGroupe:nth-child(4) select, .contact_content .rsv_trajets_contact .formBloc .formGroupe:nth-child(4) textarea {
+  text-align: right;
+}
+
 .contact_content .rsv_trajets_contact .formBloc .formGroupe:focus-within label {
   top: 0;
   -webkit-transform: translateY(-100%);
@@ -2800,6 +2804,8 @@ html {
   border-bottom: 1px solid #757766;
   padding: 5px 0;
   outline: none;
+  font-size: 0.8em;
+  color: #445061;
 }
 
 .contact_content .rsv_trajets_contact .formBloc .formGroupe label {
@@ -2866,10 +2872,20 @@ html {
 
 .contact_content .rsv_excursions_contact {
   padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.contact_content .rsv_excursions_contact h3 {
-  font-size: 0.9em;
+.contact_content .rsv_excursions_contact p {
+  font-size: 0.7em;
 }
 
 .contact_content .rsv_excursions_contact .formBloc {
