@@ -52,7 +52,7 @@
                 object-fit: cover;
                 transition: 1s;
                 &:hover {
-                    transform: scale(120%);
+                    transform: scale(110%);
                 }
 
             }
@@ -68,7 +68,7 @@
             grid-column: 2/4;
 
             img {
-                object-position: bottom;
+                
             }
         }
 
@@ -81,7 +81,7 @@
             grid-column: 2/4;
 
             img {
-                object-position: 50% 80%;
+                
             }
         }
     }

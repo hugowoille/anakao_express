@@ -2625,8 +2625,8 @@ html {
     transition: 1s;
   }
   .gallery_container a img:hover {
-    -webkit-transform: scale(120%);
-            transform: scale(120%);
+    -webkit-transform: scale(110%);
+            transform: scale(110%);
   }
   .gallery_container .gal_img1 {
     -ms-grid-column: 1;
@@ -2638,10 +2638,6 @@ html {
     -ms-grid-column-span: 2;
     grid-column: 2/4;
   }
-  .gallery_container .gal_img4 img {
-    -o-object-position: bottom;
-       object-position: bottom;
-  }
   .gallery_container .gal_img5 {
     -ms-grid-row: 3;
     -ms-grid-row-span: 2;
@@ -2652,10 +2648,6 @@ html {
     -ms-grid-column: 2;
     -ms-grid-column-span: 2;
     grid-column: 2/4;
-  }
-  .gallery_container .gal_img8 img {
-    -o-object-position: 50% 80%;
-       object-position: 50% 80%;
   }
 }
 
