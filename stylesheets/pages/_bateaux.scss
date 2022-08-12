@@ -86,16 +86,16 @@ html{
 
 
     .boat_stuff {  
-        padding:100px 0 100px 0;  
+        
         .separate_boat {
-            height: 3px;
+            height: 2px;
             width: 60%;
             background-color: $bleu;
             margin: 0 auto;
         }
         h3 {
             text-align: center;
-            font-family: $font-titre-montserrat;
+            font-family: $font-navbar-cinzel;
             font-size: 1.7rem;
             font-weight: normal;
             margin: 50px 0 50px 0;
@@ -107,14 +107,11 @@ html{
         }
         p {
             font-family: $font-titre-montserrat;
-            font-size: 1em;
+            font-size: 0.8em;
             text-align: center;
-            margin:0 auto;
-            margin-bottom: 50px;
-            margin-top: 30px;
-            width:80%;
+            padding:5vw 20vw;          
             color:$bleu;
-            text-decoration: underline;
+            
         }
     }
 }
@@ -122,25 +119,28 @@ html{
     width: 100vw;
     max-width: 100%;
     display: flex;
-    justify-content: center;
-
+    justify-content: space-around;
     flex-wrap: wrap;
-    gap: 20px;
+    margin-bottom: 100px;
     li {
-        flex-basis: 0;
+      flex-basis: 150px;
+      
         figure {
+           padding-bottom: 20px;
             img {
-                width: 150px;
+                width: 100%;
+                height:150px;
+                
             }
         }
-        h3 {
-            margin-top: 20px;
-            margin-bottom: 20px;
+        p {
+            
             text-align: center;
             font-family: $font-p;
-            font-size: 1em!important;
+            margin:0 auto!important;
             color:$bleu;
-            
+            padding:0!important;
+            padding-bottom: 20px!important;
         }
        
     }
@@ -148,14 +148,14 @@ html{
 @media (max-width: 1024px) {
     .bateaux_content {
         .boat_stuff {
-            h3 {
-                font-size: 1.5rem;
+            p{
+                padding: 10vw;
             }
             .picto_boat {
                 li {
-                    h3 {
-                        margin: 0;
-                        font-size: 1rem;
+                    margin-bottom: 3vw;
+                    p{
+                        
                     }
                 }
             }

@@ -133,7 +133,7 @@ h2 {
         margin: 20px 0;
         border-top: 10px solid $bleu;
         border-bottom: 10px solid $bleu;
-        
+
 
         .sidebar-section_home {
             span {
@@ -190,13 +190,19 @@ h2 {
             flex-direction: row;
             width: 100vw;
             box-shadow: none;
-            border:none;
-            img {
+            border: none;
+
+            a {
                 width: 70%;
                 order: 4;
-                height: auto;
-                min-height: 540.05px;
 
+                img {
+                    width: 100%;
+
+                    height: auto;
+                    min-height: 540.05px;
+
+                }
             }
 
             .sidebar-section_home {
@@ -226,9 +232,10 @@ h2 {
 
                 .buttons {
                     order: 3;
-                    width: 20%;
+                    justify-content: center;
+                    align-items: center;
                     flex-direction: column;
-                    width: auto;
+
 
                     a {
                         background-color: $jaune;
@@ -265,14 +272,24 @@ h2 {
             max-height: none;
             margin: 30px 0 !important;
 
-            img {
-                height: 300px;
-                width: 100%;
-                order: 1;
-                max-height: 700px;
-                min-height: 350px;
-                
+            a {
+                overflow: hidden;
+                order: unset;
+                width: unset;
 
+                img {
+                    height: 300px;
+                    width: 100%;
+                    order: 1;
+                    max-height: 700px;
+                    min-height: 350px;
+                    transition: .7s;
+
+                    &:hover {
+                        transform: scale(110%);
+                    }
+
+                }
             }
 
             .sidebar-section_home {
@@ -300,8 +317,8 @@ h2 {
 
                 .buttons {
                     flex-direction: row;
+                    justify-content: flex-start;
 
-                    align-self: flex-start;
                     margin: 0;
 
 
@@ -373,7 +390,7 @@ h2 {
 .excursion_1 {
     display: flex;
     flex-direction: column;
-
+    
     align-items: center;
 
     img {
@@ -389,46 +406,56 @@ h2 {
         font-family: $font-titre-montserrat;
         text-align: center;
         font-size: 0.8em;
-        width: 70%;
+        width: 80%;
         margin: 0 auto;
         margin-bottom: 50px;
         color: $bleu;
+        
     }
 
-    a {
+    .buttons {
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+        height: 100px;
+        justify-content: space-between;
 
-        padding: 0;
-        width: 150px;
-        background-color: $jaune;
-        color: $bleu;
-        border-radius: 0;
-        border: 1px solid $bleu;
-        position: relative;
-        overflow: hidden;
-        z-index: 10;
-        transition: all 0.45s;
+        a {
 
-        &:after {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            background-color: $bleu;
-            width: 100%;
-            height: 100%;
-            transform: translateX(-100%);
-            transition: all 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-            z-index: -10;
+            padding: 0;
+            width: 150px;
+            background-color: $jaune;
+            color: $bleu;
+            border-radius: 0;
+            border: 1px solid $bleu;
+            position: relative;
+            overflow: hidden;
+            z-index: 10;
+            transition: all 0.45s;
 
-        }
-
-        &:hover {
-            color: $jaune;
 
             &:after {
-                transform: translateX(0);
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: $bleu;
+                width: 100%;
+                height: 100%;
+                transform: translateX(-100%);
+                transition: all 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+                z-index: -10;
+
+            }
+
+            &:hover {
+                color: $jaune;
+
+                &:after {
+                    transform: translateX(0);
 
 
+                }
             }
         }
     }
@@ -436,6 +463,13 @@ h2 {
     @media (min-width:1024px) {
         img {
             width: 75%;
+        }
+        .buttons {
+            flex-direction: row;
+            margin: 0;
+           justify-content: space-around;
+          padding:0 25vw;
+            
         }
     }
 }
@@ -459,32 +493,34 @@ h2 {
     background-color: $bleu;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
 
-    .mon_slider{
-        display:none;
+
+
+    .mon_slider {
+        display: none;
     }
 
     p {
         font-family: $font-titre-montserrat;
         font-size: 0.8em;
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
-        padding: 100px 0;
+        padding: 30px 6vw;
         color: $jaune;
-        max-width: 80%;
+        
+        align-self: center;
         text-align: center;
     }
 
     @media (min-width: 1024px) {
         max-height: 700px;
         overflow: hidden;
+
         .mon_slider {
-            width:50%;
-            display:flex;
+            width: 50%;
+            display: flex;
             overflow: hidden;
-            
+
             img {
                 display: block;
                 object-fit: cover;
@@ -492,7 +528,7 @@ h2 {
                 width: 100%;
                 min-height: 691.09px;
                 animation: slider 20s infinite;
-                
+
             }
         }
 
@@ -504,17 +540,21 @@ h2 {
         }
     }
 }
-@keyframes slider{
+
+@keyframes slider {
     0% {
         transform: translateX(0);
     }
+
     25% {
         transform: translateX(-100%);
     }
+
     50% {
         transform: translateX(-200%);
     }
-    75%{
+
+    75% {
         transform: translateX(-100%);
     }
 }
@@ -524,16 +564,16 @@ h2 {
 
 
 .boat_home {
-    width: 90vw;
+    width: 100vw;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    position: relative;
     justify-content: center;
     align-items: center;
 
     a {
         z-index: 1;
+        position: relative;
 
         img {
             width: 80vw;
@@ -541,20 +581,32 @@ h2 {
             max-height: 500px;
             object-fit: cover;
             max-width: 1200px;
+            display: block;
+        }
+
+        span {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            left: 4vw;
+            top: 4vw;
+            border: 5px solid $bleu;
+
+            z-index: -1;
+
         }
     }
 
-    span {
-        position: absolute;
-        height: 60vw;
-        width: 70vw;
-        border: 5px solid $bleu;
-        left: 17vw;
-        top: 6vw;
-        z-index: 0;
-        max-height: 500px;
-        max-width: 1200px;
+    @media (max-width:1024px) {
+        a {
+            span {
+                left: 6vw;
+                top: 6vw;
+            }
+        }
     }
+
+
 
     .buttons {
         a {
