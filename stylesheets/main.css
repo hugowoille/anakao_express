@@ -1325,7 +1325,20 @@ h2:after {
   display: none;
 }
 
-.apropos_home p {
+.apropos_home .text_apropos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.apropos_home .text_apropos p {
   font-family: "Montserrat", sans-serif;
   font-size: 0.8em;
   width: 100%;
@@ -1338,9 +1351,24 @@ h2:after {
   text-align: center;
 }
 
+.apropos_home .text_apropos h3 {
+  text-align: center;
+  font-family: "Cinzel", serif;
+  color: #fdfedb;
+  font-weight: normal;
+  padding: 30px 6vw;
+}
+
+.apropos_home .text_apropos span {
+  display: block;
+  width: 60%;
+  height: 1px;
+  background-color: #fdfedb;
+  margin: 0 auto;
+}
+
 @media (min-width: 1024px) {
   .apropos_home {
-    max-height: 700px;
     overflow: hidden;
   }
   .apropos_home .mon_slider {
@@ -1361,11 +1389,17 @@ h2:after {
     -webkit-animation: slider 20s infinite;
             animation: slider 20s infinite;
   }
-  .apropos_home p {
-    font-size: 0.7em;
+  .apropos_home .text_apropos {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     width: 50%;
-    padding: 6vw;
+  }
+  .apropos_home .text_apropos p {
+    font-size: 0.7em;
     text-align: left;
+  }
+  .apropos_home .text_apropos h3 {
+    padding: 2vw 6vw;
   }
 }
 
