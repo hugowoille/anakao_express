@@ -944,6 +944,7 @@ h2:after {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100vw;
+  max-width: 100%;
   margin: 20px 0;
   border-top: 10px solid #445061;
   border-bottom: 10px solid #445061;
@@ -996,6 +997,7 @@ h2:after {
         -ms-flex-direction: row;
             flex-direction: row;
     width: 100vw;
+    max-width: 100%;
     -webkit-box-shadow: none;
             box-shadow: none;
     border: none;
@@ -1443,6 +1445,7 @@ h2:after {
 
 .boat_home {
   width: 100vw;
+  max-width: 100%;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1672,6 +1675,7 @@ html {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-bottom: 100px;
+  padding: 0 100px;
 }
 
 .picto_boat li {
@@ -1700,6 +1704,9 @@ html {
 @media (max-width: 1024px) {
   .bateaux_content .boat_stuff p {
     padding: 10vw;
+  }
+  .bateaux_content .boat_stuff .picto_boat {
+    padding: 0;
   }
   .bateaux_content .boat_stuff .picto_boat li {
     margin-bottom: 3vw;

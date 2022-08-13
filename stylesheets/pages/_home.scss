@@ -130,6 +130,7 @@ h2 {
         display: flex;
         flex-wrap: wrap;
         width: 100vw;
+        max-width: 100%;
         margin: 20px 0;
         border-top: 10px solid $bleu;
         border-bottom: 10px solid $bleu;
@@ -189,6 +190,7 @@ h2 {
         section {
             flex-direction: row;
             width: 100vw;
+            max-width: 100%;
             box-shadow: none;
             border: none;
 
@@ -565,9 +567,7 @@ h2 {
                 
                 text-align: left;
             }
-            span{
-                
-            }
+            
             h3{
                 padding:2vw 6vw;
             }
@@ -599,6 +599,7 @@ h2 {
 
 .boat_home {
     width: 100vw;
+    max-width: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
