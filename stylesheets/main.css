@@ -574,11 +574,22 @@ footer .summary li:first-child {
   font-size: 1.5rem;
 }
 
+footer .summary li a {
+  position: relative;
+}
+
 footer .summary li a::before {
-  font-family: FontAwesome;
-  content: "\f054";
-  float: right;
+  background-image: url(/img/arrow.svg);
+  content: "";
   display: block;
+  width: 12px;
+  height: 12px;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 footer .summary li a:hover {
@@ -594,18 +605,40 @@ footer .useful_links li:last-child {
   width: 30px;
 }
 
+footer .useful_links li:nth-child(2) {
+  position: relative;
+}
+
 footer .useful_links li:nth-child(2)::before {
-  font-family: FontAwesome;
-  content: "\f054";
-  float: right;
+  background-image: url(/img/arrow.svg);
+  content: "";
   display: block;
+  width: 12px;
+  height: 12px;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+footer .useful_links li:nth-child(3) {
+  position: relative;
 }
 
 footer .useful_links li:nth-child(3)::before {
-  font-family: FontAwesome;
-  content: "\f054";
-  float: right;
+  background-image: url(/img/arrow.svg);
+  content: "";
   display: block;
+  width: 12px;
+  height: 12px;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 *,
