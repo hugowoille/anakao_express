@@ -114,6 +114,15 @@
             font-size: 1em;
             margin-top: 2vw;
         }
+        .underline_trajets{
+            display:block;
+            height:1px;
+            background-color: $bleu;
+            margin: 0 auto;
+            width:20%;
+            
+           
+        }
 
         p {
             font-family: $font-titre-montserrat;
@@ -121,8 +130,8 @@
             color: $bleu;
             width: 100%;
             text-align: center;
-            padding-bottom: 0;
-            margin-bottom: 15px;
+            
+            margin: 15px 0;
             padding:2vw;
         }
 
@@ -184,6 +193,9 @@
                     border-bottom: 1px solid $jaune;
                     width:90%;
                     margin-top: 2vw;
+                }
+                .underline_trajets{
+                    display:none;
                 }
 
                 p {

@@ -976,11 +976,11 @@ h2:after {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 100vw;
+  width: 90vw;
   max-width: 100%;
   margin: 20px 0;
-  border-top: 10px solid #445061;
-  border-bottom: 10px solid #445061;
+  background-color: #fdeab7;
+  border-radius: 7px;
 }
 
 .trajets_home section .sidebar-section_home span {
@@ -1001,8 +1001,16 @@ h2:after {
   margin: 0 auto;
   font-family: "Cinzel", serif;
   font-weight: 500;
-  padding: 10px 0;
+  padding: 20px 0;
   color: #445061;
+}
+
+.trajets_home section .underline_trajets {
+  display: block;
+  height: 1px;
+  background-color: #445061;
+  margin: 0 auto;
+  width: 20%;
 }
 
 .trajets_home section p {
@@ -1011,8 +1019,7 @@ h2:after {
   color: #445061;
   width: 100%;
   text-align: center;
-  padding-bottom: 0;
-  padding: 3vw;
+  margin-top: 20px;
 }
 
 .trajets_home section img {
@@ -1021,6 +1028,8 @@ h2:after {
      object-fit: cover;
   width: 100%;
   max-height: 450px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+          box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 
 @media (min-width: 600px) {
@@ -1043,6 +1052,8 @@ h2:after {
   }
   .trajets_home section a img {
     width: 100%;
+    -webkit-box-shadow: none;
+            box-shadow: none;
     height: auto;
     min-height: 540.05px;
   }
@@ -1069,6 +1080,10 @@ h2:after {
         -ms-flex-order: 1;
             order: 1;
     color: #fdfedb;
+    padding: 10px 0;
+  }
+  .trajets_home section .sidebar-section_home .underline_trajets {
+    display: none;
   }
   .trajets_home section .sidebar-section_home p {
     font-size: 0.7em;
@@ -1127,6 +1142,7 @@ h2:after {
     width: 30%;
     max-height: none;
     margin: 30px 0 !important;
+    background-color: transparent;
   }
   .trajets_home section a {
     overflow: hidden;
@@ -2181,14 +2197,21 @@ html {
   margin-top: 2vw;
 }
 
+.trajets_trajets section .underline_trajets {
+  display: block;
+  height: 1px;
+  background-color: #445061;
+  margin: 0 auto;
+  width: 20%;
+}
+
 .trajets_trajets section p {
   font-family: "Montserrat", sans-serif;
   font-size: 0.7em;
   color: #445061;
   width: 100%;
   text-align: center;
-  padding-bottom: 0;
-  margin-bottom: 15px;
+  margin: 15px 0;
   padding: 2vw;
 }
 
@@ -2259,6 +2282,9 @@ html {
     border-bottom: 1px solid #fdfedb;
     width: 90%;
     margin-top: 2vw;
+  }
+  .trajets_trajets section .sidebar_article_trajets .underline_trajets {
+    display: none;
   }
   .trajets_trajets section .sidebar_article_trajets p {
     width: 90%;

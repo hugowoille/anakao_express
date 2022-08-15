@@ -129,11 +129,11 @@ h2 {
     section {
         display: flex;
         flex-wrap: wrap;
-        width: 100vw;
+        width: 90vw;
         max-width: 100%;
         margin: 20px 0;
-        border-top: 10px solid $bleu;
-        border-bottom: 10px solid $bleu;
+        background-color: rgb(253, 234, 183);
+        border-radius: 7px;
 
 
         .sidebar-section_home {
@@ -157,8 +157,18 @@ h2 {
             margin: 0 auto;
             font-family: $font-navbar-cinzel;
             font-weight: 500;
-            padding: 10px 0;
+            padding: 20px 0;
             color: $bleu;
+        }
+
+        .underline_trajets {
+            display: block;
+            height: 1px;
+            background-color: $bleu;
+            margin: 0 auto;
+            width: 20%;
+
+
         }
 
         p {
@@ -167,8 +177,8 @@ h2 {
             color: $bleu;
             width: 100%;
             text-align: center;
-            padding-bottom: 0;
-            padding: 3vw;
+            margin-top: 20px;
+
         }
 
         img {
@@ -176,7 +186,7 @@ h2 {
             object-fit: cover;
             width: 100%;
             max-height: 450px;
-
+            box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
         }
     }
 }
@@ -200,7 +210,7 @@ h2 {
 
                 img {
                     width: 100%;
-
+                    box-shadow: none;
                     height: auto;
                     min-height: 540.05px;
 
@@ -220,7 +230,12 @@ h2 {
                     margin: 0;
                     order: 1;
                     color: $jaune;
+                    padding: 10px 0;
 
+                }
+
+                .underline_trajets {
+                    display: none;
                 }
 
                 p {
@@ -260,7 +275,6 @@ h2 {
 @media (min-width: 1024px) {
     .trajets_home {
         overflow: hidden;
-
         flex-direction: row;
         justify-content: space-evenly;
         padding: 0 40px;
@@ -273,6 +287,7 @@ h2 {
             width: 30%;
             max-height: none;
             margin: 30px 0 !important;
+            background-color: transparent;
 
             a {
                 overflow: hidden;
@@ -539,7 +554,7 @@ h2 {
     }
 
     @media (min-width: 1024px) {
-        
+
         overflow: hidden;
 
         .mon_slider {
@@ -561,15 +576,16 @@ h2 {
         .text_apropos {
             justify-content: space-around;
             width: 50%;
+
             p {
                 font-size: 0.7em;
-                
-                
+
+
                 text-align: left;
             }
-            
-            h3{
-                padding:2vw 6vw;
+
+            h3 {
+                padding: 2vw 6vw;
             }
         }
     }
