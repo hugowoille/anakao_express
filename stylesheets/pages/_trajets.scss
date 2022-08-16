@@ -166,21 +166,21 @@
             box-shadow: none;
             
             img {
-                width: 50%;
+                width: 60%;
                 order: 2;
                 max-height: none;
                 object-position: 20%;
             }
 
             .sidebar_article_trajets {
-                width: 50%;
+                width: 40%;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-around;
                 align-items: flex-start;
                 background-color: $bleu;
                 order: 1;
-                padding-left: 2vw;
+                padding: 0 2vw;
                 
                 h3 {
                     
@@ -199,10 +199,11 @@
                 }
 
                 p {
-                    width: 90%;
+                    width: 100%;
                     text-align: left;
                     color: $jaune;
-                    padding:30px 0;
+                    padding:20px 0;
+                    font-size: 0.6em;
                 }
 
                 .rsv_button {
@@ -220,7 +221,7 @@
                     order: 2;
                     align-items: flex-end;
                     padding-left: 0;
-                    padding-right: 2vw;
+                    padding: 0 2vw;
                     p{
                         text-align: right;
                     }
@@ -258,6 +259,7 @@
                 p {
                     text-align: left;
                     width:60%;
+                    font-size: 0.7em;
                 }
 
                 .rsv_button {
