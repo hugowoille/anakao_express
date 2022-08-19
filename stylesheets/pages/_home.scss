@@ -30,6 +30,7 @@ h2 {
     font-size: 1.2em;
     color: $bleu;
     margin-left: 5vw;
+    font-weight: normal;
 
     &:after {
         content: "";
@@ -125,21 +126,30 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    background-color: $bleu;
+    padding:5vw 0;
+    border-radius: 20px;
     section {
         display: flex;
         flex-wrap: wrap;
         width: 90vw;
         max-width: 100%;
         margin: 20px 0;
-        background-color: rgb(253, 234, 183);
-        border-radius: 7px;
-        box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.40);
+        background-color: $jaune;
+        border-radius: 20px;
+        -webkit-box-shadow: 10px 10px 22px -6px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 22px -6px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 22px -6px rgba(0,0,0,0.75);
 
         .sidebar-section_home {
             span {
                 font-size: 0.8em;
 
+            }
+            .buttons{
+                a{
+                    border-radius: 10px;
+                }
             }
         }
 
@@ -157,7 +167,7 @@ h2 {
             margin: 0 auto;
             font-family: $font-navbar-cinzel;
             font-weight: 500;
-            padding: 20px 0;
+            padding: 10px 0;
             color: $bleu;
         }
 
@@ -173,12 +183,12 @@ h2 {
 
         p {
             font-family: $font-titre-montserrat;
-            font-size: 0.8em;
+            font-size: 0.7em;
             color: $bleu;
             width: 100%;
             text-align: center;
-            margin-top: 20px;
-            padding:1vw;
+            margin-top: 10px;
+            padding:2vw;
 
         }
 
@@ -186,7 +196,8 @@ h2 {
             display: block;
             object-fit: cover;
             width: 100%;
-            max-height: 450px;
+            
+            border-radius: 20px 20px 0 0;
             
         }
     }
@@ -198,13 +209,15 @@ h2 {
 
 @media (min-width: 600px) {
     .trajets_home {
+        background-color: $jaune;
+        padding:0;
         section {
             flex-direction: row;
             width: 100vw;
             max-width: 100%;
             box-shadow: none;
             border: none;
-
+           
             a {
                 width: 70%;
                 order: 4;
@@ -214,6 +227,7 @@ h2 {
                     box-shadow: none;
                     height: auto;
                     min-height: 540.05px;
+                    border-radius: 0;
 
                 }
             }
@@ -258,6 +272,7 @@ h2 {
                     a {
                         background-color: $jaune;
                         color: $bleu;
+                        border-radius: 0;
                     }
 
                     .esp_button {
@@ -408,7 +423,7 @@ h2 {
 .excursion_1 {
     display: flex;
     flex-direction: column;
-
+    
     align-items: center;
 
     img {
@@ -416,27 +431,28 @@ h2 {
         width: 90%;
         max-width: 100%;
         object-fit: cover;
-        margin-bottom: 50px;
+        
         object-position: bottom;
     }
 
     p {
         font-family: $font-titre-montserrat;
         text-align: center;
-        font-size: 0.8em;
-        width: 80%;
+        font-size: 0.7em;
+        width: 90%;
         margin: 0 auto;
-        margin-bottom: 50px;
+        padding:6vw 3vw;
         color: $bleu;
+
 
     }
 
     .buttons {
-        flex-direction: column;
+        flex-direction: row;
         margin: 0;
         align-items: center;
-        height: 100px;
-        justify-content: space-between;
+        
+        justify-content: space-around;
 
         a {
 
@@ -489,6 +505,10 @@ h2 {
             justify-content: space-around;
             padding: 0 25vw;
 
+        }
+        p{
+            font-size: 0.8em;
+            padding: 3vw;
         }
     }
 }

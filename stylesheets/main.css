@@ -483,7 +483,7 @@ footer {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   background-color: #445061;
-  color: #fdfedb;
+  color: #fff1cc;
   font-size: 1rem;
   font-family: "Montserrat", sans-serif;
   padding: 70px;
@@ -491,7 +491,7 @@ footer {
 
 footer .separate_footer {
   width: 1px;
-  background-color: #fdfedb;
+  background-color: #fff1cc;
   height: auto;
 }
 
@@ -509,7 +509,7 @@ footer .separate_footer {
   }
   footer .separate_footer {
     width: 100%;
-    background-color: #fdfedb;
+    background-color: #fff1cc;
     height: 1px;
     margin: 50px 0 50px 0;
   }
@@ -557,7 +557,7 @@ footer .adress a, footer .summary a, footer .useful_links a {
 }
 
 footer .adress a:hover, footer .summary a:hover, footer .useful_links a:hover {
-  color: #fdfedb;
+  color: #fff1cc;
 }
 
 footer .adress li:first-child {
@@ -593,7 +593,7 @@ footer .summary li a::before {
 }
 
 footer .summary li a:hover {
-  color: rgba(253, 254, 219, 0.5);
+  color: rgba(255, 241, 204, 0.5);
 }
 
 footer .useful_links li:first-child {
@@ -660,7 +660,7 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   top: 0;
-  background: #fdfedb;
+  background: #fff1cc;
   height: 80px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -754,7 +754,7 @@ nav .main-navlinks .navlinks-container a:hover:after {
             align-items: flex-start;
     position: absolute;
     top: 100%;
-    background-color: #fdfedb;
+    background-color: #fff1cc;
     left: 0;
     height: auto;
     width: 100%;
@@ -840,12 +840,12 @@ nav .main-navlinks .navlinks-container a:hover:after {
   text-decoration: none !important;
   padding: 0 2vw;
   font-weight: 600;
-  color: #fdfedb;
+  color: #fff1cc;
   background-color: #445061;
 }
 
 .bg {
-  background-color: #fdfedb;
+  background-color: #fff1cc;
   margin-bottom: 390.05px;
   margin-top: 0;
   -webkit-box-shadow: 10px 10px 23px -7px rgba(0, 0, 0, 0.75);
@@ -864,6 +864,7 @@ h2 {
   font-size: 1.2em;
   color: #445061;
   margin-left: 5vw;
+  font-weight: normal;
 }
 
 h2:after {
@@ -895,7 +896,7 @@ h2:after {
 }
 
 .splashscreen_home .sidebar_home h1 {
-  color: #fdfedb;
+  color: #fff1cc;
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
   font-size: 40px;
@@ -909,7 +910,7 @@ h2:after {
 }
 
 .splashscreen_home .sidebar_home p {
-  color: #fdfedb;
+  color: #fff1cc;
   font-family: "Montserrat", sans-serif;
   -ms-grid-row: 5;
   -ms-grid-row-span: 1;
@@ -922,8 +923,8 @@ h2:after {
 }
 
 .splashscreen_home .sidebar_home a {
-  color: #fdfedb;
-  border: 1px solid #fdfedb;
+  color: #fff1cc;
+  border: 1px solid #fff1cc;
   font-family: "Montserrat", sans-serif;
   -ms-grid-row: 8;
   -ms-grid-row-span: 1;
@@ -968,6 +969,9 @@ h2:after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #445061;
+  padding: 5vw 0;
+  border-radius: 20px;
 }
 
 .trajets_home section {
@@ -979,14 +983,18 @@ h2:after {
   width: 90vw;
   max-width: 100%;
   margin: 20px 0;
-  background-color: #fdeab7;
-  border-radius: 7px;
-  -webkit-box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.4);
-          box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.4);
+  background-color: #fff1cc;
+  border-radius: 20px;
+  -webkit-box-shadow: 10px 10px 22px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 22px -6px rgba(0, 0, 0, 0.75);
 }
 
 .trajets_home section .sidebar-section_home span {
   font-size: 0.8em;
+}
+
+.trajets_home section .sidebar-section_home .buttons a {
+  border-radius: 10px;
 }
 
 .trajets_home section:nth-child(1) {
@@ -1003,7 +1011,7 @@ h2:after {
   margin: 0 auto;
   font-family: "Cinzel", serif;
   font-weight: 500;
-  padding: 20px 0;
+  padding: 10px 0;
   color: #445061;
 }
 
@@ -1017,12 +1025,12 @@ h2:after {
 
 .trajets_home section p {
   font-family: "Montserrat", sans-serif;
-  font-size: 0.8em;
+  font-size: 0.7em;
   color: #445061;
   width: 100%;
   text-align: center;
-  margin-top: 20px;
-  padding: 1vw;
+  margin-top: 10px;
+  padding: 2vw;
 }
 
 .trajets_home section img {
@@ -1030,10 +1038,14 @@ h2:after {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
-  max-height: 450px;
+  border-radius: 20px 20px 0 0;
 }
 
 @media (min-width: 600px) {
+  .trajets_home {
+    background-color: #fff1cc;
+    padding: 0;
+  }
   .trajets_home section {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1057,6 +1069,7 @@ h2:after {
             box-shadow: none;
     height: auto;
     min-height: 540.05px;
+    border-radius: 0;
   }
   .trajets_home section .sidebar-section_home {
     width: 30%;
@@ -1080,7 +1093,7 @@ h2:after {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
-    color: #fdfedb;
+    color: #fff1cc;
     padding: 10px 0;
   }
   .trajets_home section .sidebar-section_home .underline_trajets {
@@ -1092,7 +1105,7 @@ h2:after {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
-    color: #fdfedb;
+    color: #fff1cc;
     text-align: left;
     padding: 2vw;
   }
@@ -1112,8 +1125,9 @@ h2:after {
             flex-direction: column;
   }
   .trajets_home section .sidebar-section_home .buttons a {
-    background-color: #fdfedb;
+    background-color: #fff1cc;
     color: #445061;
+    border-radius: 0;
   }
   .trajets_home section .sidebar-section_home .buttons .esp_button {
     margin-bottom: 10px;
@@ -1200,7 +1214,7 @@ h2:after {
   .trajets_home section .sidebar-section_home .buttons a {
     padding: 0;
     width: 150px;
-    background-color: #fdfedb;
+    background-color: #fff1cc;
     color: #445061;
     border-radius: 0;
     border: 1px solid #445061;
@@ -1226,7 +1240,7 @@ h2:after {
     z-index: -10;
   }
   .trajets_home section .sidebar-section_home .buttons a:hover {
-    color: #fdfedb;
+    color: #fff1cc;
   }
   .trajets_home section .sidebar-section_home .buttons a:hover:after {
     -webkit-transform: translateX(0);
@@ -1263,7 +1277,6 @@ h2:after {
   max-width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  margin-bottom: 50px;
   -o-object-position: bottom;
      object-position: bottom;
 }
@@ -1271,32 +1284,30 @@ h2:after {
 .excursion_1 p {
   font-family: "Montserrat", sans-serif;
   text-align: center;
-  font-size: 0.8em;
-  width: 80%;
+  font-size: 0.7em;
+  width: 90%;
   margin: 0 auto;
-  margin-bottom: 50px;
+  padding: 6vw 3vw;
   color: #445061;
 }
 
 .excursion_1 .buttons {
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   margin: 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .excursion_1 .buttons a {
   padding: 0;
   width: 150px;
-  background-color: #fdfedb;
+  background-color: #fff1cc;
   color: #445061;
   border-radius: 0;
   border: 1px solid #445061;
@@ -1323,7 +1334,7 @@ h2:after {
 }
 
 .excursion_1 .buttons a:hover {
-  color: #fdfedb;
+  color: #fff1cc;
 }
 
 .excursion_1 .buttons a:hover:after {
@@ -1344,6 +1355,10 @@ h2:after {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     padding: 0 25vw;
+  }
+  .excursion_1 p {
+    font-size: 0.8em;
+    padding: 3vw;
   }
 }
 
@@ -1396,7 +1411,7 @@ h2:after {
   width: 100%;
   margin: 0 auto;
   padding: 30px 6vw;
-  color: #fdfedb;
+  color: #fff1cc;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -1406,7 +1421,7 @@ h2:after {
 .apropos_home .text_apropos h3 {
   text-align: center;
   font-family: "Cinzel", serif;
-  color: #fdfedb;
+  color: #fff1cc;
   font-weight: normal;
   padding: 30px 6vw;
 }
@@ -1415,7 +1430,7 @@ h2:after {
   display: block;
   width: 60%;
   height: 1px;
-  background-color: #fdfedb;
+  background-color: #fff1cc;
   margin: 0 auto;
 }
 
@@ -1547,7 +1562,7 @@ h2:after {
 .boat_home .buttons a {
   padding: 0;
   width: 150px;
-  background-color: #fdfedb;
+  background-color: #fff1cc;
   color: #445061;
   border-radius: 0;
   border: 1px solid #445061;
@@ -1574,7 +1589,7 @@ h2:after {
 }
 
 .boat_home .buttons a:hover {
-  color: #fdfedb;
+  color: #fff1cc;
 }
 
 .boat_home .buttons a:hover:after {
@@ -1593,7 +1608,7 @@ html {
 
 .bateaux_content {
   overflow: hidden;
-  background-color: #fdfedb;
+  background-color: #fff1cc;
   margin-bottom: 390.05px;
   margin-top: 0;
   -webkit-box-shadow: 10px 10px 23px -7px rgba(0, 0, 0, 0.75);
@@ -1627,7 +1642,7 @@ html {
 }
 
 .splashscreen_bateaux .sidebar_boat h1 {
-  color: #fdfedb;
+  color: #fff1cc;
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
   font-size: 40px;
@@ -1641,7 +1656,7 @@ html {
 }
 
 .splashscreen_bateaux .sidebar_boat p {
-  color: #fdfedb;
+  color: #fff1cc;
   font-family: "Montserrat", sans-serif;
   -ms-grid-row: 5;
   -ms-grid-row-span: 1;
@@ -1654,8 +1669,8 @@ html {
 }
 
 .splashscreen_bateaux .sidebar_boat a {
-  color: #fdfedb;
-  border: 1px solid #fdfedb;
+  color: #fff1cc;
+  border: 1px solid #fff1cc;
   font-family: "Montserrat", sans-serif;
   -ms-grid-row: 8;
   -ms-grid-row-span: 1;
@@ -1799,15 +1814,15 @@ html {
 .boat_list .sambobe .sidebar_left h3 {
   font-family: "Cinzel", serif;
   font-weight: 300;
-  color: #fdfedb;
+  color: #fff1cc;
   font-size: 2rem;
-  border-bottom: 2px solid #fdfedb;
+  border-bottom: 2px solid #fff1cc;
   margin: 2vw 0;
 }
 
 .boat_list .sambobe .sidebar_left p {
   font-family: "Montserrat", sans-serif;
-  color: #fdfedb;
+  color: #fff1cc;
   font-size: 0.8em;
   margin-bottom: 2vw;
 }
@@ -1816,11 +1831,11 @@ html {
   width: 40px;
   height: 40px;
   font-size: 20px;
-  color: #fdfedb;
+  color: #fff1cc;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  border: 1px solid #fdfedb;
+  border: 1px solid #fff1cc;
   border-radius: 100%;
 }
 
@@ -1870,15 +1885,15 @@ html {
 .boat_list .sambokely .sidebar_right h3 {
   font-family: "Cinzel", serif;
   font-weight: 300;
-  color: #fdfedb;
+  color: #fff1cc;
   font-size: 2rem;
-  border-bottom: 2px solid #fdfedb;
+  border-bottom: 2px solid #fff1cc;
   margin: 2vw 0;
 }
 
 .boat_list .sambokely .sidebar_right p {
   font-family: "Montserrat", sans-serif;
-  color: #fdfedb;
+  color: #fff1cc;
   font-size: 0.8em;
   margin-bottom: 2vw;
 }
@@ -1887,11 +1902,11 @@ html {
   width: 40px;
   height: 40px;
   font-size: 20px;
-  color: #fdfedb;
+  color: #fff1cc;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  border: 1px solid #fdfedb;
+  border: 1px solid #fff1cc;
   border-radius: 100%;
 }
 
@@ -1943,15 +1958,15 @@ html {
 .boat_list .sambovezo .sidebar_left2 h3 {
   font-family: "Cinzel", serif;
   font-weight: 300;
-  color: #fdfedb;
+  color: #fff1cc;
   font-size: 2rem;
-  border-bottom: 2px solid #fdfedb;
+  border-bottom: 2px solid #fff1cc;
   margin: 2vw 0;
 }
 
 .boat_list .sambovezo .sidebar_left2 p {
   font-family: "Montserrat", sans-serif;
-  color: #fdfedb;
+  color: #fff1cc;
   font-size: 0.8em;
   margin-bottom: 2vw;
 }
@@ -2085,7 +2100,7 @@ html {
 }
 
 .splashscreen_trajets .sidebar_trajets h1 {
-  color: #fdfedb;
+  color: #fff1cc;
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
   font-size: 40px;
@@ -2099,7 +2114,7 @@ html {
 }
 
 .splashscreen_trajets .sidebar_trajets p {
-  color: #fdfedb;
+  color: #fff1cc;
   font-family: "Montserrat", sans-serif;
   -ms-grid-row: 5;
   -ms-grid-row-span: 1;
@@ -2112,8 +2127,8 @@ html {
 }
 
 .splashscreen_trajets .sidebar_trajets a {
-  color: #fdfedb;
-  border: 1px solid #fdfedb;
+  color: #fff1cc;
+  border: 1px solid #fff1cc;
   font-family: "Montserrat", sans-serif;
   -ms-grid-row: 8;
   -ms-grid-row-span: 1;
@@ -2275,12 +2290,12 @@ html {
   }
   .trajets_trajets section .sidebar_article_trajets h3 {
     margin: 0;
-    color: #fdfedb;
+    color: #fff1cc;
     width: 100%;
     text-align: left;
     font-family: "Cinzel", serif;
     font-weight: normal;
-    border-bottom: 1px solid #fdfedb;
+    border-bottom: 1px solid #fff1cc;
     width: 90%;
     margin-top: 2vw;
   }
@@ -2290,12 +2305,12 @@ html {
   .trajets_trajets section .sidebar_article_trajets p {
     width: 100%;
     text-align: left;
-    color: #fdfedb;
+    color: #fff1cc;
     padding: 20px 0;
     font-size: 0.6em;
   }
   .trajets_trajets section .sidebar_article_trajets .rsv_button {
-    background-color: #fdfedb;
+    background-color: #fff1cc;
     color: #445061;
     margin: 0;
     margin-bottom: 30px;
@@ -2351,10 +2366,10 @@ html {
   .trajets_trajets section .sidebar_article_trajets .rsv_button {
     padding: 0;
     width: 150px;
-    background-color: #fdfedb;
+    background-color: #fff1cc;
     color: #445061;
     border-radius: 0;
-    border: 1px solid #fdfedb;
+    border: 1px solid #fff1cc;
     position: relative;
     overflow: hidden;
     z-index: 10;
@@ -2378,7 +2393,7 @@ html {
     z-index: -10;
   }
   .trajets_trajets section .sidebar_article_trajets .rsv_button:hover {
-    color: #fdfedb;
+    color: #fff1cc;
   }
   .trajets_trajets section .sidebar_article_trajets .rsv_button:hover:after {
     -webkit-transform: translateX(0);
@@ -2504,9 +2519,9 @@ html {
   color: #445061;
   padding: 0;
   width: 150px;
-  color: #fdfedb;
+  color: #fff1cc;
   border-radius: 0;
-  border: 1px solid #fdfedb;
+  border: 1px solid #fff1cc;
   position: relative;
   overflow: hidden;
   z-index: 10;
@@ -2519,7 +2534,7 @@ html {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #fdfedb;
+  background-color: #fff1cc;
   width: 100%;
   height: 100%;
   -webkit-transform: translateX(-100%);
@@ -2540,15 +2555,15 @@ html {
 
 .excursions_trajets .nosi_txt h3,
 .excursions_trajets .nosi_txt p {
-  color: #fdfedb;
+  color: #fff1cc;
 }
 
 .excursions_trajets .nosi_txt .separate_exc {
-  background: #fdfedb;
+  background: #fff1cc;
 }
 
 .excursions_trajets .dmd_txt {
-  background: #fdfedb;
+  background: #fff1cc;
   padding: 0 4vw;
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
@@ -2562,7 +2577,7 @@ html {
   margin-top: 40px;
   padding: 0;
   width: 150px;
-  background-color: #fdfedb;
+  background-color: #fff1cc;
   color: #445061;
   border-radius: 0;
   border: 1px solid #445061;
@@ -2589,7 +2604,7 @@ html {
 }
 
 .excursions_trajets .dmd_txt .rsv_button:hover {
-  color: #fdfedb;
+  color: #fff1cc;
 }
 
 .excursions_trajets .dmd_txt .rsv_button:hover:after {
@@ -2598,7 +2613,7 @@ html {
 }
 
 .excursions_trajets .dmd_txt .rsv_button:hover {
-  color: #fdfedb;
+  color: #fff1cc;
 }
 
 .excursions_trajets .dmd_txt h3,
@@ -2629,7 +2644,7 @@ html {
     padding-bottom: 20px;
   }
   .excursions_trajets .nosi_txt .rsv_button {
-    background-color: #fdfedb;
+    background-color: #fff1cc;
     color: #445061;
     margin: 0 auto;
   }
@@ -2672,7 +2687,7 @@ html {
 
 .gallery_content {
   overflow: hidden;
-  background-color: #fdfedb;
+  background-color: #fff1cc;
   margin-bottom: 390.05px;
   margin-top: 0;
   -webkit-box-shadow: 10px 10px 23px -7px rgba(0, 0, 0, 0.75);
@@ -2755,7 +2770,7 @@ html {
 }
 
 .bg_galerie_contact {
-  background-color: #fdfedb;
+  background-color: #fff1cc;
   margin-bottom: 390.05px;
   margin-top: 80px;
   -webkit-box-shadow: 10px 10px 23px -7px rgba(0, 0, 0, 0.75);
@@ -2791,13 +2806,13 @@ html {
   font-weight: normal;
   font-family: "Cinzel", serif;
   margin-bottom: 50px;
-  border-bottom: 1px solid #fdfedb;
+  border-bottom: 1px solid #fff1cc;
   width: 80%;
-  color: #fdfedb;
+  color: #fff1cc;
 }
 
 .contact_content section p {
-  color: #fdfedb;
+  color: #fff1cc;
   font-family: "Montserrat", sans-serif;
   font-size: 0.7em;
 }
@@ -2807,7 +2822,7 @@ html {
 }
 
 .contact_content section:nth-child(2n) {
-  background-color: #fdfedb;
+  background-color: #fff1cc;
 }
 
 .contact_content section:nth-child(2n) h3 {
@@ -2986,7 +3001,7 @@ html {
   width: 100%;
   border: none;
   background: none;
-  border-bottom: 1px solid #fdfedb;
+  border-bottom: 1px solid #fff1cc;
   padding: 5px 0;
   outline: none;
 }
@@ -3000,7 +3015,7 @@ html {
   left: 0;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  color: #fdfedb;
+  color: #fff1cc;
   -webkit-transition: 0.4s ease-out;
   transition: 0.4s ease-out;
 }
@@ -3010,7 +3025,7 @@ html {
 }
 
 .contact_content .rsv_excursions_contact .formBloc #text_area input {
-  border: 1px solid #fdfedb;
+  border: 1px solid #fff1cc;
   padding-bottom: 150px;
   border-radius: 3px;
 }
@@ -3018,33 +3033,33 @@ html {
 .contact_content .rsv_excursions_contact .formBloc #text_area input::-webkit-input-placeholder {
   font-size: 0.7em;
   padding-left: 10px;
-  color: #fdfedb;
+  color: #fff1cc;
 }
 
 .contact_content .rsv_excursions_contact .formBloc #text_area input:-ms-input-placeholder {
   font-size: 0.7em;
   padding-left: 10px;
-  color: #fdfedb;
+  color: #fff1cc;
 }
 
 .contact_content .rsv_excursions_contact .formBloc #text_area input::-ms-input-placeholder {
   font-size: 0.7em;
   padding-left: 10px;
-  color: #fdfedb;
+  color: #fff1cc;
 }
 
 .contact_content .rsv_excursions_contact .formBloc #text_area input::placeholder {
   font-size: 0.7em;
   padding-left: 10px;
-  color: #fdfedb;
+  color: #fff1cc;
 }
 
 .contact_content .rsv_excursions_contact .formBloc button {
-  color: #fdfedb;
+  color: #fff1cc;
   margin-top: 25px;
   width: 50%;
   background: none;
-  border: 1px solid #fdfedb;
+  border: 1px solid #fff1cc;
   border-radius: 3px;
   padding: 10px;
   font-size: 0.8em;
@@ -3098,7 +3113,7 @@ html {
 }
 
 .body_thanks {
-  background-color: #fdfedb;
+  background-color: #fff1cc;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
