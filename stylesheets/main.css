@@ -9,6 +9,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
@@ -859,20 +860,28 @@ nav .main-navlinks .navlinks-container a:hover:after {
 }
 
 h2 {
-  padding: 60px 0;
-  font-family: "Cinzel", serif;
-  font-size: 1.2em;
+  padding: 30px 0;
+  font-family: "Abril Fatface", cursive;
+  font-size: 2em;
   color: #445061;
-  margin-left: 5vw;
-  font-weight: normal;
+  margin: 0 5vw;
+  font-weight: 10;
 }
 
 h2:after {
   content: "";
-  height: 1px;
-  width: 50%;
+  height: 3px;
   background-color: #445061;
   display: block;
+  border-radius: 9999px;
+  margin-top: 15px;
+}
+
+@media (min-width: 1024px) {
+  h2 {
+    font-size: 2.5em;
+    font-weight: 10;
+  }
 }
 
 .splashscreen_home {
@@ -1382,14 +1391,20 @@ h2:after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 20px;
+  margin-top: 50px;
 }
 
-.apropos_home .mon_slider {
-  display: none;
+.apropos_home h2 {
+  color: #fff1cc;
+}
+
+.apropos_home h2::after {
+  background-color: #fff1cc;
 }
 
 .apropos_home .text_apropos {
@@ -1415,7 +1430,7 @@ h2:after {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  text-align: center;
+  text-align: left;
 }
 
 .apropos_home .text_apropos h3 {
@@ -1435,27 +1450,6 @@ h2:after {
 }
 
 @media (min-width: 1024px) {
-  .apropos_home {
-    overflow: hidden;
-  }
-  .apropos_home .mon_slider {
-    width: 50%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    overflow: hidden;
-  }
-  .apropos_home .mon_slider img {
-    display: block;
-    -o-object-fit: cover;
-       object-fit: cover;
-    -o-object-position: right;
-       object-position: right;
-    width: 100%;
-    min-height: 691.09px;
-    -webkit-animation: slider 20s infinite;
-            animation: slider 20s infinite;
-  }
   .apropos_home .text_apropos {
     -ms-flex-pack: distribute;
         justify-content: space-around;
@@ -1467,44 +1461,6 @@ h2:after {
   }
   .apropos_home .text_apropos h3 {
     padding: 2vw 6vw;
-  }
-}
-
-@-webkit-keyframes slider {
-  0% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  25% {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-  }
-  50% {
-    -webkit-transform: translateX(-200%);
-            transform: translateX(-200%);
-  }
-  75% {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-  }
-}
-
-@keyframes slider {
-  0% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  25% {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-  }
-  50% {
-    -webkit-transform: translateX(-200%);
-            transform: translateX(-200%);
-  }
-  75% {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
   }
 }
 
@@ -2455,6 +2411,7 @@ html {
   max-width: 100%;
   -ms-grid-columns: (50%)[auto-fit];
       grid-template-columns: repeat(auto-fit, 50%);
+  margin-top: 50px;
 }
 
 .excursions_trajets section {
@@ -2642,6 +2599,7 @@ html {
             order: 2;
     padding: 0 20px;
     padding-bottom: 20px;
+    min-height: unset;
   }
   .excursions_trajets .nosi_txt .rsv_button {
     background-color: #fff1cc;
@@ -2669,6 +2627,9 @@ html {
   }
   .excursions_trajets .dmd_txt h3 {
     text-align: center;
+  }
+  .excursions_trajets .dmd_txt .rsv_button {
+    margin: 0;
   }
   .excursions_trajets section {
     -webkit-box-align: center;

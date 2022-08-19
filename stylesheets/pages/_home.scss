@@ -25,21 +25,28 @@
 h2 {
 
 
-    padding: 60px 0;
-    font-family: $font-navbar-cinzel;
-    font-size: 1.2em;
+    padding: 30px 0;
+    font-family: $font-abril;
+    font-size: 2em;
     color: $bleu;
-    margin-left: 5vw;
-    font-weight: normal;
+    margin: 0 5vw;
+    font-weight: 10;
 
     &:after {
         content: "";
-        height: 1px;
-        width: 50%;
+        height: 3px;
+        
         background-color: $bleu;
         display: block;
+        border-radius: 9999px;
+        margin-top: 15px;
+    }
+    @media (min-width:1024px){
+        font-size: 2.5em;
+        font-weight: 10;
     }
 }
+
 
 
 ////////////////// SPLASHSCREEN //////////////////
@@ -531,13 +538,19 @@ box-shadow: 10px 10px 22px -6px rgba(0,0,0,0.75);
     width: 100%;
     background-color: $bleu;
     display: flex;
-    flex-direction: row;
-
-
-
-    .mon_slider {
-        display: none;
+    flex-direction: column;
+    border-radius: 20px;
+    margin-top: 50px;
+    h2{
+        color:$jaune;
+        
+        &::after{
+            background-color: $jaune;
+        }
     }
+
+
+   
 
     .text_apropos {
         display: flex;
@@ -553,7 +566,7 @@ box-shadow: 10px 10px 22px -6px rgba(0,0,0,0.75);
             color: $jaune;
 
             align-self: center;
-            text-align: center;
+            text-align: left;
         }
 
         h3 {
@@ -576,23 +589,6 @@ box-shadow: 10px 10px 22px -6px rgba(0,0,0,0.75);
 
     @media (min-width: 1024px) {
 
-        overflow: hidden;
-
-        .mon_slider {
-            width: 50%;
-            display: flex;
-            overflow: hidden;
-
-            img {
-                display: block;
-                object-fit: cover;
-                object-position: right;
-                width: 100%;
-                min-height: 691.09px;
-                animation: slider 20s infinite;
-
-            }
-        }
 
         .text_apropos {
             justify-content: space-around;
@@ -612,23 +608,7 @@ box-shadow: 10px 10px 22px -6px rgba(0,0,0,0.75);
     }
 }
 
-@keyframes slider {
-    0% {
-        transform: translateX(0);
-    }
 
-    25% {
-        transform: translateX(-100%);
-    }
-
-    50% {
-        transform: translateX(-200%);
-    }
-
-    75% {
-        transform: translateX(-100%);
-    }
-}
 
 
 //////////////////  BATEAUX //////////////////
