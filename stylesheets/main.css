@@ -1425,7 +1425,8 @@ h2:after {
   font-size: 0.8em;
   width: 100%;
   margin: 0 auto;
-  padding: 30px 6vw;
+  padding: 5vw;
+  padding-top: 0;
   color: #fff1cc;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -1438,7 +1439,6 @@ h2:after {
   font-family: "Cinzel", serif;
   color: #fff1cc;
   font-weight: normal;
-  padding: 30px 6vw;
 }
 
 .apropos_home .text_apropos span {
@@ -1453,14 +1453,10 @@ h2:after {
   .apropos_home .text_apropos {
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    width: 50%;
   }
   .apropos_home .text_apropos p {
     font-size: 0.7em;
     text-align: left;
-  }
-  .apropos_home .text_apropos h3 {
-    padding: 2vw 6vw;
   }
 }
 
