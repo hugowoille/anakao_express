@@ -72,11 +72,14 @@
     }
 }
 
-
+#nostrong {
+    font-weight: unset;
+}
 
 .acces_container {
     display: flex;
     flex-direction: column;
+
 
     .acces_items {
         padding: 5vw;
@@ -102,11 +105,20 @@
             font-family: $font-titre-montserrat;
             color: $bleu;
             font-size: 0.8em;
+            margin-top: 50px;
+
+            strong {
+                &:last-child {
+                    font-weight: unset;
+                }
+            }
+
         }
 
         figure {
             overflow: hidden;
             margin-bottom: 25px;
+
             img {
                 display: block;
                 width: 100%;
@@ -126,6 +138,7 @@
             p {
                 color: $jaune;
                 margin-bottom: 15px;
+
             }
 
             .separate_acces {
@@ -173,8 +186,9 @@
                     width: 30%;
                 }
             }
-            figure{
-                img{
+
+            figure {
+                img {
                     transform: scale(150%);
                     object-fit: unset;
                     object-position: 5vw 0;
@@ -187,97 +201,125 @@
 
 
 @media (min-width: 1024px) {
-    .acces_container{
+    .acces_container {
         flex-direction: row;
         flex-wrap: wrap;
-        .acces_items{
-            padding:7vw;
-            width:50%;
-            p{
+
+        .acces_items {
+            
+            width: 50%;
+
+            p {
                 font-size: 0.9em;
             }
-           
-            &:nth-child(1){
+
+            &:nth-child(1) {
                 border-right: 2px solid $bleu;
                 border-bottom: 4px solid $bleu;
+                padding: 4vw;
             }
-            &:nth-child(2){
+
+            &:nth-child(2) {
                 border-radius: unset;
                 background-color: unset;
                 border-left: 2px solid $bleu;
                 border-bottom: 4px solid $bleu;
-                p{
-                    color:$bleu;
+                padding: 4vw;
+
+                p {
+                    color: $bleu;
                 }
-                h2{
-                    color:$bleu;
+
+                h2 {
+                    color: $bleu;
                 }
-                .separate_acces{
+
+                .separate_acces {
                     background-color: $bleu;
                 }
-                .buttons{
-                   
+
+                .buttons {
+
                     position: unset;
                     transform: unset;
                     border-radius: unset;
-                    border:1px solid $bleu;
-                    height:40px;
+                    border: 1px solid $bleu;
+                    height: 40px;
                     margin-top: 40px;
-                    width:150px;
-                    
-                    .rsv_button{
+                    width: 150px;
+
+                    .rsv_button {
                         line-height: 40px;
                         position: relative;
                         z-index: 10;
                         transition: all 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
                         overflow: hidden;
-                        &::after{
-                            content:"";
+
+                        &::after {
+                            content: "";
                             position: absolute;
-                            left:0;
-                            top:0;
-                            height:100%;
-                            width:100%;
+                            left: 0;
+                            top: 0;
+                            height: 100%;
+                            width: 100%;
                             background-color: $bleu;
                             transform: translateX(-100%);
                             z-index: -1;
                             transition: all 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
                         }
-                        &:hover{
-                            color:$jaune;
-                            &:after{
+
+                        &:hover {
+                            color: $jaune;
+
+                            &:after {
                                 transform: translate(0);
-                                
+
                             }
                         }
                     }
                 }
             }
-            &:nth-child(3){
+
+            &:nth-child(3) {
                 flex-grow: 1;
                 display: flex;
-                flex-direction: column;
-                padding:5vw;
-                h2{
-                    text-align: center;
-                }
-                .separate_acces{
-                   align-self: center;
+                flex-direction: row;
+                padding:0;
 
-                }
-                p{
-                    text-align: center;
+                .anakao_location {
+                    width:50%;
+                    padding:4vw;
+                    border-right:2px solid $bleu;
+                    h2 {
 
+                    }
+                    .separate_acces {
+                        align-self: center;
+
+                    }
+
+                    p {
+                        text-align: left;
+                       
+
+
+                    }
                 }
-                figure{
-                    max-height: 500px;
-                    img{
+
+                figure {
+                    border-left:2px solid $bleu;
+                    width:50%;
+                    height:100%;
+                    img {
                         transform: scale(130%);
-                        object-position: unset;
+                        object-position: 25px 0;
+                        object-fit: cover;
+                        display:block;
+                        
                     }
                 }
             }
-           
+
         }
     }
 }

@@ -3154,6 +3154,10 @@ html {
   }
 }
 
+#nostrong {
+  font-weight: unset;
+}
+
 .acces_container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3189,6 +3193,11 @@ html {
   font-family: "Montserrat", sans-serif;
   color: #445061;
   font-size: 0.8em;
+  margin-top: 50px;
+}
+
+.acces_container .acces_items p strong:last-child {
+  font-weight: unset;
 }
 
 .acces_container .acces_items figure {
@@ -3278,7 +3287,6 @@ html {
         flex-wrap: wrap;
   }
   .acces_container .acces_items {
-    padding: 7vw;
     width: 50%;
   }
   .acces_container .acces_items p {
@@ -3287,12 +3295,14 @@ html {
   .acces_container .acces_items:nth-child(1) {
     border-right: 2px solid #445061;
     border-bottom: 4px solid #445061;
+    padding: 4vw;
   }
   .acces_container .acces_items:nth-child(2) {
     border-radius: unset;
     background-color: unset;
     border-left: 2px solid #445061;
     border-bottom: 4px solid #445061;
+    padding: 4vw;
   }
   .acces_container .acces_items:nth-child(2) p {
     color: #445061;
@@ -3349,31 +3359,38 @@ html {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 5vw;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 0;
   }
-  .acces_container .acces_items:nth-child(3) h2 {
-    text-align: center;
+  .acces_container .acces_items:nth-child(3) .anakao_location {
+    width: 50%;
+    padding: 4vw;
+    border-right: 2px solid #445061;
   }
-  .acces_container .acces_items:nth-child(3) .separate_acces {
+  .acces_container .acces_items:nth-child(3) .anakao_location .separate_acces {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
   }
-  .acces_container .acces_items:nth-child(3) p {
-    text-align: center;
+  .acces_container .acces_items:nth-child(3) .anakao_location p {
+    text-align: left;
   }
   .acces_container .acces_items:nth-child(3) figure {
-    max-height: 500px;
+    border-left: 2px solid #445061;
+    width: 50%;
+    height: 100%;
   }
   .acces_container .acces_items:nth-child(3) figure img {
     -webkit-transform: scale(130%);
             transform: scale(130%);
-    -o-object-position: unset;
-       object-position: unset;
+    -o-object-position: 25px 0;
+       object-position: 25px 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+    display: block;
   }
 }
 
