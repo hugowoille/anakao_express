@@ -3290,7 +3290,7 @@ html {
     width: 50%;
   }
   .acces_container .acces_items p {
-    font-size: 0.9em;
+    font-size: 0.8em;
   }
   .acces_container .acces_items:nth-child(1) {
     border-right: 2px solid #445061;
