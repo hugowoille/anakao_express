@@ -25,15 +25,15 @@
 h2 {
 
 
-    padding: 30px 0;
+    padding: 5vw 0;
     font-family: $font-abril;
-    font-size: 2em;
+    font-size: 1.5em;
     color: $bleu;
     margin: 0 5vw;
     font-weight: 10;
 
-    
-    @media (min-width:1024px){
+
+    @media (min-width:1024px) {
         font-size: 2.5em;
         font-weight: 10;
     }
@@ -127,8 +127,9 @@ h2 {
     flex-direction: column;
     align-items: center;
     background-color: $bleu;
-    padding:5vw 0;
-    border-radius: 20px;
+    padding: 5vw 0;
+    
+
     section {
         display: flex;
         flex-wrap: wrap;
@@ -137,17 +138,18 @@ h2 {
         margin: 20px 0;
         background-color: $jaune;
         border-radius: 20px;
-        -webkit-box-shadow: 10px 10px 22px -6px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 10px 22px -6px rgba(0,0,0,0.75);
-box-shadow: 10px 10px 22px -6px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 10px 10px 22px -6px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 10px 10px 22px -6px rgba(0, 0, 0, 0.75);
+        box-shadow: 10px 10px 22px -6px rgba(0, 0, 0, 0.75);
 
         .sidebar-section_home {
             span {
                 font-size: 0.8em;
 
             }
-            .buttons{
-                a{
+
+            .buttons {
+                a {
                     border-radius: 10px;
                 }
             }
@@ -188,7 +190,7 @@ box-shadow: 10px 10px 22px -6px rgba(0,0,0,0.75);
             width: 100%;
             text-align: center;
             margin-top: 10px;
-            padding:2vw;
+            padding: 2vw;
 
         }
 
@@ -196,9 +198,9 @@ box-shadow: 10px 10px 22px -6px rgba(0,0,0,0.75);
             display: block;
             object-fit: cover;
             width: 100%;
-            
+
             border-radius: 20px 20px 0 0;
-            
+
         }
     }
 }
@@ -210,14 +212,15 @@ box-shadow: 10px 10px 22px -6px rgba(0,0,0,0.75);
 @media (min-width: 600px) {
     .trajets_home {
         background-color: $jaune;
-        padding:0;
+        padding: 0;
+
         section {
             flex-direction: row;
             width: 100vw;
             max-width: 100%;
             box-shadow: none;
             border: none;
-           
+
             a {
                 width: 70%;
                 order: 4;
@@ -423,7 +426,7 @@ box-shadow: 10px 10px 22px -6px rgba(0,0,0,0.75);
 .excursion_1 {
     display: flex;
     flex-direction: column;
-    
+
     align-items: center;
 
     img {
@@ -431,7 +434,7 @@ box-shadow: 10px 10px 22px -6px rgba(0,0,0,0.75);
         width: 90%;
         max-width: 100%;
         object-fit: cover;
-        
+
         object-position: bottom;
     }
 
@@ -441,7 +444,7 @@ box-shadow: 10px 10px 22px -6px rgba(0,0,0,0.75);
         font-size: 0.7em;
         width: 90%;
         margin: 0 auto;
-        padding:6vw 3vw;
+        padding: 6vw 3vw;
         color: $bleu;
 
 
@@ -451,7 +454,7 @@ box-shadow: 10px 10px 22px -6px rgba(0,0,0,0.75);
         flex-direction: row;
         margin: 0;
         align-items: center;
-        
+
         justify-content: space-around;
 
         a {
@@ -506,7 +509,8 @@ box-shadow: 10px 10px 22px -6px rgba(0,0,0,0.75);
             padding: 0 25vw;
 
         }
-        p{
+
+        p {
             font-size: 0.8em;
             padding: 3vw;
         }
@@ -525,21 +529,106 @@ box-shadow: 10px 10px 22px -6px rgba(0,0,0,0.75);
 
 //////////////////  BATEAUX //////////////////
 
+.bg_boat_apropos{
+    background: rgba(68,80,97,1);
+background: -moz-linear-gradient(left, rgba(68,80,97,1) 0%, rgba(68,80,97,1) 48%, rgba(255,241,204,1) 49%, rgba(255,241,204,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(68,80,97,1)), color-stop(48%, rgba(68,80,97,1)), color-stop(49%, rgba(255,241,204,1)), color-stop(100%, rgba(255,241,204,1)));
+background: -webkit-linear-gradient(left, rgba(68,80,97,1) 0%, rgba(68,80,97,1) 48%, rgba(255,241,204,1) 49%, rgba(255,241,204,1) 100%);
+background: -o-linear-gradient(left, rgba(68,80,97,1) 0%, rgba(68,80,97,1) 48%, rgba(255,241,204,1) 49%, rgba(255,241,204,1) 100%);
+background: -ms-linear-gradient(left, rgba(68,80,97,1) 0%, rgba(68,80,97,1) 48%, rgba(255,241,204,1) 49%, rgba(255,241,204,1) 100%);
+background: linear-gradient(to right, rgba(68,80,97,1) 0%, rgba(68,80,97,1) 48%, rgba(255,241,204,1) 49%, rgba(255,241,204,1) 100%);
+}
+.boat_container_index {
+    
+    .boat_items {
+        display: flex;
+        width: 100%;
+        background-color: $jaune;
 
-.boat_container_index{
-    background-color: $bleu;
-    .boat_items{
-        display:flex;
-        width:100%;
-        background-color:$jaune;
-        
-        figure{
+        &:nth-child(1) {
+            flex-direction: column;
             
-            img{
-                display:block;
-                width:100%;
-                height:100%;
+        }
+        &:nth-child(2){
+            border-radius: 0 0 0 50px;
+            position: relative;
+            a{
+                position: absolute;
+                bottom:0;
+                right:10%;
+                transform: translateY(50%);
+                color:$bleu;
+                height:70px;
+                background-color: $jaune;
+                line-height: 64px;
+                border: 3px solid $bleu;
+                border-radius: 30px;
+                padding:0 4vw;
+                font-family: $font-titre-montserrat;
+                font-size: 0.8em;
+
             }
+        }
+
+        .separate_boat_index {
+            height: 5px;
+            background-color: $bleu;
+            width: 70%;
+            border-radius: 999px;
+            margin-left: 5vw;
+        }
+
+        p {
+            color: $bleu;
+            font-family: $font-titre-montserrat;
+           padding: 30px 5vw 70px 5vw;
+           font-size: 0.8em;
+
+            
+            
+
+        }
+
+        &:nth-child(3) {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            flex-wrap: wrap;
+            padding:50px;
+            gap:3vw;
+            justify-content: center;
+            
+            background-color: $bleu;
+            border-radius: 0 50px 50px 0;
+
+            figure {
+                width: 45%;
+                color:$jaune;
+                font-family: $font-titre-montserrat;
+                text-align: center;
+                font-size: 0.8em;
+                
+
+                img {
+                    display: block;
+                    width: 100%;
+                    
+                    
+                }
+            }
+
+        }
+        &:nth-child(4){
+            display:none;
+            figure{
+                width:100%;
+                img{
+                    width:100%;
+                    height:100%;
+                    display: block;
+                }
+            }
+
         }
 
     }
@@ -547,15 +636,105 @@ box-shadow: 10px 10px 22px -6px rgba(0,0,0,0.75);
 
 
 
+//////////////////  BATEAUX 600px //////////////////
+
+
+@media (min-width: 600px) {
+    .bg_boat_apropos{
+        background : none;
+        .boat_container_index{
+            .boat_items{
+                &:nth-child(3){
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    border-radius: unset;
+                    padding: 7vw 5vw;
+                    figure{
+                        
+                        img{
+
+                        }
+                    }
+                }
+                a{
+                    border-radius: unset;
+                }
+                &:nth-child(4){
+                    display: block;
+                    margin-top: 5vw;
+                    a{
+                        
+                        
+                        figure{
+                            
+                            width:90vw;
+                            margin: 0 auto;
+                            
+                            img{
+                                display: block;
+                                max-height: 450px;
+                                object-fit: cover;
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}
+@media (min-width: 1024px) {
+    .bg_boat_apropos{
+        .boat_container_index{
+            flex-direction: row;
+            flex-wrap: wrap;
+            .boat_items{
+                flex-wrap: wrap;
+                flex-direction: row;
+                &:nth-child(1){
+                    
+                }
+                &:nth-child(2){
+                    width:30%;
+                    a{
+                        display: none;
+                    }
+                }
+                &:nth-child(3){
+                    width:30%;
+                    max-width: 30%;
+                    margin:0!important;
+                    margin-right: 0!important;
+                    flex-direction: column;
+
+                }
+            }
+        }
+    }
+}
+
 
 
 ////////////////// A PROPOS //////////////////
 
 
+.apropos_index{
+    border-radius: 50px 0 0 0;
+    background-color: $jaune;
+    h2{
 
-
-
-
-
-
-
+    }
+    .separate_apropos{
+        height: 5px;
+            background-color: $bleu;
+            width: 70%;
+            border-radius: 999px;
+            margin-left: 5vw;
+    }
+    p{
+        color:$bleu;
+        font-family: $font-titre-montserrat;
+        padding:5vw;
+        font-size: 0.8em;
+    }
+}
