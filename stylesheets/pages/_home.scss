@@ -36,6 +36,7 @@ h2 {
     @media (min-width:1024px) {
         font-size: 2.5em;
         font-weight: 10;
+        padding: 2vw 0;
     }
 }
 
@@ -128,7 +129,7 @@ h2 {
     align-items: center;
     background-color: $bleu;
     padding: 5vw 0;
-    
+
 
     section {
         display: flex;
@@ -529,17 +530,18 @@ h2 {
 
 //////////////////  BATEAUX //////////////////
 
-.bg_boat_apropos{
-    background: rgba(68,80,97,1);
-background: -moz-linear-gradient(left, rgba(68,80,97,1) 0%, rgba(68,80,97,1) 48%, rgba(255,241,204,1) 49%, rgba(255,241,204,1) 100%);
-background: -webkit-gradient(left top, right top, color-stop(0%, rgba(68,80,97,1)), color-stop(48%, rgba(68,80,97,1)), color-stop(49%, rgba(255,241,204,1)), color-stop(100%, rgba(255,241,204,1)));
-background: -webkit-linear-gradient(left, rgba(68,80,97,1) 0%, rgba(68,80,97,1) 48%, rgba(255,241,204,1) 49%, rgba(255,241,204,1) 100%);
-background: -o-linear-gradient(left, rgba(68,80,97,1) 0%, rgba(68,80,97,1) 48%, rgba(255,241,204,1) 49%, rgba(255,241,204,1) 100%);
-background: -ms-linear-gradient(left, rgba(68,80,97,1) 0%, rgba(68,80,97,1) 48%, rgba(255,241,204,1) 49%, rgba(255,241,204,1) 100%);
-background: linear-gradient(to right, rgba(68,80,97,1) 0%, rgba(68,80,97,1) 48%, rgba(255,241,204,1) 49%, rgba(255,241,204,1) 100%);
+.bg_boat_apropos {
+    background: rgba(68, 80, 97, 1);
+    background: -moz-linear-gradient(left, rgba(68, 80, 97, 1) 0%, rgba(68, 80, 97, 1) 48%, rgba(255, 241, 204, 1) 49%, rgba(255, 241, 204, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(68, 80, 97, 1)), color-stop(48%, rgba(68, 80, 97, 1)), color-stop(49%, rgba(255, 241, 204, 1)), color-stop(100%, rgba(255, 241, 204, 1)));
+    background: -webkit-linear-gradient(left, rgba(68, 80, 97, 1) 0%, rgba(68, 80, 97, 1) 48%, rgba(255, 241, 204, 1) 49%, rgba(255, 241, 204, 1) 100%);
+    background: -o-linear-gradient(left, rgba(68, 80, 97, 1) 0%, rgba(68, 80, 97, 1) 48%, rgba(255, 241, 204, 1) 49%, rgba(255, 241, 204, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(68, 80, 97, 1) 0%, rgba(68, 80, 97, 1) 48%, rgba(255, 241, 204, 1) 49%, rgba(255, 241, 204, 1) 100%);
+    background: linear-gradient(to right, rgba(68, 80, 97, 1) 0%, rgba(68, 80, 97, 1) 48%, rgba(255, 241, 204, 1) 49%, rgba(255, 241, 204, 1) 100%);
 }
+
 .boat_container_index {
-    
+
     .boat_items {
         display: flex;
         width: 100%;
@@ -547,23 +549,25 @@ background: linear-gradient(to right, rgba(68,80,97,1) 0%, rgba(68,80,97,1) 48%,
 
         &:nth-child(1) {
             flex-direction: column;
-            
+
         }
-        &:nth-child(2){
+
+        &:nth-child(2) {
             border-radius: 0 0 0 50px;
             position: relative;
-            a{
+
+            a {
                 position: absolute;
-                bottom:0;
-                right:10%;
+                bottom: 0;
+                right: 10%;
                 transform: translateY(50%);
-                color:$bleu;
-                height:70px;
+                color: $bleu;
+                height: 70px;
                 background-color: $jaune;
                 line-height: 64px;
                 border: 3px solid $bleu;
                 border-radius: 30px;
-                padding:0 4vw;
+                padding: 0 4vw;
                 font-family: $font-titre-montserrat;
                 font-size: 0.8em;
 
@@ -581,11 +585,11 @@ background: linear-gradient(to right, rgba(68,80,97,1) 0%, rgba(68,80,97,1) 48%,
         p {
             color: $bleu;
             font-family: $font-titre-montserrat;
-           padding: 30px 5vw 70px 5vw;
-           font-size: 0.8em;
+            padding: 30px 5vw 70px 5vw;
+            font-size: 0.8em;
 
-            
-            
+
+
 
         }
 
@@ -594,37 +598,40 @@ background: linear-gradient(to right, rgba(68,80,97,1) 0%, rgba(68,80,97,1) 48%,
             flex-direction: row;
             width: 100%;
             flex-wrap: wrap;
-            padding:50px;
-            gap:3vw;
+            padding: 50px;
+            gap: 3vw;
             justify-content: center;
-            
+
             background-color: $bleu;
             border-radius: 0 50px 50px 0;
 
             figure {
                 width: 45%;
-                color:$jaune;
+                color: $jaune;
                 font-family: $font-titre-montserrat;
                 text-align: center;
                 font-size: 0.8em;
-                
+
 
                 img {
                     display: block;
                     width: 100%;
-                    
-                    
+
+
                 }
             }
 
         }
-        &:nth-child(4){
-            display:none;
-            figure{
-                width:100%;
-                img{
-                    width:100%;
-                    height:100%;
+
+        &:nth-child(4) {
+            display: none;
+
+            figure {
+                width: 100%;
+
+                img {
+                    width: 100%;
+                    height: 100%;
                     display: block;
                 }
             }
@@ -640,73 +647,150 @@ background: linear-gradient(to right, rgba(68,80,97,1) 0%, rgba(68,80,97,1) 48%,
 
 
 @media (min-width: 600px) {
-    .bg_boat_apropos{
-        background : none;
-        .boat_container_index{
-            .boat_items{
-                &:nth-child(3){
+    .bg_boat_apropos {
+        background: none;
+
+        .boat_container_index {
+            .boat_items {
+                &:nth-child(3) {
                     flex-direction: row;
                     flex-wrap: nowrap;
                     border-radius: unset;
                     padding: 7vw 5vw;
-                    figure{
-                        
-                        img{
 
-                        }
+                    figure {
+
+                        img {}
                     }
                 }
-                a{
+
+                a {
                     border-radius: unset;
                 }
-                &:nth-child(4){
+
+                &:nth-child(4) {
                     display: block;
                     margin-top: 5vw;
-                    a{
-                        
-                        
-                        figure{
-                            
-                            width:90vw;
+
+                    a {
+
+
+                        figure {
+
+                            width: 90vw;
                             margin: 0 auto;
-                            
-                            img{
+
+                            img {
                                 display: block;
                                 max-height: 450px;
                                 object-fit: cover;
                             }
                         }
                     }
-                }
-            }
-            
-        }
-    }
-}
-@media (min-width: 1024px) {
-    .bg_boat_apropos{
-        .boat_container_index{
-            flex-direction: row;
-            flex-wrap: wrap;
-            .boat_items{
-                flex-wrap: wrap;
-                flex-direction: row;
-                &:nth-child(1){
-                    
-                }
-                &:nth-child(2){
-                    width:30%;
-                    a{
+
+                    .boatton {
                         display: none;
                     }
                 }
-                &:nth-child(3){
-                    width:30%;
-                    max-width: 30%;
-                    margin:0!important;
-                    margin-right: 0!important;
-                    flex-direction: column;
+            }
+        }
+    }
+}
 
+@media (min-width: 1024px) {
+    .bg_boat_apropos {
+
+        .boat_container_index {
+            flex-direction: row;
+            display: flex;
+            flex-wrap: wrap;
+
+            .boat_items {
+                width: 100%;
+                align-items: center;
+
+                &:nth-child(1) {
+                    width: 100%;
+                    align-self: flex-start;
+                    justify-self: flex-start;
+
+                    .separate_boat_index {
+                        width: 100%;
+                        margin: 0;
+                        border-radius: unset;
+                    }
+                }
+
+                &:nth-child(2) {
+                    width: 50%;
+
+                    border-right: 3px solid $bleu;
+
+                    p {
+                        padding: 0;
+                        width: 60%;
+                        margin: 0 auto;
+                        font-size: 1em;
+
+                    }
+
+                    a {
+                        display: none;
+                    }
+
+                }
+
+                &:nth-child(3) {
+                    width: 50%;
+                    padding: 0;
+                    flex-wrap: wrap;
+                    padding: 5vw;
+                    background-color: unset;
+                    border-left: 3px solid $bleu;
+
+                    figure {
+                        width: 30%;
+                        img{
+                            width:70%;
+                        }
+
+                    }
+                }
+
+                &:nth-child(4) {
+                    width: 100%;
+                    margin: 0;
+                    border-top: 6px solid $bleu;
+                    border-bottom: 6px solid $bleu;
+                    position: relative;
+                    a {
+                        
+                        figure {
+                            width: 100%;
+
+                            img {
+                                width: 100%;
+                                object-fit: cover;
+                                max-height: 600px;
+                            }
+                        }
+                    }
+                    .boatton{
+                        display: block;
+                        position: absolute;
+                        top:50%;
+                        left:50%;
+                        transform: translate(-50%, -50%);
+                        color: $bleu;
+                height: 70px;
+                background-color: $jaune;
+                line-height: 64px;
+                border: 3px solid $bleu;
+                
+                padding: 0 4vw;
+                font-family: $font-titre-montserrat;
+                font-size: 1em;
+                    }
                 }
             }
         }
@@ -718,23 +802,24 @@ background: linear-gradient(to right, rgba(68,80,97,1) 0%, rgba(68,80,97,1) 48%,
 ////////////////// A PROPOS //////////////////
 
 
-.apropos_index{
+.apropos_index {
     border-radius: 50px 0 0 0;
     background-color: $jaune;
-    h2{
 
-    }
-    .separate_apropos{
+    h2 {}
+
+    .separate_apropos {
         height: 5px;
-            background-color: $bleu;
-            width: 70%;
-            border-radius: 999px;
-            margin-left: 5vw;
+        background-color: $bleu;
+        width: 70%;
+        border-radius: 999px;
+        margin-left: 5vw;
     }
-    p{
-        color:$bleu;
+
+    p {
+        color: $bleu;
         font-family: $font-titre-montserrat;
-        padding:5vw;
+        padding: 5vw;
         font-size: 0.8em;
     }
 }

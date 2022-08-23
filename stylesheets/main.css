@@ -872,6 +872,7 @@ h2 {
   h2 {
     font-size: 2.5em;
     font-weight: 10;
+    padding: 2vw 0;
   }
 }
 
@@ -1512,6 +1513,9 @@ h2 {
     -o-object-fit: cover;
        object-fit: cover;
   }
+  .bg_boat_apropos .boat_container_index .boat_items:nth-child(4) .boatton {
+    display: none;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -1520,32 +1524,88 @@ h2 {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
   .bg_boat_apropos .boat_container_index .boat_items {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .bg_boat_apropos .boat_container_index .boat_items:nth-child(1) {
+    width: 100%;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    justify-self: flex-start;
+  }
+  .bg_boat_apropos .boat_container_index .boat_items:nth-child(1) .separate_boat_index {
+    width: 100%;
+    margin: 0;
+    border-radius: unset;
   }
   .bg_boat_apropos .boat_container_index .boat_items:nth-child(2) {
-    width: 30%;
+    width: 50%;
+    border-right: 3px solid #445061;
+  }
+  .bg_boat_apropos .boat_container_index .boat_items:nth-child(2) p {
+    padding: 0;
+    width: 60%;
+    margin: 0 auto;
+    font-size: 1em;
   }
   .bg_boat_apropos .boat_container_index .boat_items:nth-child(2) a {
     display: none;
   }
   .bg_boat_apropos .boat_container_index .boat_items:nth-child(3) {
+    width: 50%;
+    padding: 0;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 5vw;
+    background-color: unset;
+    border-left: 3px solid #445061;
+  }
+  .bg_boat_apropos .boat_container_index .boat_items:nth-child(3) figure {
     width: 30%;
-    max-width: 30%;
-    margin: 0 !important;
-    margin-right: 0 !important;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  }
+  .bg_boat_apropos .boat_container_index .boat_items:nth-child(3) figure img {
+    width: 70%;
+  }
+  .bg_boat_apropos .boat_container_index .boat_items:nth-child(4) {
+    width: 100%;
+    margin: 0;
+    border-top: 6px solid #445061;
+    border-bottom: 6px solid #445061;
+    position: relative;
+  }
+  .bg_boat_apropos .boat_container_index .boat_items:nth-child(4) a figure {
+    width: 100%;
+  }
+  .bg_boat_apropos .boat_container_index .boat_items:nth-child(4) a figure img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    max-height: 600px;
+  }
+  .bg_boat_apropos .boat_container_index .boat_items:nth-child(4) .boatton {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    color: #445061;
+    height: 70px;
+    background-color: #fff1cc;
+    line-height: 64px;
+    border: 3px solid #445061;
+    padding: 0 4vw;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1em;
   }
 }
 
