@@ -118,7 +118,7 @@
         figure {
             overflow: hidden;
             margin-bottom: 25px;
-
+            margin-top: 5vw;
             img {
                 display: block;
                 width: 100%;
@@ -188,6 +188,7 @@
             }
 
             figure {
+                
                 img {
                     transform: scale(150%);
                     object-fit: unset;
@@ -310,6 +311,7 @@
                     border-left:2px solid $bleu;
                     width:50%;
                     height:100%;
+                    margin-top: 0;
                     img {
                         transform: scale(130%);
                         object-position: 25px 0;

@@ -1538,9 +1538,10 @@ h2 {
   }
   .bg_boat_apropos .boat_container_index .boat_items:nth-child(1) {
     width: 100%;
+  }
+  .bg_boat_apropos .boat_container_index .boat_items:nth-child(1) h2 {
     -ms-flex-item-align: start;
         align-self: flex-start;
-    justify-self: flex-start;
   }
   .bg_boat_apropos .boat_container_index .boat_items:nth-child(1) .separate_boat_index {
     width: 100%;
@@ -1555,7 +1556,7 @@ h2 {
     padding: 0;
     width: 60%;
     margin: 0 auto;
-    font-size: 1em;
+    font-size: 0.9em;
   }
   .bg_boat_apropos .boat_container_index .boat_items:nth-child(2) a {
     display: none;
@@ -1571,9 +1572,11 @@ h2 {
   }
   .bg_boat_apropos .boat_container_index .boat_items:nth-child(3) figure {
     width: 30%;
+    color: #445061;
   }
   .bg_boat_apropos .boat_container_index .boat_items:nth-child(3) figure img {
     width: 70%;
+    margin: 0 auto;
   }
   .bg_boat_apropos .boat_container_index .boat_items:nth-child(4) {
     width: 100%;
@@ -1627,6 +1630,17 @@ h2 {
   font-family: "Montserrat", sans-serif;
   padding: 5vw;
   font-size: 0.8em;
+}
+
+.apropos_index p strong {
+  font-weight: normal;
+}
+
+@media (min-width: 1024px) {
+  .apropos_index {
+    width: 70%;
+    margin: 0 auto;
+  }
 }
 
 html {
@@ -3278,6 +3292,7 @@ html {
 .acces_container .acces_items figure {
   overflow: hidden;
   margin-bottom: 25px;
+  margin-top: 5vw;
 }
 
 .acces_container .acces_items figure img {
@@ -3457,6 +3472,7 @@ html {
     border-left: 2px solid #445061;
     width: 50%;
     height: 100%;
+    margin-top: 0;
   }
   .acces_container .acces_items:nth-child(3) figure img {
     -webkit-transform: scale(130%);

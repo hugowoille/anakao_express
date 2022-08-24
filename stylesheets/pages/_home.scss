@@ -711,8 +711,10 @@ h2 {
 
                 &:nth-child(1) {
                     width: 100%;
-                    align-self: flex-start;
-                    justify-self: flex-start;
+                    
+                    h2{
+                        align-self: flex-start;
+                    }
 
                     .separate_boat_index {
                         width: 100%;
@@ -730,7 +732,7 @@ h2 {
                         padding: 0;
                         width: 60%;
                         margin: 0 auto;
-                        font-size: 1em;
+                        font-size: 0.9em;
 
                     }
 
@@ -750,8 +752,10 @@ h2 {
 
                     figure {
                         width: 30%;
+                        color:$bleu;
                         img{
                             width:70%;
+                            margin:0 auto;
                         }
 
                     }
@@ -821,5 +825,14 @@ h2 {
         font-family: $font-titre-montserrat;
         padding: 5vw;
         font-size: 0.8em;
+        strong{
+            font-weight: normal;
+        }
+    }
+}
+@media (min-width: 1024px) {
+    .apropos_index{
+        width:70%;
+        margin:0 auto;
     }
 }
