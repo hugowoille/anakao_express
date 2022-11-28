@@ -657,11 +657,6 @@ h2 {
                     flex-wrap: nowrap;
                     border-radius: unset;
                     padding: 7vw 5vw;
-
-                    figure {
-
-                        img {}
-                    }
                 }
 
                 a {
@@ -776,13 +771,14 @@ h2 {
                                 width: 100%;
                                 object-fit: cover;
                                 max-height: 600px;
+                                margin: 0 auto;
                             }
                         }
                     }
                     .boatton{
                         display: block;
                         position: absolute;
-                        top:50%;
+                        top:70%;
                         left:50%;
                         transform: translate(-50%, -50%);
                         color: $bleu;
@@ -794,6 +790,9 @@ h2 {
                 padding: 0 4vw;
                 font-family: $font-titre-montserrat;
                 font-size: 1em;
+                &:hover{
+                    text-decoration: none;
+                }
                     }
                 }
             }
@@ -810,7 +809,6 @@ h2 {
     border-radius: 50px 0 0 0;
     background-color: $jaune;
 
-    h2 {}
 
     .separate_apropos {
         height: 5px;

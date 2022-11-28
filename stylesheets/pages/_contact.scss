@@ -106,14 +106,22 @@
                 &:nth-child(3){
                     
                     input{
-                    text-align: right;
+                        &::placeholder{
+                            position: absolute;
+                            right : 0;
+                           }
                     
                     }
                 }
                 &:nth-child(4){
-                    button, input, optgroup, select, textarea{
-                    text-align: right;
-                    }
+                   input{
+                    &::placeholder{
+                        position: absolute;
+                        right : 0;
+                       }
+                   }
+            
+                   
                 }
 
                 &:focus-within {

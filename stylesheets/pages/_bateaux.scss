@@ -1,6 +1,9 @@
 html{
     scroll-behavior: smooth;
 }
+a{
+    text-decoration: none;
+}
 
 .bateaux_content {
     
@@ -156,9 +159,6 @@ html{
                 padding:0;
                 li {
                     margin-bottom: 3vw;
-                    p{
-                        
-                    }
                 }
             }
         }

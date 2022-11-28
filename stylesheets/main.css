@@ -14,10 +14,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 html {
-  line-height: 1.15;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
 }
 
 /* Sections
@@ -52,13 +50,9 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
-  /* 1 */
-  height: 0;
-  /* 1 */
-  overflow: visible;
-  /* 2 */
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
 }
 
 /**
@@ -66,10 +60,8 @@ hr {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 pre {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /* Text-level semantics
@@ -86,13 +78,10 @@ a {
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
 abbr[title] {
-  border-bottom: none;
-  /* 1 */
-  text-decoration: underline;
-  /* 2 */
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
   -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
-  /* 2 */
+          text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -110,10 +99,8 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /**
@@ -163,14 +150,10 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit;
-  /* 1 */
-  font-size: 100%;
-  /* 1 */
-  line-height: 1.15;
-  /* 1 */
-  margin: 0;
-  /* 2 */
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
 }
 
 /**
@@ -178,8 +161,7 @@ textarea {
  * 1. Show the overflow in Edge.
  */
 button,
-input {
-  /* 1 */
+input { /* 1 */
   overflow: visible;
 }
 
@@ -188,8 +170,7 @@ input {
  * 1. Remove the inheritance of text transform in Firefox.
  */
 button,
-select {
-  /* 1 */
+select { /* 1 */
   text-transform: none;
 }
 
@@ -197,9 +178,9 @@ select {
  * Correct the inability to style clickable types in iOS and Safari.
  */
 button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
+[type=button],
+[type=reset],
+[type=submit] {
   -webkit-appearance: button;
 }
 
@@ -207,9 +188,9 @@ button,
  * Remove the inner border and padding in Firefox.
  */
 button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
@@ -218,9 +199,9 @@ button::-moz-focus-inner,
  * Restore the focus styles unset by the previous rule.
  */
 button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -238,19 +219,12 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  /* 1 */
-  color: inherit;
-  /* 2 */
-  display: table;
-  /* 1 */
-  max-width: 100%;
-  /* 1 */
-  padding: 0;
-  /* 3 */
-  white-space: normal;
-  /* 1 */
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
 }
 
 /**
@@ -271,20 +245,17 @@ textarea {
  * 1. Add the correct box sizing in IE 10.
  * 2. Remove the padding in IE 10.
  */
-[type="checkbox"],
-[type="radio"] {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
 }
 
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -292,17 +263,15 @@ textarea {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-[type="search"] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
 }
 
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
-[type="search"]::-webkit-search-decoration {
+[type=search]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -311,10 +280,8 @@ textarea {
  * 2. Change font properties to `inherit` in Safari.
  */
 ::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
 }
 
 /* Interactive
@@ -353,8 +320,7 @@ template {
  * Set up a decent box model on the root element
  */
 html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /**
@@ -366,20 +332,18 @@ html {
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 /**
  * Basic styles for links
  */
 a {
-  color: #e50050;
+  color: rgb(229, 0, 80);
   text-decoration: none;
 }
-
 a:hover, a:active, a:focus {
-  color: #222222;
+  color: rgb(34, 34, 34);
   text-decoration: underline;
 }
 
@@ -402,7 +366,7 @@ ul, li, p, h1, h2, h3, img, figure, article, section, main, header, nav, footer,
  * Basic typography style for copy text
  */
 body {
-  color: #222222;
+  color: rgb(34, 34, 34);
   font: normal 125%/1.4 "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
@@ -414,7 +378,7 @@ body {
  */
 .clearfix::after {
   clear: both;
-  content: '';
+  content: "";
   display: table;
 }
 
@@ -425,18 +389,12 @@ body {
  * 3. Leave some space on the edges, especially valuable on small screens
  */
 .container {
-  max-width: 1180px;
-  /* 1 */
-  margin-left: auto;
-  /* 2 */
-  margin-right: auto;
-  /* 2 */
-  padding-left: 20px;
-  /* 3 */
-  padding-right: 20px;
-  /* 3 */
-  width: 100%;
-  /* 1 */
+  max-width: 1180px; /* 1 */
+  margin-left: auto; /* 2 */
+  margin-right: auto; /* 2 */
+  padding-left: 20px; /* 3 */
+  padding-right: 20px; /* 3 */
+  width: 100%; /* 1 */
 }
 
 /**
@@ -446,8 +404,7 @@ body {
  */
 .hide-text {
   overflow: hidden;
-  padding: 0;
-  /* 1 */
+  padding: 0; /* 1 */
   text-indent: 101%;
   white-space: nowrap;
 }
@@ -473,112 +430,76 @@ footer {
   width: 100%;
   bottom: 0;
   z-index: -10;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  flex-direction: row;
+  justify-content: space-evenly;
   background-color: #445061;
-  color: #fff1cc;
+  color: rgb(255, 241, 204);
   font-size: 1rem;
   font-family: "Montserrat", sans-serif;
   padding: 70px;
 }
-
 footer .separate_footer {
   width: 1px;
-  background-color: #fff1cc;
+  background-color: rgb(255, 241, 204);
   height: auto;
 }
-
 @media (max-width: 1024px) {
   footer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
     position: unset;
   }
   footer .separate_footer {
     width: 100%;
-    background-color: #fff1cc;
+    background-color: rgb(255, 241, 204);
     height: 1px;
     margin: 50px 0 50px 0;
   }
 }
-
 footer .adress, footer .summary, footer .useful_links {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-preferred-size: 200px;
-      flex-basis: 200px;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 200px;
 }
-
 @media (max-width: 1024px) {
   footer .adress, footer .summary, footer .useful_links {
     padding: 0;
-    -ms-flex-preferred-size: 300px;
-        flex-basis: 300px;
-    -ms-flex-item-align: stretch;
-        -ms-grid-row-align: stretch;
-        align-self: stretch;
+    flex-basis: 300px;
+    align-self: stretch;
   }
   footer .adress:last-child, footer .summary:last-child, footer .useful_links:last-child {
     border: none;
   }
 }
-
 footer .adress li, footer .summary li, footer .useful_links li {
   margin-bottom: 15px;
 }
-
 footer .adress li:last-child, footer .summary li:last-child, footer .useful_links li:last-child {
   margin-bottom: 0;
 }
-
 footer .adress a, footer .summary a, footer .useful_links a {
   display: block;
 }
-
 footer .adress a:hover, footer .summary a:hover, footer .useful_links a:hover {
-  color: #fff1cc;
+  color: rgb(255, 241, 204);
 }
-
 footer .adress li:first-child {
   font-weight: 900;
   font-size: 1.5rem;
 }
-
 footer .adress li:nth-child(5) {
   width: 90px;
 }
-
 footer .summary li:first-child {
   font-weight: 900;
   font-size: 1.5rem;
 }
-
 footer .summary li a {
   position: relative;
 }
-
 footer .summary li a::before {
   background-image: url(/img/arrow.svg);
   content: "";
@@ -589,27 +510,21 @@ footer .summary li a::before {
   position: absolute;
   right: 0;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
-
 footer .summary li a:hover {
   color: rgba(255, 241, 204, 0.5);
 }
-
 footer .useful_links li:first-child {
   font-weight: 900;
   font-size: 1.5rem;
 }
-
 footer .useful_links li:last-child {
   width: 30px;
 }
-
 footer .useful_links li:nth-child(2) {
   position: relative;
 }
-
 footer .useful_links li:nth-child(2)::before {
   background-image: url(/img/arrow.svg);
   content: "";
@@ -620,14 +535,11 @@ footer .useful_links li:nth-child(2)::before {
   position: absolute;
   right: 0;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
-
 footer .useful_links li:nth-child(3) {
   position: relative;
 }
-
 footer .useful_links li:nth-child(3)::before {
   background-image: url(/img/arrow.svg);
   content: "";
@@ -638,15 +550,13 @@ footer .useful_links li:nth-child(3)::before {
   position: absolute;
   right: 0;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 *,
 ::before,
 ::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -654,48 +564,32 @@ footer .useful_links li:nth-child(3)::before {
 nav {
   position: fixed;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   top: 0;
-  background: #fff1cc;
+  background: rgb(255, 241, 204);
   height: 80px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   z-index: 20;
 }
-
 nav .nav-icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-decoration: none;
   margin-right: 20px;
   margin-left: 20px;
 }
-
 nav .nav-icon img {
   width: 130px;
 }
-
 nav .main-navlinks .hamburger {
   display: none;
 }
-
 nav .main-navlinks .navlinks-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 5vw;
-          column-gap: 5vw;
+  -moz-column-gap: 5vw;
+       column-gap: 5vw;
 }
-
 nav .main-navlinks .navlinks-container a {
   font-family: "Cinzel", serif;
   font-weight: 500;
@@ -705,7 +599,6 @@ nav .main-navlinks .navlinks-container a {
   display: inline-block;
   position: relative;
 }
-
 nav .main-navlinks .navlinks-container a:after {
   content: "";
   display: block;
@@ -713,28 +606,19 @@ nav .main-navlinks .navlinks-container a:after {
   bottom: -3px;
   width: 100%;
   height: 1px;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transform-origin: left;
-          transform-origin: left;
+  transform: scale(0);
+  transform-origin: left;
   background: #445061;
-  -webkit-transition: -webkit-transform 0.3s ease-out;
-  transition: -webkit-transform 0.3s ease-out;
   transition: transform 0.3s ease-out;
-  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
 }
-
 nav .main-navlinks .navlinks-container a:hover:after {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 @media (max-width: 1024px) {
   nav {
     position: fixed;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
   }
   nav .nav-icon {
     width: 90px;
@@ -743,24 +627,16 @@ nav .main-navlinks .navlinks-container a:hover:after {
     font-size: 22px;
   }
   nav .main-navlinks .navlinks-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
     position: absolute;
     top: 100%;
-    background-color: #fff1cc;
+    background-color: rgb(255, 241, 204);
     left: 0;
     height: auto;
     width: 100%;
-    -webkit-transform: translate(-100%);
-            transform: translate(-100%);
+    transform: translate(-100%);
     padding: 10px 50px 15px 20px;
   }
   nav .main-navlinks .navlinks-container a {
@@ -773,13 +649,9 @@ nav .main-navlinks .navlinks-container a:hover:after {
     height: 20px;
     cursor: pointer;
     border: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     background: transparent;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     position: relative;
     margin-right: 25px;
   }
@@ -790,48 +662,36 @@ nav .main-navlinks .navlinks-container a:hover:after {
     background: #445061;
     position: absolute;
     pointer-events: none;
-    -webkit-transition: opacity 0.3s 0.15s ease-out;
     transition: opacity 0.3s 0.15s ease-out;
   }
   nav .main-navlinks .hamburger span:nth-child(1), nav .main-navlinks .hamburger span:nth-child(3) {
-    -webkit-transition: -webkit-transform 0.3s ease-out;
-    transition: -webkit-transform 0.3s ease-out;
     transition: transform 0.3s ease-out;
-    transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
   }
   nav .main-navlinks .hamburger span:nth-child(1) {
-    -webkit-transform: translateY(7px);
-            transform: translateY(7px);
+    transform: translateY(7px);
   }
   nav .main-navlinks .hamburger span:nth-child(3) {
-    -webkit-transform: translateY(-7px);
-            transform: translateY(-7px);
+    transform: translateY(-7px);
   }
   nav .main-navlinks .open {
-    -webkit-transform: translate(0%);
-            transform: translate(0%);
+    transform: translate(0%);
   }
   nav .main-navlinks .hamburger.open span:nth-child(1) {
-    -webkit-transform: translate(0) rotate(135deg);
-            transform: translate(0) rotate(135deg);
+    transform: translate(0) rotate(135deg);
   }
   nav .main-navlinks .hamburger.open span:nth-child(2) {
     opacity: 0;
-    -webkit-transition: opacity 0.3s 0.15s ease-out;
     transition: opacity 0.3s 0.15s ease-out;
   }
   nav .main-navlinks .hamburger.open span:nth-child(3) {
-    -webkit-transform: translate(0) rotate(-135deg);
-            transform: translate(0) rotate(-135deg);
+    transform: translate(0) rotate(-135deg);
   }
 }
-
 @media (max-width: 500px) {
   nav .nav-icon {
     width: 80px;
   }
 }
-
 .rsv_button, .esp_button {
   font-family: "Montserrat", sans-serif;
   text-align: center;
@@ -841,15 +701,14 @@ nav .main-navlinks .navlinks-container a:hover:after {
   text-decoration: none !important;
   padding: 0 2vw;
   font-weight: 600;
-  color: #fff1cc;
+  color: rgb(255, 241, 204);
   background-color: #445061;
 }
 
 .bg {
-  background-color: #fff1cc;
+  background-color: rgb(255, 241, 204);
   margin-bottom: 390.05px;
   margin-top: 0;
-  -webkit-box-shadow: 10px 10px 23px -7px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 10px 23px -7px rgba(0, 0, 0, 0.75);
 }
 
@@ -858,7 +717,6 @@ nav .main-navlinks .navlinks-container a:hover:after {
     margin-bottom: 0;
   }
 }
-
 h2 {
   padding: 5vw 0;
   font-family: "Abril Fatface", cursive;
@@ -867,7 +725,6 @@ h2 {
   margin: 0 5vw;
   font-weight: 10;
 }
-
 @media (min-width: 1024px) {
   h2 {
     font-size: 2.5em;
@@ -882,57 +739,38 @@ h2 {
   max-width: 100%;
   z-index: 0;
 }
-
 .splashscreen_home .sidebar_home {
   background-color: #445061;
   width: 400px;
   height: 100%;
   position: absolute;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (1fr)[10];
-      grid-template-rows: repeat(10, 1fr);
-  -ms-grid-columns: (1fr)[6];
-      grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  grid-template-columns: repeat(6, 1fr);
 }
-
 .splashscreen_home .sidebar_home h1 {
-  color: #fff1cc;
+  color: rgb(255, 241, 204);
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
   font-size: 40px;
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 1;
-  grid-row: 3 / 4;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 6;
-  grid-column: 2 / 8;
+  grid-row: 3/4;
+  grid-column: 2/8;
   left: 9vw;
 }
-
 .splashscreen_home .sidebar_home p {
-  color: #fff1cc;
+  color: rgb(255, 241, 204);
   font-family: "Montserrat", sans-serif;
-  -ms-grid-row: 5;
-  -ms-grid-row-span: 1;
-  grid-row: 5 / 6;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 4;
-  grid-column: 2 / 6;
+  grid-row: 5/6;
+  grid-column: 2/6;
   font-size: 1rem;
   font-weight: 300;
 }
-
 .splashscreen_home .sidebar_home a {
-  color: #fff1cc;
-  border: 1px solid #fff1cc;
+  color: rgb(255, 241, 204);
+  border: 1px solid rgb(255, 241, 204);
   font-family: "Montserrat", sans-serif;
-  -ms-grid-row: 8;
-  -ms-grid-row-span: 1;
-  grid-row: 8 / 9;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
-  grid-column: 2 / 4;
+  grid-row: 8/9;
+  grid-column: 2/4;
   text-align: center;
   line-height: 40px;
   height: 40px;
@@ -940,7 +778,6 @@ h2 {
   min-width: 150px;
   text-decoration: none;
 }
-
 .splashscreen_home figure img {
   width: 100vw;
   max-width: 100%;
@@ -955,56 +792,38 @@ h2 {
   .body_home .splashscreen_home .sidebar_home {
     width: 100vw;
     max-width: 100%;
-    background-color: #222222a9;
+    background-color: rgba(34, 34, 34, 0.662745098);
   }
 }
-
 .trajets_home {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   background-color: #445061;
   padding: 5vw 0;
 }
-
 .trajets_home section {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   width: 90vw;
   max-width: 100%;
   margin: 20px 0;
-  background-color: #fff1cc;
+  background-color: rgb(255, 241, 204);
   border-radius: 20px;
-  -webkit-box-shadow: 10px 10px 22px -6px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 10px 22px -6px rgba(0, 0, 0, 0.75);
 }
-
 .trajets_home section .sidebar-section_home span {
   font-size: 0.8em;
 }
-
 .trajets_home section .sidebar-section_home .buttons a {
   border-radius: 10px;
 }
-
 .trajets_home section:nth-child(1) {
   margin-top: 0;
 }
-
 .trajets_home section:last-child {
   margin-bottom: 0;
 }
-
 .trajets_home section h3 {
   text-align: center;
   display: block;
@@ -1014,7 +833,6 @@ h2 {
   padding: 10px 0;
   color: #445061;
 }
-
 .trajets_home section .underline_trajets {
   display: block;
   height: 1px;
@@ -1022,7 +840,6 @@ h2 {
   margin: 0 auto;
   width: 20%;
 }
-
 .trajets_home section p {
   font-family: "Montserrat", sans-serif;
   font-size: 0.7em;
@@ -1032,7 +849,6 @@ h2 {
   margin-top: 10px;
   padding: 2vw;
 }
-
 .trajets_home section img {
   display: block;
   -o-object-fit: cover;
@@ -1043,57 +859,40 @@ h2 {
 
 @media (min-width: 600px) {
   .trajets_home {
-    background-color: #fff1cc;
+    background-color: rgb(255, 241, 204);
     padding: 0;
   }
   .trajets_home section {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     width: 100vw;
     max-width: 100%;
-    -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
     border: none;
   }
   .trajets_home section a {
     width: 70%;
-    -webkit-box-ordinal-group: 5;
-        -ms-flex-order: 4;
-            order: 4;
+    order: 4;
   }
   .trajets_home section a img {
     width: 100%;
-    -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
     height: auto;
     min-height: 540.05px;
     border-radius: 0;
   }
   .trajets_home section .sidebar-section_home {
     width: 30%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     background-color: #445061;
   }
   .trajets_home section .sidebar-section_home h3 {
     display: inline;
     margin: 0;
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-    color: #fff1cc;
+    order: 1;
+    color: rgb(255, 241, 204);
     padding: 10px 0;
   }
   .trajets_home section .sidebar-section_home .underline_trajets {
@@ -1102,30 +901,19 @@ h2 {
   .trajets_home section .sidebar-section_home p {
     font-size: 0.7em;
     width: 100%;
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-    color: #fff1cc;
+    order: 2;
+    color: rgb(255, 241, 204);
     text-align: left;
     padding: 2vw;
   }
   .trajets_home section .sidebar-section_home .buttons {
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    order: 3;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
   .trajets_home section .sidebar-section_home .buttons a {
-    background-color: #fff1cc;
+    background-color: rgb(255, 241, 204);
     color: #445061;
     border-radius: 0;
   }
@@ -1133,26 +921,17 @@ h2 {
     margin-bottom: 10px;
   }
 }
-
 @media (min-width: 1024px) {
   .trajets_home {
     overflow: hidden;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    flex-direction: row;
+    justify-content: space-evenly;
     padding: 0 40px;
   }
   .trajets_home section {
     max-width: 100%;
     width: 500px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     margin: 0;
     width: 30%;
     max-height: none;
@@ -1161,30 +940,22 @@ h2 {
   }
   .trajets_home section a {
     overflow: hidden;
-    -webkit-box-ordinal-group: unset;
-        -ms-flex-order: unset;
-            order: unset;
+    order: unset;
     width: unset;
   }
   .trajets_home section a img {
     height: 300px;
     width: 100%;
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+    order: 1;
     max-height: 700px;
     min-height: 350px;
-    -webkit-transition: .7s;
-    transition: .7s;
+    transition: 0.7s;
   }
   .trajets_home section a img:hover {
-    -webkit-transform: scale(110%);
-            transform: scale(110%);
+    transform: scale(110%);
   }
   .trajets_home section .sidebar-section_home {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+    order: 2;
     width: 100%;
     padding: 0 20px;
     background-color: transparent;
@@ -1195,33 +966,27 @@ h2 {
     min-height: 186px;
   }
   .trajets_home section .sidebar-section_home h3,
-  .trajets_home section .sidebar-section_home p {
+.trajets_home section .sidebar-section_home p {
     color: #445061;
     text-align: left;
     padding: 15px 0;
     width: 100%;
   }
   .trajets_home section .sidebar-section_home .buttons {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    flex-direction: row;
+    justify-content: flex-start;
     margin: 0;
   }
   .trajets_home section .sidebar-section_home .buttons a {
     padding: 0;
     width: 150px;
-    background-color: #fff1cc;
+    background-color: rgb(255, 241, 204);
     color: #445061;
     border-radius: 0;
     border: 1px solid #445061;
     position: relative;
     overflow: hidden;
     z-index: 10;
-    -webkit-transition: color 0.45s;
     transition: color 0.45s;
     justify-self: flex-end !important;
   }
@@ -1233,44 +998,31 @@ h2 {
     background-color: #445061;
     width: 100%;
     height: 100%;
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-    -webkit-transition: all 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    transform: translateX(-100%);
     transition: all 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
     z-index: -10;
   }
   .trajets_home section .sidebar-section_home .buttons a:hover {
-    color: #fff1cc;
+    color: rgb(255, 241, 204);
   }
   .trajets_home section .sidebar-section_home .buttons a:hover:after {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
   .trajets_home section .sidebar-section_home .buttons .esp_button {
     margin-bottom: 0;
     margin-right: 1vw;
   }
 }
-
 @media (min-width: 1024px) and (min-width: 1600px) {
   .trajets_home section .sidebar-section_home p {
     min-height: 150px;
   }
 }
-
 .excursion_1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
-
 .excursion_1 img {
   height: 450px;
   width: 90%;
@@ -1280,7 +1032,6 @@ h2 {
   -o-object-position: bottom;
      object-position: bottom;
 }
-
 .excursion_1 p {
   font-family: "Montserrat", sans-serif;
   text-align: center;
@@ -1290,34 +1041,24 @@ h2 {
   padding: 6vw 3vw;
   color: #445061;
 }
-
 .excursion_1 .buttons {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   margin: 0;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  align-items: center;
+  justify-content: space-around;
 }
-
 .excursion_1 .buttons a {
   padding: 0;
   width: 150px;
-  background-color: #fff1cc;
+  background-color: rgb(255, 241, 204);
   color: #445061;
   border-radius: 0;
   border: 1px solid #445061;
   position: relative;
   overflow: hidden;
   z-index: 10;
-  -webkit-transition: all 0.45s;
   transition: all 0.45s;
 }
-
 .excursion_1 .buttons a:after {
   content: "";
   position: absolute;
@@ -1326,34 +1067,24 @@ h2 {
   background-color: #445061;
   width: 100%;
   height: 100%;
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
-  -webkit-transition: all 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transform: translateX(-100%);
   transition: all 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   z-index: -10;
 }
-
 .excursion_1 .buttons a:hover {
-  color: #fff1cc;
+  color: rgb(255, 241, 204);
 }
-
 .excursion_1 .buttons a:hover:after {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+  transform: translateX(0);
 }
-
 @media (min-width: 1024px) {
   .excursion_1 img {
     width: 75%;
   }
   .excursion_1 .buttons {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     margin: 0;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
     padding: 0 25vw;
   }
   .excursion_1 p {
@@ -1363,55 +1094,39 @@ h2 {
 }
 
 .buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  justify-content: space-around;
+  flex-direction: row;
   width: 100%;
   margin: 20px 0;
 }
 
 .bg_boat_apropos {
-  background: #445061;
-  background: -webkit-gradient(left top, right top, color-stop(0%, #445061), color-stop(48%, #445061), color-stop(49%, #fff1cc), color-stop(100%, #fff1cc));
-  background: -webkit-gradient(linear, left top, right top, from(#445061), color-stop(48%, #445061), color-stop(49%, #fff1cc), to(#fff1cc));
-  background: linear-gradient(to right, #445061 0%, #445061 48%, #fff1cc 49%, #fff1cc 100%);
+  background: rgb(68, 80, 97);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgb(68, 80, 97)), color-stop(48%, rgb(68, 80, 97)), color-stop(49%, rgb(255, 241, 204)), color-stop(100%, rgb(255, 241, 204)));
+  background: linear-gradient(to right, rgb(68, 80, 97) 0%, rgb(68, 80, 97) 48%, rgb(255, 241, 204) 49%, rgb(255, 241, 204) 100%);
 }
 
 .boat_container_index .boat_items {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  background-color: #fff1cc;
+  background-color: rgb(255, 241, 204);
 }
-
 .boat_container_index .boat_items:nth-child(1) {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 .boat_container_index .boat_items:nth-child(2) {
   border-radius: 0 0 0 50px;
   position: relative;
 }
-
 .boat_container_index .boat_items:nth-child(2) a {
   position: absolute;
   bottom: 0;
   right: 10%;
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
+  transform: translateY(50%);
   color: #445061;
   height: 70px;
-  background-color: #fff1cc;
+  background-color: rgb(255, 241, 204);
   line-height: 64px;
   border: 3px solid #445061;
   border-radius: 30px;
@@ -1419,7 +1134,6 @@ h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 0.8em;
 }
-
 .boat_container_index .boat_items .separate_boat_index {
   height: 5px;
   background-color: #445061;
@@ -1427,55 +1141,40 @@ h2 {
   border-radius: 999px;
   margin-left: 5vw;
 }
-
 .boat_container_index .boat_items p {
   color: #445061;
   font-family: "Montserrat", sans-serif;
   padding: 30px 5vw 70px 5vw;
   font-size: 0.8em;
 }
-
 .boat_container_index .boat_items:nth-child(3) {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   width: 100%;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   padding: 50px;
   gap: 3vw;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   background-color: #445061;
   border-radius: 0 50px 50px 0;
 }
-
 .boat_container_index .boat_items:nth-child(3) figure {
   width: 45%;
-  color: #fff1cc;
+  color: rgb(255, 241, 204);
   font-family: "Montserrat", sans-serif;
   text-align: center;
   font-size: 0.8em;
 }
-
 .boat_container_index .boat_items:nth-child(3) figure img {
   display: block;
   width: 100%;
 }
-
 .boat_container_index .boat_items:nth-child(4) {
   display: none;
 }
-
 .boat_container_index .boat_items:nth-child(4) figure {
   width: 100%;
 }
-
 .boat_container_index .boat_items:nth-child(4) figure img {
   width: 100%;
   height: 100%;
@@ -1487,12 +1186,8 @@ h2 {
     background: none;
   }
   .bg_boat_apropos .boat_container_index .boat_items:nth-child(3) {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    flex-direction: row;
+    flex-wrap: nowrap;
     border-radius: unset;
     padding: 7vw 5vw;
   }
@@ -1517,31 +1212,21 @@ h2 {
     display: none;
   }
 }
-
 @media (min-width: 1024px) {
   .bg_boat_apropos .boat_container_index {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    flex-direction: row;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   .bg_boat_apropos .boat_container_index .boat_items {
     width: 100%;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
   }
   .bg_boat_apropos .boat_container_index .boat_items:nth-child(1) {
     width: 100%;
   }
   .bg_boat_apropos .boat_container_index .boat_items:nth-child(1) h2 {
-    -ms-flex-item-align: start;
-        align-self: flex-start;
+    align-self: flex-start;
   }
   .bg_boat_apropos .boat_container_index .boat_items:nth-child(1) .separate_boat_index {
     width: 100%;
@@ -1564,8 +1249,7 @@ h2 {
   .bg_boat_apropos .boat_container_index .boat_items:nth-child(3) {
     width: 50%;
     padding: 0;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     padding: 5vw;
     background-color: unset;
     border-left: 3px solid #445061;
@@ -1593,30 +1277,31 @@ h2 {
     -o-object-fit: cover;
        object-fit: cover;
     max-height: 600px;
+    margin: 0 auto;
   }
   .bg_boat_apropos .boat_container_index .boat_items:nth-child(4) .boatton {
     display: block;
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     color: #445061;
     height: 70px;
-    background-color: #fff1cc;
+    background-color: rgb(255, 241, 204);
     line-height: 64px;
     border: 3px solid #445061;
     padding: 0 4vw;
     font-family: "Montserrat", sans-serif;
     font-size: 1em;
   }
+  .bg_boat_apropos .boat_container_index .boat_items:nth-child(4) .boatton:hover {
+    text-decoration: none;
+  }
 }
-
 .apropos_index {
   border-radius: 50px 0 0 0;
-  background-color: #fff1cc;
+  background-color: rgb(255, 241, 204);
 }
-
 .apropos_index .separate_apropos {
   height: 5px;
   background-color: #445061;
@@ -1624,14 +1309,12 @@ h2 {
   border-radius: 999px;
   margin-left: 5vw;
 }
-
 .apropos_index p {
   color: #445061;
   font-family: "Montserrat", sans-serif;
   padding: 5vw;
   font-size: 0.8em;
 }
-
 .apropos_index p strong {
   font-weight: normal;
 }
@@ -1642,20 +1325,21 @@ h2 {
     margin: 0 auto;
   }
 }
-
 html {
   scroll-behavior: smooth;
 }
 
-.bateaux_content {
-  overflow: hidden;
-  background-color: #fff1cc;
-  margin-bottom: 390.05px;
-  margin-top: 0;
-  -webkit-box-shadow: 10px 10px 23px -7px rgba(0, 0, 0, 0.75);
-  box-shadow: 10px 10px 23px -7px rgba(0, 0, 0, 0.75);
+a {
+  text-decoration: none;
 }
 
+.bateaux_content {
+  overflow: hidden;
+  background-color: rgb(255, 241, 204);
+  margin-bottom: 390.05px;
+  margin-top: 0;
+  box-shadow: 10px 10px 23px -7px rgba(0, 0, 0, 0.75);
+}
 @media (max-width: 1024px) {
   .bateaux_content {
     margin-bottom: 0 !important;
@@ -1668,57 +1352,38 @@ html {
   max-width: 100%;
   z-index: 0;
 }
-
 .splashscreen_bateaux .sidebar_boat {
   background-color: #445061;
   width: 400px;
   height: 100%;
   position: absolute;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (1fr)[10];
-      grid-template-rows: repeat(10, 1fr);
-  -ms-grid-columns: (1fr)[6];
-      grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  grid-template-columns: repeat(6, 1fr);
 }
-
 .splashscreen_bateaux .sidebar_boat h1 {
-  color: #fff1cc;
+  color: rgb(255, 241, 204);
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
   font-size: 40px;
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 1;
-  grid-row: 3 / 4;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 6;
-  grid-column: 2 / 8;
+  grid-row: 3/4;
+  grid-column: 2/8;
   left: 9vw;
 }
-
 .splashscreen_bateaux .sidebar_boat p {
-  color: #fff1cc;
+  color: rgb(255, 241, 204);
   font-family: "Montserrat", sans-serif;
-  -ms-grid-row: 5;
-  -ms-grid-row-span: 1;
-  grid-row: 5 / 6;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 4;
-  grid-column: 2 / 6;
+  grid-row: 5/6;
+  grid-column: 2/6;
   font-size: 1rem;
   font-weight: 300;
 }
-
 .splashscreen_bateaux .sidebar_boat a {
-  color: #fff1cc;
-  border: 1px solid #fff1cc;
+  color: rgb(255, 241, 204);
+  border: 1px solid rgb(255, 241, 204);
   font-family: "Montserrat", sans-serif;
-  -ms-grid-row: 8;
-  -ms-grid-row-span: 1;
-  grid-row: 8 / 9;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
-  grid-column: 2 / 4;
+  grid-row: 8/9;
+  grid-column: 2/4;
   text-align: center;
   line-height: 40px;
   height: 40px;
@@ -1726,7 +1391,6 @@ html {
   min-width: 150px;
   text-decoration: none;
 }
-
 .splashscreen_bateaux figure img {
   width: 100vw;
   max-width: 100%;
@@ -1740,14 +1404,12 @@ html {
 .bateaux_content {
   margin-bottom: 390.05px;
 }
-
 .bateaux_content .boat_stuff .separate_boat {
   height: 2px;
   width: 60%;
   background-color: #445061;
   margin: 0 auto;
 }
-
 .bateaux_content .boat_stuff h3 {
   text-align: center;
   font-family: "Cinzel", serif;
@@ -1757,11 +1419,9 @@ html {
   text-decoration: none;
   color: #445061;
 }
-
 .bateaux_content .boat_stuff h3::after {
   display: none;
 }
-
 .bateaux_content .boat_stuff p {
   font-family: "Montserrat", sans-serif;
   font-size: 0.8em;
@@ -1773,31 +1433,22 @@ html {
 .picto_boat {
   width: 100vw;
   max-width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: space-around;
+  flex-wrap: wrap;
   margin-bottom: 100px;
   padding: 0 100px;
 }
-
 .picto_boat li {
-  -ms-flex-preferred-size: 150px;
-      flex-basis: 150px;
+  flex-basis: 150px;
 }
-
 .picto_boat li figure {
   padding-bottom: 20px;
 }
-
 .picto_boat li figure img {
   width: 100%;
   height: 150px;
 }
-
 .picto_boat li p {
   text-align: center;
   font-family: "Playfair Display", serif;
@@ -1818,78 +1469,56 @@ html {
     margin-bottom: 3vw;
   }
 }
-
 .boat_list {
   width: 100%;
   max-width: 100%;
 }
-
 .boat_list .sambobe {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   max-height: 600px;
   margin-bottom: 100px;
   max-width: 100%;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
 }
-
 .boat_list .sambobe .sidebar_left {
   width: 35%;
   background-color: #445061;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   padding: 2vw;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
-
 .boat_list .sambobe .sidebar_left h3 {
   font-family: "Cinzel", serif;
   font-weight: 300;
-  color: #fff1cc;
+  color: rgb(255, 241, 204);
   font-size: 2rem;
-  border-bottom: 2px solid #fff1cc;
+  border-bottom: 2px solid rgb(255, 241, 204);
   margin: 2vw 0;
 }
-
 .boat_list .sambobe .sidebar_left p {
   font-family: "Montserrat", sans-serif;
-  color: #fff1cc;
+  color: rgb(255, 241, 204);
   font-size: 0.8em;
   margin-bottom: 2vw;
 }
-
 .boat_list .sambobe .sidebar_left a {
   width: 40px;
   height: 40px;
   font-size: 20px;
-  color: #fff1cc;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  border: 1px solid #fff1cc;
+  color: rgb(255, 241, 204);
+  align-self: center;
+  border: 1px solid rgb(255, 241, 204);
   border-radius: 100%;
 }
-
 .boat_list .sambobe .sidebar_left a span {
   text-align: center;
   display: block;
   line-height: 30px;
 }
-
 .boat_list .sambobe figure {
   width: 65%;
 }
-
 .boat_list .sambobe figure img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -1899,68 +1528,50 @@ html {
   display: block;
   min-height: 413.2px;
 }
-
 .boat_list .sambokely {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-bottom: 100px;
   max-width: 100%;
 }
-
 .boat_list .sambokely .sidebar_right {
   width: 35%;
   background-color: #445061;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   padding: 2vw;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
-
 .boat_list .sambokely .sidebar_right h3 {
   font-family: "Cinzel", serif;
   font-weight: 300;
-  color: #fff1cc;
+  color: rgb(255, 241, 204);
   font-size: 2rem;
-  border-bottom: 2px solid #fff1cc;
+  border-bottom: 2px solid rgb(255, 241, 204);
   margin: 2vw 0;
 }
-
 .boat_list .sambokely .sidebar_right p {
   font-family: "Montserrat", sans-serif;
-  color: #fff1cc;
+  color: rgb(255, 241, 204);
   font-size: 0.8em;
   margin-bottom: 2vw;
 }
-
 .boat_list .sambokely .sidebar_right a {
   width: 40px;
   height: 40px;
   font-size: 20px;
-  color: #fff1cc;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  border: 1px solid #fff1cc;
+  color: rgb(255, 241, 204);
+  align-self: center;
+  border: 1px solid rgb(255, 241, 204);
   border-radius: 100%;
 }
-
 .boat_list .sambokely .sidebar_right a span {
   text-align: center;
   display: block;
   line-height: 30px;
 }
-
 .boat_list .sambokely figure {
   width: 65%;
 }
-
 .boat_list .sambokely figure img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -1970,52 +1581,37 @@ html {
   display: block;
   min-height: 368.42px;
 }
-
 .boat_list .sambovezo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   max-height: 600px;
   margin-bottom: 100px;
   max-width: 100%;
 }
-
 .boat_list .sambovezo .sidebar_left2 {
   width: 35%;
   background-color: #445061;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   padding: 2vw;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  justify-content: space-evenly;
 }
-
 .boat_list .sambovezo .sidebar_left2 h3 {
   font-family: "Cinzel", serif;
   font-weight: 300;
-  color: #fff1cc;
+  color: rgb(255, 241, 204);
   font-size: 2rem;
-  border-bottom: 2px solid #fff1cc;
+  border-bottom: 2px solid rgb(255, 241, 204);
   margin: 2vw 0;
 }
-
 .boat_list .sambovezo .sidebar_left2 p {
   font-family: "Montserrat", sans-serif;
-  color: #fff1cc;
+  color: rgb(255, 241, 204);
   font-size: 0.8em;
   margin-bottom: 2vw;
 }
-
 .boat_list .sambovezo figure {
   width: 65%;
 }
-
 .boat_list .sambovezo figure img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -2030,18 +1626,13 @@ html {
   .body_bateaux .splashscreen_bateaux .sidebar_boat {
     width: 100vw;
     max-width: 100%;
-    background-color: #222222a9;
+    background-color: rgba(34, 34, 34, 0.662745098);
   }
   .boat_list .sambobe {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    flex-direction: column-reverse;
     margin: 0;
     margin-bottom: 25vw;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   .boat_list .sambobe .sidebar_left {
     width: 100vw;
@@ -2064,10 +1655,7 @@ html {
     min-height: unset;
   }
   .boat_list .sambokely {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     margin: 0;
     margin-bottom: 25vw;
   }
@@ -2092,10 +1680,7 @@ html {
     min-height: unset;
   }
   .boat_list .sambovezo {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    flex-direction: column-reverse;
     margin-bottom: 50px;
   }
   .boat_list .sambovezo .sidebar_left2 {
@@ -2119,64 +1704,44 @@ html {
     min-height: unset;
   }
 }
-
 .splashscreen_trajets {
   position: relative;
   width: 100vw;
   max-width: 100%;
   z-index: 0;
 }
-
 .splashscreen_trajets .sidebar_trajets {
   background-color: #445061;
   width: 400px;
   height: 100%;
   position: absolute;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (1fr)[10];
-      grid-template-rows: repeat(10, 1fr);
-  -ms-grid-columns: (1fr)[6];
-      grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  grid-template-columns: repeat(6, 1fr);
 }
-
 .splashscreen_trajets .sidebar_trajets h1 {
-  color: #fff1cc;
+  color: rgb(255, 241, 204);
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
   font-size: 40px;
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 1;
-  grid-row: 3 / 4;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 6;
-  grid-column: 2 / 8;
+  grid-row: 3/4;
+  grid-column: 2/8;
   left: 9vw;
 }
-
 .splashscreen_trajets .sidebar_trajets p {
-  color: #fff1cc;
+  color: rgb(255, 241, 204);
   font-family: "Montserrat", sans-serif;
-  -ms-grid-row: 5;
-  -ms-grid-row-span: 1;
-  grid-row: 5 / 6;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 4;
-  grid-column: 2 / 6;
+  grid-row: 5/6;
+  grid-column: 2/6;
   font-size: 1rem;
   font-weight: 300;
 }
-
 .splashscreen_trajets .sidebar_trajets a {
-  color: #fff1cc;
-  border: 1px solid #fff1cc;
+  color: rgb(255, 241, 204);
+  border: 1px solid rgb(255, 241, 204);
   font-family: "Montserrat", sans-serif;
-  -ms-grid-row: 8;
-  -ms-grid-row-span: 1;
-  grid-row: 8 / 9;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
-  grid-column: 2 / 4;
+  grid-row: 8/9;
+  grid-column: 2/4;
   text-align: center;
   line-height: 40px;
   height: 40px;
@@ -2184,7 +1749,6 @@ html {
   min-width: 150px;
   text-decoration: none;
 }
-
 .splashscreen_trajets figure img {
   width: 100vw;
   max-width: 100%;
@@ -2201,23 +1765,14 @@ html {
   .body_trajets .splashscreen_trajets .sidebar_trajets {
     width: 100vw;
     max-width: 100%;
-    background-color: #222222a9;
+    background-color: rgba(34, 34, 34, 0.662745098);
   }
 }
-
 .trajets_trajets {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
-
 .trajets_trajets .separate_trajets {
   height: 1px;
   width: 80%;
@@ -2225,23 +1780,16 @@ html {
   margin: 50px 0;
   display: none;
 }
-
 .trajets_trajets section {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   width: 100vw;
   margin: 20px 0;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
-          box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
-
 .trajets_trajets section:nth-child(1) {
   margin-top: 0;
 }
-
 .trajets_trajets section h3 {
   text-align: center;
   display: block;
@@ -2253,7 +1801,6 @@ html {
   font-size: 1em;
   margin-top: 2vw;
 }
-
 .trajets_trajets section .underline_trajets {
   display: block;
   height: 1px;
@@ -2261,7 +1808,6 @@ html {
   margin: 0 auto;
   width: 20%;
 }
-
 .trajets_trajets section p {
   font-family: "Montserrat", sans-serif;
   font-size: 0.7em;
@@ -2271,7 +1817,6 @@ html {
   margin: 15px 0;
   padding: 2vw;
 }
-
 .trajets_trajets section img {
   display: block;
   -o-object-fit: cover;
@@ -2279,7 +1824,6 @@ html {
   width: 100%;
   max-height: 450px;
 }
-
 .trajets_trajets section .rsv_button {
   display: block;
   margin: 0 auto;
@@ -2292,51 +1836,35 @@ html {
     display: block;
   }
   .trajets_trajets section {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     width: 100vw;
-    -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
   }
   .trajets_trajets section img {
     width: 60%;
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+    order: 2;
     max-height: none;
     -o-object-position: 20%;
        object-position: 20%;
   }
   .trajets_trajets section .sidebar_article_trajets {
     width: 40%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
     background-color: #445061;
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+    order: 1;
     padding: 0 2vw;
   }
   .trajets_trajets section .sidebar_article_trajets h3 {
     margin: 0;
-    color: #fff1cc;
+    color: rgb(255, 241, 204);
     width: 100%;
     text-align: left;
     font-family: "Cinzel", serif;
     font-weight: normal;
-    border-bottom: 1px solid #fff1cc;
+    border-bottom: 1px solid rgb(255, 241, 204);
     width: 90%;
     margin-top: 2vw;
   }
@@ -2346,23 +1874,19 @@ html {
   .trajets_trajets section .sidebar_article_trajets p {
     width: 100%;
     text-align: left;
-    color: #fff1cc;
+    color: rgb(255, 241, 204);
     padding: 20px 0;
     font-size: 0.6em;
   }
   .trajets_trajets section .sidebar_article_trajets .rsv_button {
-    background-color: #fff1cc;
+    background-color: rgb(255, 241, 204);
     color: #445061;
     margin: 0;
     margin-bottom: 30px;
   }
   .trajets_trajets section:nth-child(3) .sidebar_article_trajets {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    order: 2;
+    align-items: flex-end;
     padding-left: 0;
     padding: 0 2vw;
   }
@@ -2373,7 +1897,6 @@ html {
     text-align: right;
   }
 }
-
 @media (min-width: 1024px) {
   .trajets_trajets {
     overflow: hidden;
@@ -2386,12 +1909,8 @@ html {
   }
   .trajets_trajets section .sidebar_article_trajets {
     width: 60%;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: flex-start;
+    justify-content: center;
     padding-left: 3vw;
     max-height: 600px;
   }
@@ -2407,14 +1926,13 @@ html {
   .trajets_trajets section .sidebar_article_trajets .rsv_button {
     padding: 0;
     width: 150px;
-    background-color: #fff1cc;
+    background-color: rgb(255, 241, 204);
     color: #445061;
     border-radius: 0;
-    border: 1px solid #fff1cc;
+    border: 1px solid rgb(255, 241, 204);
     position: relative;
     overflow: hidden;
     z-index: 10;
-    -webkit-transition: color 0.45s;
     transition: color 0.45s;
     margin: 0;
     margin-bottom: 20px;
@@ -2427,38 +1945,31 @@ html {
     background-color: #445061;
     width: 100%;
     height: 100%;
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-    -webkit-transition: all 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    transform: translateX(-100%);
     transition: all 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
     z-index: -10;
   }
   .trajets_trajets section .sidebar_article_trajets .rsv_button:hover {
-    color: #fff1cc;
+    color: rgb(255, 241, 204);
   }
   .trajets_trajets section .sidebar_article_trajets .rsv_button:hover:after {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
   .trajets_trajets section img {
     height: 27vw;
     width: 40%;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    align-self: center;
     min-height: 400px;
     position: relative;
     left: -15%;
     display: block;
     -o-object-fit: cover;
        object-fit: cover;
-    -webkit-transition: all .5s;
-    transition: all .5s;
+    transition: all 0.5s;
   }
   .trajets_trajets section img:hover {
     height: 32vw;
-    -webkit-transform: scale(115%);
-            transform: scale(115%);
+    transform: scale(115%);
   }
   .trajets_trajets section:nth-child(3) {
     margin-right: 25%;
@@ -2470,14 +1981,11 @@ html {
        object-position: bottom;
   }
   .trajets_trajets section:nth-child(3) img:hover {
-    -webkit-transform: scale(115%);
-            transform: scale(115%);
+    transform: scale(115%);
     height: 32vw;
   }
   .trajets_trajets section:nth-child(3) .sidebar_article_trajets {
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    align-items: flex-end;
     padding-left: 0;
     padding-right: 3vw;
   }
@@ -2489,33 +1997,19 @@ html {
        object-position: top;
   }
 }
-
 .excursions_trajets {
-  display: -ms-grid;
   display: grid;
   max-width: 100%;
-  -ms-grid-columns: (50%)[auto-fit];
-      grid-template-columns: repeat(auto-fit, 50%);
+  grid-template-columns: repeat(auto-fit, 50%);
   margin-top: 50px;
 }
-
 .excursions_trajets section {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
   max-height: 600px;
 }
-
 .excursions_trajets section img {
   width: 100%;
   display: block;
@@ -2523,20 +2017,17 @@ html {
      object-fit: cover;
   max-height: 600px;
 }
-
 .excursions_trajets section h3 {
   font-family: "Cinzel", serif;
   color: #445061;
   font-weight: 400;
 }
-
 .excursions_trajets section .separate_exc {
   width: 70%;
   background: #445061;
   height: 2px;
   margin-bottom: 2vw;
 }
-
 .excursions_trajets section p {
   color: #445061;
   text-align: right;
@@ -2544,92 +2035,72 @@ html {
   font-size: 0.7em;
   margin-top: 2vw;
 }
-
 .excursions_trajets .nos_img img {
   min-height: 453.38px;
 }
-
 .excursions_trajets .nosi_txt {
   background: #445061;
   padding: 0 4vw;
   min-height: 453.38px;
 }
-
 .excursions_trajets .nosi_txt .rsv_button {
   margin-top: 2vw;
   background-color: #445061;
   color: #445061;
   padding: 0;
   width: 150px;
-  color: #fff1cc;
+  color: rgb(255, 241, 204);
   border-radius: 0;
-  border: 1px solid #fff1cc;
+  border: 1px solid rgb(255, 241, 204);
   position: relative;
   overflow: hidden;
   z-index: 10;
-  -webkit-transition: color 0.45s;
   transition: color 0.45s;
 }
-
 .excursions_trajets .nosi_txt .rsv_button:after {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #fff1cc;
+  background-color: rgb(255, 241, 204);
   width: 100%;
   height: 100%;
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
-  -webkit-transition: all 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transform: translateX(-100%);
   transition: all 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   z-index: -10;
 }
-
 .excursions_trajets .nosi_txt .rsv_button:hover {
   color: #445061;
 }
-
 .excursions_trajets .nosi_txt .rsv_button:hover:after {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+  transform: translateX(0);
 }
-
 .excursions_trajets .nosi_txt h3,
 .excursions_trajets .nosi_txt p {
-  color: #fff1cc;
+  color: rgb(255, 241, 204);
 }
-
 .excursions_trajets .nosi_txt .separate_exc {
-  background: #fff1cc;
+  background: rgb(255, 241, 204);
 }
-
 .excursions_trajets .dmd_txt {
-  background: #fff1cc;
+  background: rgb(255, 241, 204);
   padding: 0 4vw;
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  order: 2;
+  align-items: flex-start;
 }
-
 .excursions_trajets .dmd_txt .rsv_button {
   margin-top: 40px;
   padding: 0;
   width: 150px;
-  background-color: #fff1cc;
+  background-color: rgb(255, 241, 204);
   color: #445061;
   border-radius: 0;
   border: 1px solid #445061;
   position: relative;
   overflow: hidden;
   z-index: 10;
-  -webkit-transition: color 0.45s;
   transition: color 0.45s;
 }
-
 .excursions_trajets .dmd_txt .rsv_button:after {
   content: "";
   position: absolute;
@@ -2638,71 +2109,51 @@ html {
   background-color: #445061;
   width: 100%;
   height: 100%;
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
-  -webkit-transition: all 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transform: translateX(-100%);
   transition: all 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   z-index: -10;
 }
-
 .excursions_trajets .dmd_txt .rsv_button:hover {
-  color: #fff1cc;
+  color: rgb(255, 241, 204);
 }
-
 .excursions_trajets .dmd_txt .rsv_button:hover:after {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+  transform: translateX(0);
 }
-
 .excursions_trajets .dmd_txt .rsv_button:hover {
-  color: #fff1cc;
+  color: rgb(255, 241, 204);
 }
-
 .excursions_trajets .dmd_txt h3,
 .excursions_trajets .dmd_txt p {
   color: #445061;
   text-align: left;
 }
-
 .excursions_trajets .dmd_txt .separate_exc {
   background: #445061;
 }
-
 @media (max-width: 1024px) {
   .excursions_trajets {
-    -ms-grid-columns: (100%)[auto-fit];
-        grid-template-columns: repeat(auto-fit, 100%);
+    grid-template-columns: repeat(auto-fit, 100%);
   }
   .excursions_trajets .nos_img {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+    order: 1;
   }
   .excursions_trajets .nosi_txt {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+    order: 2;
     padding: 0 20px;
     padding-bottom: 20px;
     min-height: unset;
   }
   .excursions_trajets .nosi_txt .rsv_button {
-    background-color: #fff1cc;
+    background-color: rgb(255, 241, 204);
     color: #445061;
     margin: 0 auto;
   }
   .excursions_trajets .dmd_img {
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
+    order: 3;
   }
   .excursions_trajets .dmd_txt {
-    -webkit-box-ordinal-group: 5;
-        -ms-flex-order: 4;
-            order: 4;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    order: 4;
+    align-items: center;
     padding-top: 0;
     padding: 0 20px;
     padding-bottom: 20px;
@@ -2717,9 +2168,7 @@ html {
     margin: 0;
   }
   .excursions_trajets section {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
   }
   .excursions_trajets section p {
     text-align: center;
@@ -2733,13 +2182,11 @@ html {
 
 .gallery_content {
   overflow: hidden;
-  background-color: #fff1cc;
+  background-color: rgb(255, 241, 204);
   margin-bottom: 390.05px;
   margin-top: 0;
-  -webkit-box-shadow: 10px 10px 23px -7px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 10px 23px -7px rgba(0, 0, 0, 0.75);
 }
-
 @media (max-width: 1024px) {
   .gallery_content {
     margin-bottom: 0 !important;
@@ -2747,22 +2194,16 @@ html {
 }
 
 .gallery_container {
-  display: -ms-grid;
   display: grid;
   width: 100%;
-  -ms-grid-columns: (300px)[auto-fit];
-      grid-template-columns: repeat(auto-fit, 300px);
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  grid-template-columns: repeat(auto-fit, 300px);
+  justify-content: center;
   gap: 10px;
 }
-
 .gallery_container a {
   display: block;
   height: 400px;
 }
-
 .gallery_container a img {
   width: 100%;
   display: block;
@@ -2773,10 +2214,8 @@ html {
 
 @media (min-width: 1024px) {
   .gallery_container {
-    -ms-grid-columns: (30%)[auto-fit];
-        grid-template-columns: repeat(auto-fit, 30%);
-    -ms-grid-rows: ()[400px];
-        grid-template-rows: repeat(400px);
+    grid-template-columns: repeat(auto-fit, 30%);
+    grid-template-rows: repeat(400px);
     margin: 80px 0;
   }
   .gallery_container a {
@@ -2785,41 +2224,29 @@ html {
   .gallery_container a img {
     -o-object-fit: cover;
        object-fit: cover;
-    -webkit-transition: 1s;
     transition: 1s;
   }
   .gallery_container a img:hover {
-    -webkit-transform: scale(110%);
-            transform: scale(110%);
+    transform: scale(110%);
   }
   .gallery_container .gal_img1 {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
     grid-column: 1/3;
   }
   .gallery_container .gal_img4 {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 2;
     grid-column: 2/4;
   }
   .gallery_container .gal_img5 {
-    -ms-grid-row: 3;
-    -ms-grid-row-span: 2;
     grid-row: 3/5;
     height: auto;
   }
   .gallery_container .gal_img8 {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 2;
     grid-column: 2/4;
   }
 }
-
 .bg_galerie_contact {
-  background-color: #fff1cc;
+  background-color: rgb(255, 241, 204);
   margin-bottom: 390.05px;
   margin-top: 80px;
-  -webkit-box-shadow: 10px 10px 23px -7px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 10px 23px -7px rgba(0, 0, 0, 0.75);
 }
 
@@ -2828,58 +2255,44 @@ html {
     margin-bottom: 0;
   }
 }
-
 .contact_content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 90%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin: 0 auto;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
-
 .contact_content section {
   width: 100%;
   background-color: #445061;
   margin-bottom: 50px;
 }
-
 .contact_content section h3 {
   font-weight: normal;
   font-family: "Cinzel", serif;
   margin-bottom: 50px;
-  border-bottom: 1px solid #fff1cc;
+  border-bottom: 1px solid rgb(255, 241, 204);
   width: 80%;
-  color: #fff1cc;
+  color: rgb(255, 241, 204);
 }
-
 .contact_content section p {
-  color: #fff1cc;
+  color: rgb(255, 241, 204);
   font-family: "Montserrat", sans-serif;
   font-size: 0.7em;
 }
-
 .contact_content section p span {
   font-size: 1.7em;
 }
-
 .contact_content section:nth-child(2n) {
-  background-color: #fff1cc;
+  background-color: rgb(255, 241, 204);
 }
-
 .contact_content section:nth-child(2n) h3 {
   color: #445061;
   border-bottom: 1px solid #445061;
 }
-
 .contact_content section figure {
   height: 100%;
 }
-
 .contact_content section figure img {
   display: block;
   height: 100%;
@@ -2887,56 +2300,58 @@ html {
   -o-object-fit: cover;
      object-fit: cover;
 }
-
 .contact_content .tarifs_contact {
   padding: 3vw;
 }
-
 .contact_content .rsv_trajets_contact .formBloc {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   font-family: "Montserrat", sans-serif;
 }
-
 .contact_content .rsv_trajets_contact .formBloc .formGroupe {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-bottom: 25px;
 }
-
-.contact_content .rsv_trajets_contact .formBloc .formGroupe:nth-child(3) input {
-  text-align: right;
+.contact_content .rsv_trajets_contact .formBloc .formGroupe:nth-child(3) input::-moz-placeholder {
+  position: absolute;
+  right: 0;
 }
-
-.contact_content .rsv_trajets_contact .formBloc .formGroupe:nth-child(4) button, .contact_content .rsv_trajets_contact .formBloc .formGroupe:nth-child(4) input, .contact_content .rsv_trajets_contact .formBloc .formGroupe:nth-child(4) optgroup, .contact_content .rsv_trajets_contact .formBloc .formGroupe:nth-child(4) select, .contact_content .rsv_trajets_contact .formBloc .formGroupe:nth-child(4) textarea {
-  text-align: right;
+.contact_content .rsv_trajets_contact .formBloc .formGroupe:nth-child(3) input:-ms-input-placeholder {
+  position: absolute;
+  right: 0;
 }
-
+.contact_content .rsv_trajets_contact .formBloc .formGroupe:nth-child(3) input::placeholder {
+  position: absolute;
+  right: 0;
+}
+.contact_content .rsv_trajets_contact .formBloc .formGroupe:nth-child(4) input::-moz-placeholder {
+  position: absolute;
+  right: 0;
+}
+.contact_content .rsv_trajets_contact .formBloc .formGroupe:nth-child(4) input:-ms-input-placeholder {
+  position: absolute;
+  right: 0;
+}
+.contact_content .rsv_trajets_contact .formBloc .formGroupe:nth-child(4) input::placeholder {
+  position: absolute;
+  right: 0;
+}
 .contact_content .rsv_trajets_contact .formBloc .formGroupe:focus-within label {
   top: 0;
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
+  transform: translateY(-100%);
 }
-
 .contact_content .rsv_trajets_contact .formBloc .formGroupe input {
   z-index: 10;
   width: 100%;
   border: none;
   background: none;
-  border-bottom: 1px solid #757766;
+  border-bottom: 1px solid rgb(117, 119, 102);
   padding: 5px 0;
   outline: none;
   font-size: 0.8em;
   color: #445061;
 }
-
 .contact_content .rsv_trajets_contact .formBloc .formGroupe label {
   position: absolute;
   z-index: 0;
@@ -2944,43 +2359,30 @@ html {
   font-size: 0.7em;
   top: 50%;
   left: 0;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  color: #757766;
-  -webkit-transition: 0.4s ease-out;
+  transform: translateY(-50%);
+  color: rgb(117, 119, 102);
   transition: 0.4s ease-out;
 }
-
 .contact_content .rsv_trajets_contact .formBloc #text_area {
   margin: 0;
 }
-
 .contact_content .rsv_trajets_contact .formBloc #text_area input {
-  border: 1px solid #757766;
+  border: 1px solid rgb(117, 119, 102);
   padding-bottom: 150px;
   border-radius: 3px;
 }
-
-.contact_content .rsv_trajets_contact .formBloc #text_area input::-webkit-input-placeholder {
+.contact_content .rsv_trajets_contact .formBloc #text_area input::-moz-placeholder {
   font-size: 0.7em;
   padding-left: 10px;
 }
-
 .contact_content .rsv_trajets_contact .formBloc #text_area input:-ms-input-placeholder {
   font-size: 0.7em;
   padding-left: 10px;
 }
-
-.contact_content .rsv_trajets_contact .formBloc #text_area input::-ms-input-placeholder {
-  font-size: 0.7em;
-  padding-left: 10px;
-}
-
 .contact_content .rsv_trajets_contact .formBloc #text_area input::placeholder {
   font-size: 0.7em;
   padding-left: 10px;
 }
-
 .contact_content .rsv_trajets_contact .formBloc button {
   color: #445061;
   margin-top: 25px;
@@ -2992,66 +2394,42 @@ html {
   font-size: 0.8em;
   cursor: pointer;
 }
-
 .contact_content .rsv_trajets_contact .formBloc .formGroupe.animation label {
   top: 0;
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
+  transform: translateY(-100%);
 }
-
 .contact_content .rsv_excursions_contact {
   padding: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
 }
-
 .contact_content .rsv_excursions_contact p {
   font-size: 0.7em;
 }
-
 .contact_content .rsv_excursions_contact .formBloc {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   font-family: "Montserrat", sans-serif;
 }
-
 .contact_content .rsv_excursions_contact .formBloc .formGroupe {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-bottom: 25px;
 }
-
 .contact_content .rsv_excursions_contact .formBloc .formGroupe:focus-within label {
   top: 0;
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
+  transform: translateY(-100%);
 }
-
 .contact_content .rsv_excursions_contact .formBloc .formGroupe input {
   z-index: 10;
   width: 100%;
   border: none;
   background: none;
-  border-bottom: 1px solid #fff1cc;
+  border-bottom: 1px solid rgb(255, 241, 204);
   padding: 5px 0;
   outline: none;
 }
-
 .contact_content .rsv_excursions_contact .formBloc .formGroupe label {
   position: absolute;
   z-index: 0;
@@ -3059,96 +2437,70 @@ html {
   font-size: 0.7em;
   top: 50%;
   left: 0;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  color: #fff1cc;
-  -webkit-transition: 0.4s ease-out;
+  transform: translateY(-50%);
+  color: rgb(255, 241, 204);
   transition: 0.4s ease-out;
 }
-
 .contact_content .rsv_excursions_contact .formBloc #text_area {
   margin: 0;
 }
-
 .contact_content .rsv_excursions_contact .formBloc #text_area input {
-  border: 1px solid #fff1cc;
+  border: 1px solid rgb(255, 241, 204);
   padding-bottom: 150px;
   border-radius: 3px;
 }
-
-.contact_content .rsv_excursions_contact .formBloc #text_area input::-webkit-input-placeholder {
+.contact_content .rsv_excursions_contact .formBloc #text_area input::-moz-placeholder {
   font-size: 0.7em;
   padding-left: 10px;
-  color: #fff1cc;
+  color: rgb(255, 241, 204);
 }
-
 .contact_content .rsv_excursions_contact .formBloc #text_area input:-ms-input-placeholder {
   font-size: 0.7em;
   padding-left: 10px;
-  color: #fff1cc;
+  color: rgb(255, 241, 204);
 }
-
-.contact_content .rsv_excursions_contact .formBloc #text_area input::-ms-input-placeholder {
-  font-size: 0.7em;
-  padding-left: 10px;
-  color: #fff1cc;
-}
-
 .contact_content .rsv_excursions_contact .formBloc #text_area input::placeholder {
   font-size: 0.7em;
   padding-left: 10px;
-  color: #fff1cc;
+  color: rgb(255, 241, 204);
 }
-
 .contact_content .rsv_excursions_contact .formBloc button {
-  color: #fff1cc;
+  color: rgb(255, 241, 204);
   margin-top: 25px;
   width: 50%;
   background: none;
-  border: 1px solid #fff1cc;
+  border: 1px solid rgb(255, 241, 204);
   border-radius: 3px;
   padding: 10px;
   font-size: 0.8em;
   cursor: pointer;
 }
-
 .contact_content .rsv_excursions_contact .formBloc .formGroupe.animation label {
   top: 0;
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
+  transform: translateY(-100%);
 }
-
 .contact_content .map_bureau_contact img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
 }
-
 @media (min-width: 1024px) {
   .contact_content section {
     width: 50%;
     margin: 0;
   }
   .contact_content .tarifs_contact {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+    order: 1;
   }
   .contact_content .rsv_trajets_contact {
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
+    order: 3;
     padding: 30px;
   }
   .contact_content .rsv_excursions_contact {
-    -webkit-box-ordinal-group: 5;
-        -ms-flex-order: 4;
-            order: 4;
+    order: 4;
   }
   .contact_content .map_bureau_contact {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+    order: 2;
   }
   .contact_content .map_bureau_contact img {
     display: block;
@@ -3164,57 +2516,38 @@ html {
   max-width: 100%;
   z-index: 0;
 }
-
 .splashscreen_acces .sidebar_acces {
   background-color: #445061;
   width: 400px;
   height: 100%;
   position: absolute;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (1fr)[10];
-      grid-template-rows: repeat(10, 1fr);
-  -ms-grid-columns: (1fr)[6];
-      grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  grid-template-columns: repeat(6, 1fr);
 }
-
 .splashscreen_acces .sidebar_acces h1 {
-  color: #fff1cc;
+  color: rgb(255, 241, 204);
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
   font-size: 40px;
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 1;
-  grid-row: 3 / 4;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 6;
-  grid-column: 2 / 8;
+  grid-row: 3/4;
+  grid-column: 2/8;
   left: 9vw;
 }
-
 .splashscreen_acces .sidebar_acces p {
-  color: #fff1cc;
+  color: rgb(255, 241, 204);
   font-family: "Montserrat", sans-serif;
-  -ms-grid-row: 5;
-  -ms-grid-row-span: 1;
-  grid-row: 5 / 6;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 4;
-  grid-column: 2 / 6;
+  grid-row: 5/6;
+  grid-column: 2/6;
   font-size: 1rem;
   font-weight: 300;
 }
-
 .splashscreen_acces .sidebar_acces a {
-  color: #fff1cc;
-  border: 1px solid #fff1cc;
+  color: rgb(255, 241, 204);
+  border: 1px solid rgb(255, 241, 204);
   font-family: "Montserrat", sans-serif;
-  -ms-grid-row: 8;
-  -ms-grid-row-span: 1;
-  grid-row: 8 / 9;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
-  grid-column: 2 / 4;
+  grid-row: 8/9;
+  grid-column: 2/4;
   text-align: center;
   line-height: 40px;
   height: 40px;
@@ -3222,7 +2555,6 @@ html {
   min-width: 150px;
   text-decoration: none;
 }
-
 .splashscreen_acces figure img {
   width: 100vw;
   max-width: 100%;
@@ -3239,37 +2571,27 @@ html {
   .body_acces .splashscreen_acces .sidebar_acces {
     width: 100vw;
     max-width: 100%;
-    background-color: #222222a9;
+    background-color: rgba(34, 34, 34, 0.662745098);
   }
 }
-
 #nostrong {
   font-weight: unset;
 }
 
 .acces_container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 .acces_container .acces_items {
   padding: 5vw;
 }
-
 .acces_container .acces_items h2 {
   margin: 0;
   padding: 0;
 }
-
 .acces_container .acces_items h2:after {
   display: none;
 }
-
 .acces_container .acces_items .separate_acces {
   height: 5px;
   background-color: #445061;
@@ -3277,73 +2599,59 @@ html {
   border-radius: 999px;
   margin: 25px 0;
 }
-
 .acces_container .acces_items p {
   font-family: "Montserrat", sans-serif;
   color: #445061;
   font-size: 0.8em;
   margin-top: 50px;
 }
-
 .acces_container .acces_items p strong:last-child {
   font-weight: unset;
 }
-
 .acces_container .acces_items figure {
   overflow: hidden;
   margin-bottom: 25px;
   margin-top: 5vw;
 }
-
 .acces_container .acces_items figure img {
   display: block;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-transform: scale(250%);
-          transform: scale(250%);
+  transform: scale(250%);
   -o-object-position: 15vw -5vw;
      object-position: 15vw -5vw;
 }
-
 .acces_container .acces_items:nth-child(2) {
   background-color: #445061;
   border-radius: 40px;
   position: relative;
 }
-
 .acces_container .acces_items:nth-child(2) p {
-  color: #fff1cc;
+  color: rgb(255, 241, 204);
   margin-bottom: 15px;
 }
-
 .acces_container .acces_items:nth-child(2) .separate_acces {
-  background-color: #fff1cc;
+  background-color: rgb(255, 241, 204);
 }
-
 .acces_container .acces_items:nth-child(2) h2 {
-  color: #fff1cc;
+  color: rgb(255, 241, 204);
 }
-
 .acces_container .acces_items:nth-child(2) .buttons {
   position: absolute;
   bottom: 0;
   right: 0;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  justify-content: flex-start;
   display: block;
   margin: 0;
   width: 50%;
-  -webkit-transform: translate(-25%, 50%);
-          transform: translate(-25%, 50%);
-  background-color: #fff1cc;
+  transform: translate(-25%, 50%);
+  background-color: rgb(255, 241, 204);
   border-radius: 999px;
   border: 3px solid #445061;
   height: 50px;
 }
-
 .acces_container .acces_items:nth-child(2) .buttons a {
   line-height: 47px;
   height: 100%;
@@ -3358,23 +2666,17 @@ html {
     width: 30%;
   }
   .acces_container .acces_items figure img {
-    -webkit-transform: scale(150%);
-            transform: scale(150%);
+    transform: scale(150%);
     -o-object-fit: unset;
        object-fit: unset;
     -o-object-position: 5vw 0;
        object-position: 5vw 0;
   }
 }
-
 @media (min-width: 1024px) {
   .acces_container {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
   .acces_container .acces_items {
     width: 50%;
@@ -3405,8 +2707,7 @@ html {
   }
   .acces_container .acces_items:nth-child(2) .buttons {
     position: unset;
-    -webkit-transform: unset;
-            transform: unset;
+    transform: unset;
     border-radius: unset;
     border: 1px solid #445061;
     height: 40px;
@@ -3417,7 +2718,6 @@ html {
     line-height: 40px;
     position: relative;
     z-index: 10;
-    -webkit-transition: all 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
     transition: all 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
     overflow: hidden;
   }
@@ -3429,30 +2729,20 @@ html {
     height: 100%;
     width: 100%;
     background-color: #445061;
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
+    transform: translateX(-100%);
     z-index: -1;
-    -webkit-transition: all 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
     transition: all 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   }
   .acces_container .acces_items:nth-child(2) .buttons .rsv_button:hover {
-    color: #fff1cc;
+    color: rgb(255, 241, 204);
   }
   .acces_container .acces_items:nth-child(2) .buttons .rsv_button:hover:after {
-    -webkit-transform: translate(0);
-            transform: translate(0);
+    transform: translate(0);
   }
   .acces_container .acces_items:nth-child(3) {
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    flex-grow: 1;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     padding: 0;
   }
   .acces_container .acces_items:nth-child(3) .anakao_location {
@@ -3461,9 +2751,7 @@ html {
     border-right: 2px solid #445061;
   }
   .acces_container .acces_items:nth-child(3) .anakao_location .separate_acces {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    align-self: center;
   }
   .acces_container .acces_items:nth-child(3) .anakao_location p {
     text-align: left;
@@ -3475,8 +2763,7 @@ html {
     margin-top: 0;
   }
   .acces_container .acces_items:nth-child(3) figure img {
-    -webkit-transform: scale(130%);
-            transform: scale(130%);
+    transform: scale(130%);
     -o-object-position: 25px 0;
        object-position: 25px 0;
     -o-object-fit: cover;
@@ -3484,28 +2771,18 @@ html {
     display: block;
   }
 }
-
 .body_thanks {
-  background-color: #fff1cc;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  background-color: rgb(255, 241, 204);
   display: flex;
   height: 100vh;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: flex-start;
+  flex-direction: column;
 }
-
 .body_thanks img {
   width: 200px;
   margin: 0 auto;
   margin-top: 10vw;
 }
-
 .body_thanks p {
   margin-top: 50px;
   text-align: center;
@@ -3514,14 +2791,13 @@ html {
   font-weight: 900;
   color: #445061;
 }
-
 .body_thanks a {
   margin-top: 50px;
   text-align: center;
   font-size: 0.8em;
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
-  color: #30b8b1;
+  color: rgb(48, 184, 177);
 }
 
 @media (min-width: 1024px) {
@@ -3533,8 +2809,6 @@ html {
   }
   .body_thanks a {
     font-size: 1.2em;
-    -webkit-transition: .4s;
-    transition: .4s;
+    transition: 0.4s;
   }
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
