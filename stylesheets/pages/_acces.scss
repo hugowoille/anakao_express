@@ -12,6 +12,7 @@
         display: grid;
         grid-template-rows: repeat(10, 1fr);
         grid-template-columns: repeat(6, 1fr);
+        padding-top: 50px;
 
         h1 {
             color: $jaune;

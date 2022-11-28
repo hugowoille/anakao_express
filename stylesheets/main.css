@@ -1200,7 +1200,6 @@ h2 {
   }
   .bg_boat_apropos .boat_container_index .boat_items:nth-child(4) a figure {
     width: 90vw;
-    margin: 0 auto;
   }
   .bg_boat_apropos .boat_container_index .boat_items:nth-child(4) a figure img {
     display: block;
@@ -2524,6 +2523,7 @@ a {
   display: grid;
   grid-template-rows: repeat(10, 1fr);
   grid-template-columns: repeat(6, 1fr);
+  padding-top: 50px;
 }
 .splashscreen_acces .sidebar_acces h1 {
   color: rgb(255, 241, 204);
