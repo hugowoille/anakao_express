@@ -673,12 +673,13 @@ h2 {
                         figure {
 
                             width: 90vw;
-                            
+                            margin: 0 auto;
 
                             img {
                                 display: block;
                                 max-height: 450px;
                                 object-fit: cover;
+                                
                                
                             }
                         }
