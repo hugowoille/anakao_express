@@ -1315,6 +1315,7 @@ h2 {
   padding: 5vw;
   font-size: 0.8em;
 }
+
 @media (min-width: 1024px) {
   .apropos_index {
     width: 70%;
@@ -2359,23 +2360,23 @@ a {
   color: rgb(117, 119, 102);
   transition: 0.4s ease-out;
 }
-.contact_content .rsv_trajets_contact .formBloc #text_area {
+.contact_content .rsv_trajets_contact .formBloc .text_area {
   margin: 0;
 }
-.contact_content .rsv_trajets_contact .formBloc #text_area input {
+.contact_content .rsv_trajets_contact .formBloc .text_area input {
   border: 1px solid rgb(117, 119, 102);
   padding-bottom: 150px;
   border-radius: 3px;
 }
-.contact_content .rsv_trajets_contact .formBloc #text_area input::-moz-placeholder {
+.contact_content .rsv_trajets_contact .formBloc .text_area input::-moz-placeholder {
   font-size: 0.7em;
   padding-left: 10px;
 }
-.contact_content .rsv_trajets_contact .formBloc #text_area input:-ms-input-placeholder {
+.contact_content .rsv_trajets_contact .formBloc .text_area input:-ms-input-placeholder {
   font-size: 0.7em;
   padding-left: 10px;
 }
-.contact_content .rsv_trajets_contact .formBloc #text_area input::placeholder {
+.contact_content .rsv_trajets_contact .formBloc .text_area input::placeholder {
   font-size: 0.7em;
   padding-left: 10px;
 }
@@ -2437,25 +2438,25 @@ a {
   color: rgb(255, 241, 204);
   transition: 0.4s ease-out;
 }
-.contact_content .rsv_excursions_contact .formBloc #text_area {
+.contact_content .rsv_excursions_contact .formBloc .text_area {
   margin: 0;
 }
-.contact_content .rsv_excursions_contact .formBloc #text_area input {
+.contact_content .rsv_excursions_contact .formBloc .text_area input {
   border: 1px solid rgb(255, 241, 204);
   padding-bottom: 150px;
   border-radius: 3px;
 }
-.contact_content .rsv_excursions_contact .formBloc #text_area input::-moz-placeholder {
+.contact_content .rsv_excursions_contact .formBloc .text_area input::-moz-placeholder {
   font-size: 0.7em;
   padding-left: 10px;
   color: rgb(255, 241, 204);
 }
-.contact_content .rsv_excursions_contact .formBloc #text_area input:-ms-input-placeholder {
+.contact_content .rsv_excursions_contact .formBloc .text_area input:-ms-input-placeholder {
   font-size: 0.7em;
   padding-left: 10px;
   color: rgb(255, 241, 204);
 }
-.contact_content .rsv_excursions_contact .formBloc #text_area input::placeholder {
+.contact_content .rsv_excursions_contact .formBloc .text_area input::placeholder {
   font-size: 0.7em;
   padding-left: 10px;
   color: rgb(255, 241, 204);
