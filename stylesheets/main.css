@@ -1314,10 +1314,6 @@ h2 {
   padding: 5vw;
   font-size: 0.8em;
 }
-.apropos_index p strong {
-  font-weight: normal;
-}
-
 @media (min-width: 1024px) {
   .apropos_index {
     width: 70%;
