@@ -96,32 +96,32 @@
             display: flex;
             flex-direction: column;
             font-family: $font-titre-montserrat;
-            
+
 
 
             .formGroupe {
                 position: relative;
                 display: flex;
                 margin-bottom: 25px;
-                &:nth-child(3){
-                    
-                    input{
-                        &::placeholder{
-                            position: absolute;
-                            right : 0;
-                           }
-                    
+
+                &:nth-child(3) {
+
+                    input {
+                        &::placeholder {
+                            text-align: right;
+                        }
+
                     }
                 }
-                &:nth-child(4){
-                   input{
-                    &::placeholder{
-                        position: absolute;
-                        right : 0;
-                       }
-                   }
-            
-                   
+
+                &:nth-child(4) {
+                    input {
+                        &::placeholder {
+                            text-align: right;
+                        }
+                    }
+
+
                 }
 
                 &:focus-within {
@@ -141,8 +141,8 @@
                     outline: none;
                     font-size: 0.8em;
                     color: $bleu;
-                    
-                    
+
+
                 }
 
                 label {
@@ -165,7 +165,7 @@
                     border: 1px solid rgb(117, 119, 102);
                     padding-bottom: 150px;
                     border-radius: 3px;
-                    
+
                     &::placeholder {
                         font-size: 0.7em;
                         padding-left: 10px;
@@ -190,7 +190,7 @@
                     top: 0;
                     transform: translateY(-100%);
                 }
-                
+
             }
         }
     }
@@ -204,10 +204,12 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        p{
+
+        p {
             font-size: 0.7em;
-            
+
         }
+
         .formBloc {
             display: flex;
             flex-direction: column;
@@ -261,7 +263,7 @@
                     &::placeholder {
                         font-size: 0.7em;
                         padding-left: 10px;
-                        color:$jaune;
+                        color: $jaune;
                     }
                 }
             }
@@ -306,7 +308,7 @@
 
         section {
             width: 50%;
-            margin:0;
+            margin: 0;
 
         }
 
@@ -317,22 +319,22 @@
 
         .rsv_trajets_contact {
             order: 3;
-            padding:30px;
+            padding: 30px;
 
         }
 
         .rsv_excursions_contact {
             order: 4;
-           
-            
+
+
         }
 
         .map_bureau_contact {
             order: 2;
-            
-            img{
-                display:block;
-                height:100%;
+
+            img {
+                display: block;
+                height: 100%;
                 object-position: 20%;
             }
         }
