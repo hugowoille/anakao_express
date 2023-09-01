@@ -1,232 +1,293 @@
 <!DOCTYPE html>
 <html class="no-js" lang="fr">
+  <head>
+    <title>Nos Trajets</title>
 
-<head>
+    <meta charset="utf-8" />
 
-  <title> Nos Trajets</title>
+    <meta
+      name="description"
+      content="Un transfert quotidien par bateau d'Anakao à Tuléar est assuré. D'autres trajets ou excursions sont possibles sur demande."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <meta property="og:title" content="Nos trajets" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://anakaoexpress/trajets.html" />
+    <meta
+      property="og:image"
+      content="https://anakao-express.hw-code.fr/img/trajets/map.svg"
+    />
+    <meta
+      property="og:description"
+      content="Un transfert quotidien par bateau d'Anakao à Tuléar est assuré. D'autres trajets ou excursions sont possibles sur demande."
+    />
 
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="apple-touch-icon" href="icon.png" />
+    <!-- Place favicon.ico in the root directory -->
 
-  <meta charset="utf-8">
-  
-  <meta name="description"
-    content="Un transfert quotidien par bateau d'Anakao à Tuléar est assuré. D'autres trajets ou excursions sont possibles sur demande.">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheets/main.css" />
 
-  <meta property="og:title" content="Nos trajets">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="http://anakaoexpress/trajets.html">
-  <meta property="og:image" content="https://anakao-express.hw-code.fr/img/trajets/map.svg">
-  <meta property="og:description"
-    content="Un transfert quotidien par bateau d'Anakao à Tuléar est assuré. D'autres trajets ou excursions sont possibles sur demande.">
+    <meta name="theme-color" content="#fafafa" />
+  </head>
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
+  <body class="body_trajets">
+    <!-- NAVBAR -->
 
+    <header>
+      <nav>
+        <a
+          href="index.html"
+          class="nav-icon"
+          aria-label="visit homepage"
+          aria-current="page"
+        >
+          <img src="img/logo.svg" alt="logo d'anakao express" />
+        </a>
 
-  <link rel="stylesheet" href="stylesheets/main.css">
-
-  <meta name="theme-color" content="#fafafa">
-
-</head>
-
-
-
-
-<body class="body_trajets">
-
-
-  <!-- NAVBAR -->
-
-
-  <header>
-    <nav>
-      <a href="index.html" class="nav-icon" aria-label="visit homepage" aria-current="page">
-        <img src="img/logo.svg" alt="logo d'anakao express">
-
-      </a>
-
-      <div class="main-navlinks">
-        <button class="hamburger" type="button" aria-label="Toggle navigation" aria-expanded="false">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-        <div class="navlinks-container">
-          <a href="index.html" aria-current="page">Accueil</a>
-          <a href="trajets.html">Trajets</a>
-          <a href="acces.html">Accès</a>
-          <a href="galerie.html">Galerie</a>
-          <a href="contact.html">Réservation</a>
+        <div class="main-navlinks">
+          <button
+            class="hamburger"
+            type="button"
+            aria-label="Toggle navigation"
+            aria-expanded="false"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="navlinks-container">
+            <a href="index.html" aria-current="page">Accueil</a>
+            <a href="trajets.html">Trajets</a>
+            <a href="acces.html">Accès</a>
+            <a href="galerie.html">Galerie</a>
+            <a href="contact.html">Réservation</a>
+          </div>
         </div>
-      </div>
-    </nav>
-  </header>
+      </nav>
+    </header>
 
+    <!-- SPLASHSCREEN -->
 
-  <!-- SPLASHSCREEN -->
-
-
-
-  <section class="splashscreen_trajets">
-    <aside class="sidebar_trajets">
-      <h1>Nos Trajets</h1>
-      <p>Un <strong>trajet</strong> entre <strong>Tuléar</strong> et <strong>Anakao</strong> est effectué chaque jour
-        par nos <strong>bateaux.</strong> Notre offre varie en fonction de la demande : nous nous adaptons à l’affluence
-        et à la saison, afin de garantir à tous les voyageurs un <strong>transfert rapide et sûr</strong> vers leur
-        hôtel ou lieu de résidence. Découvrez ici l’ensemble de notre <strong>offre.</strong></p>
-      <a href="#scrollto-anakao_tul">En savoir plus ↓</a>
-
-    </aside>
-    <figure>
-      <img src="img/trajets/map.svg" alt="plan du trajet anakao/auléar">
-    </figure>
-  </section>
-
-  <main class="bg">
-
-
-    <!-- TRAJETS -->
-
-
-    <!-- ANAKAO/TULEAR -->
-
-
-    <h2 id="scrollto-anakao_tul">Nos trajets en détails</h2>
-    <article class="trajets_trajets">
-      <section class="anakakotul">
-        <img src="img/trajets/anakaotul.svg" alt="trajet d'anakao à tuléar">
-        <div class="sidebar_article_trajets">
-          <h3>Tuléar - Anakao</h3>
-          <span class="underline_trajets"></span>
-          <p>Afin de vous aider à organiser au mieux votre <strong>voyage à Anakao,</strong> nous assurons au minimum un <strong>transfert quotidien.</strong> Le <strong>départ de Tuléar</strong> a lieu à 09 h 30 et le<strong> retour</strong> s’effectue à 07 h 30. Le trajet dure environ une heure. En saison haute, le nombre de navettes disponibles augmente <strong>jusqu’à six allers-retours par jour,</strong> dans le but de satisfaire une demande plus volumineuse. La capacité des embarcations s’élève à 64 personnes. En se rendant vers votre hôtel, il est possible de croiser la route de <strong>baleines</strong> ou de <strong>dauphins.</strong> Dans ce cas, nos pilotes certifiés effectueront un détour afin de vous laisser profiter de ce spectacle rare. Vous serez ensuite déposé sur la plage, devant le lieu de résidence de votre choix.
-            La <strong>sécurité</strong> des passagers est garantie : tous nos bateaux sont aux normes européennes, et vous trouverez à bord des gilets de sauvetage adultes et enfants.
-
-
-          </p>
-          <a href="contact.html" class="rsv_button">Réserver</a>
-        </div>
-      </section>
-      <div class="separate_trajets" id="scrollto-ambola"></div>
-
-
-
-      <!-- AMBOLA -->
-
-
-      <section>
-        <img src="img/trajets/ambola.svg" alt="trajet vers ambola">
-        <div class="sidebar_article_trajets">
-          <h3>Vers Ambola</h3>
-          <span class="underline_trajets"></span>
-          <p>Le <strong>trajet</strong> de <strong>Tuléar</strong> à <strong>Ambola</strong> se déroule uniquement <strong>à la demande.</strong> Le point de départ est cependant variable selon vos besoins. Le village se situe à deux heures <strong>en bateau de Tuléar,</strong> soit une distance de 90 km vers le <strong>Sud.</strong> De multiples activités s’offrent aux voyageurs dans cette localité : balades à pied dans des paysages atypiques de cette région malgache ou repos sur des plages de sable fin. Découvrez aussi les réserves naturelles avoisinantes, comme celle de <strong>Tsimanampetsotsa,</strong> remarquable en raison des flamands roses qui la peuplent et de son lac salé. Restaurants et hôtels ont eux-aussi trouvé leur place dans ce cadre paradisiaque, au plus grand bonheur des visiteurs. 
-            N’hésitez pas à nous contacter pour connaître les disponibilités de nos embarcations et partez à la découverte d’une faune et d’une flore éblouissantes !
-
-          </p>
-          <a href="contact.html" class="rsv_button">Réserver</a>
-        </div>
-      </section>
-      <div class="separate_trajets" id="scrollto-mangily"></div>
-
-
-      <!-- IFATY -->
-
-
-      <section>
-        <img src="img/trajets/ifaty.svg" alt="trajet vers ifaty">
-        <div class="sidebar_article_trajets">
-          <h3>Vers Ifaty </h3>
-          <span class="underline_trajets"></span>
-          <p>Nos pilotes sont disponibles pour vous emmener, sur demande, jusqu’au <strong>village de Mangily,</strong>
-            localisé à trois quarts d’heure de la capitale du <strong>sud-ouest de Madagascar.</strong> Les lieux sont
-            adaptés aux activités touristiques : de nombreux hôtels et restaurants se sont fondus dans des paysages
-            remarquables. En outre, des spots de plongée hors du commun sont accessibles aux voyageurs. La station
-            balnéaire de <strong>Tuléar</strong> est <strong>Ifaty,</strong> cependant <strong>Mangily</strong> possède
-            la majorité des commerces en lien avec les activités de tourisme. Ces deux destinations sont bordées par le
-            <strong>lagon de Ranobe</strong> et le <strong>parc national Isalo,</strong> paysages naturels ayant déjà
-            conquis de nombreux visiteurs.
-          </p>
-          <a href="contact.html" class="rsv_button">Réserver</a>
-        </div>
-      </section>
-    </article>
-
-
-    <!-- Excursions -->
-
-
-    <h2 id="scrollto-nosy">Nos excursions</h2>
-    <article class="excursions_trajets">
-      <section class="nosi_txt">
-        <h3>Comment se rendre à Nosy Vé ?</h3>
-        <div class="separate_exc"></div>
-        <p><strong>Anakao Express</strong> propose de louer ses bateaux à ceux qui souhaitent <strong>voyager vers
-            l’île Nosy Vé.</strong> Située à 3 km ddu village <strong>d’Anakao,</strong> elle abrite une espèce
-          d’oiseaux propre à la région : les phaétons à queue rouge, plus communément appelés « pailles en queue ».
-          Cette caye est d’ailleurs leur seul lieu de reproduction. Les plages de Nosy Vé sont somptueuses, et les
-          fonds marins se découvrent à marée basse. Les lieux ont leur Histoire ; vous y observerez quelques vestiges
-          des activités économiques des Français du XIXe siècle. Autrefois, elle servait de refuge aux pirates puis
-          aux commerçants.
-          Contactez-nous pour réserver votre <strong>excursion</strong> ainsi que la livraison de votre repas du midi !
-
+    <section class="splashscreen_trajets">
+      <aside class="sidebar_trajets">
+        <h1>
+          Anakao <br />
+          Tuléar
+        </h1>
+        <p>
+          Un <strong>trajet</strong> entre <strong>Tuléar</strong> et
+          <strong>Anakao</strong> est effectué chaque jour par nos
+          <strong>bateaux.</strong> Notre offre varie en fonction de la demande
+          : nous nous adaptons à l’affluence et à la saison, afin de garantir à
+          tous les voyageurs un <strong>transfert rapide et sûr</strong> vers
+          leur hôtel ou lieu de résidence. Découvrez ici l’ensemble de notre
+          <strong>offre.</strong>
         </p>
-        <a href="contact.html" class="rsv_button" id="scrollto-dmd">Réserver</a>
-      </section>
-      <section class="nos_img">
-        <img src="img/trajets/nosive.webp" alt="photo de nosy ve">
-      </section>
-      <section class="dmd_img">
-        <img src="img/trajets/alademande.webp" alt="photos d'une excursion">
-      </section>
-      <section class="dmd_txt">
-        <h3>Location à la demande</h3>
-        <div class="separate_exc"></div>
-        <p><strong>Anakao Express</strong> offre la possibilité à tous les visiteurs de planifier l’expédition de leur rêve le long de la <strong>côte sud-ouest de Madagascar.</strong> Pour ce faire, il vous suffit de contacter le bureau pour établir un devis, et prendre note des disponibilités. Les locations sur demande se déroulent cependant aux alentours des villes <strong>à partir de Tuléar ou de Anakao.</strong> À vous de décider des lieux qui vous font le plus envie !
-        </p>
-        <a href="contact.html" class="rsv_button">Réserver</a>
-      </section>
+        <a href="#scrollto-anakao_tul">En savoir plus ↓</a>
+      </aside>
+      <figure>
+        <img src="img/trajets/map.svg" alt="plan du trajet anakao/auléar" />
+      </figure>
+    </section>
 
-    </article>
+    <main class="bg">
+      <!-- TRAJETS -->
 
+      <!-- ANAKAO/TULEAR -->
 
-    <!-- FOOTER -->
+      <h2 id="scrollto-anakao_tul">Nos trajets en détails</h2>
+      <article class="trajets_trajets">
+        <section class="anakakotul">
+          <img src="img/trajets/anakaotul.svg" alt="trajet d'anakao à tuléar" />
+          <div class="sidebar_article_trajets">
+            <h3>Tuléar - Anakao</h3>
+            <span class="underline_trajets"></span>
+            <p>
+              Afin de vous aider à organiser au mieux votre
+              <strong>voyage à Anakao,</strong> nous assurons au minimum un
+              <strong>transfert quotidien.</strong> Le
+              <strong>départ de Tuléar</strong> a lieu à 09 h 30 et le<strong>
+                retour</strong
+              >
+              s’effectue à 07 h 30. Le trajet dure environ une heure. En saison
+              haute, le nombre de navettes disponibles augmente
+              <strong>jusqu’à six allers-retours par jour,</strong> dans le but
+              de satisfaire une demande plus volumineuse. La capacité des
+              embarcations s’élève à 64 personnes. En se rendant vers votre
+              hôtel, il est possible de croiser la route de
+              <strong>baleines</strong> ou de <strong>dauphins.</strong> Dans ce
+              cas, nos pilotes certifiés effectueront un détour afin de vous
+              laisser profiter de ce spectacle rare. Vous serez ensuite déposé
+              sur la plage, devant le lieu de résidence de votre choix. La
+              <strong>sécurité</strong> des passagers est garantie : tous nos
+              bateaux sont aux normes européennes, et vous trouverez à bord des
+              gilets de sauvetage adultes et enfants.
+            </p>
+            <a href="contact.html" class="rsv_button">Réserver</a>
+          </div>
+        </section>
+        <div class="separate_trajets" id="scrollto-ambola"></div>
 
-  </main>
+        <!-- AMBOLA -->
 
-  <footer>
-    <ul class="adress">
-      <li>Anakao Express</li>
-      <li>rue Marius Jatop <br>Mahavates 2<br>601 Tuléar</li>
-      <li>Odilia : 034 60 072 61-62 <br> Fredo : 034 21 673 20</li>
-      <li>anakaoexpress@gmail.com</li>
-      <li><a href="index.html">
-          <figure><img src="img/logo.svg" alt="logo anakao express"></figure>
-        </a></li>
-    </ul>
-    <div class="separate_footer"></div>
-    <ul class="summary">
-      <li>Sommaire</li>
-      <li><a href="index.html">Accueil</a></li>
-      <li><a href="trajets.html">Les trajets</a></li>
-      <li><a href="bateaux.html">Les bateaux</a></li>
-      <li><a href="contact.html">Tarifs & réservations</a></li>
-    </ul>
-    <div class="separate_footer"></div>
-    <ul class="useful_links">
-      <li>Liens utiles</li>
-      <li><a target="_blank" href="http://amandine-redaction.fr">Rédactrice Web</a></li>
-      <li><a target="_blank" href="https://www.linkedin.com/in/hugo-woille-developpeur-front-end/">Développeur WEB</a>
-      </li>
-      <li>Suivez nous !</li>
-      <li><a href="https://www.facebook.com/anakaoexpress">
-          <figure><img src="img/rs/fbn.svg" alt="logo de facebook"></figure>
-        </a></li>
-    </ul>
-  </footer>
+        <section>
+          <img src="img/trajets/ambola.svg" alt="trajet vers ambola" />
+          <div class="sidebar_article_trajets">
+            <h3>Vers Ambola</h3>
+            <span class="underline_trajets"></span>
+            <p>
+              Le <strong>trajet</strong> de <strong>Tuléar</strong> à
+              <strong>Ambola</strong> se déroule uniquement
+              <strong>à la demande.</strong> Le point de départ est cependant
+              variable selon vos besoins. Le village se situe à deux heures
+              <strong>en bateau de Tuléar,</strong> soit une distance de 90 km
+              vers le <strong>Sud.</strong> De multiples activités s’offrent aux
+              voyageurs dans cette localité : balades à pied dans des paysages
+              atypiques de cette région malgache ou repos sur des plages de
+              sable fin. Découvrez aussi les réserves naturelles avoisinantes,
+              comme celle de <strong>Tsimanampetsotsa,</strong> remarquable en
+              raison des flamands roses qui la peuplent et de son lac salé.
+              Restaurants et hôtels ont eux-aussi trouvé leur place dans ce
+              cadre paradisiaque, au plus grand bonheur des visiteurs. N’hésitez
+              pas à nous contacter pour connaître les disponibilités de nos
+              embarcations et partez à la découverte d’une faune et d’une flore
+              éblouissantes !
+            </p>
+            <a href="contact.html" class="rsv_button">Réserver</a>
+          </div>
+        </section>
+        <div class="separate_trajets" id="scrollto-mangily"></div>
 
-  <script src="js/navbar.js"></script>
+        <!-- IFATY -->
 
-</body>
+        <section>
+          <img src="img/trajets/ifaty.svg" alt="trajet vers ifaty" />
+          <div class="sidebar_article_trajets">
+            <h3>Vers Ifaty</h3>
+            <span class="underline_trajets"></span>
+            <p>
+              Nos pilotes sont disponibles pour vous emmener, sur demande,
+              jusqu’au <strong>village de Mangily,</strong> localisé à trois
+              quarts d’heure de la capitale du
+              <strong>sud-ouest de Madagascar.</strong> Les lieux sont adaptés
+              aux activités touristiques : de nombreux hôtels et restaurants se
+              sont fondus dans des paysages remarquables. En outre, des spots de
+              plongée hors du commun sont accessibles aux voyageurs. La station
+              balnéaire de <strong>Tuléar</strong> est
+              <strong>Ifaty,</strong> cependant <strong>Mangily</strong> possède
+              la majorité des commerces en lien avec les activités de tourisme.
+              Ces deux destinations sont bordées par le
+              <strong>lagon de Ranobe</strong> et le
+              <strong>parc national Isalo,</strong> paysages naturels ayant déjà
+              conquis de nombreux visiteurs.
+            </p>
+            <a href="contact.html" class="rsv_button">Réserver</a>
+          </div>
+        </section>
+      </article>
 
+      <!-- Excursions -->
+
+      <h2 id="scrollto-nosy">Nos excursions</h2>
+      <article class="excursions_trajets">
+        <section class="nosi_txt">
+          <h3>Comment se rendre à Nosy Vé ?</h3>
+          <div class="separate_exc"></div>
+          <p>
+            <strong>Anakao Express</strong> propose de louer ses bateaux à ceux
+            qui souhaitent <strong>voyager vers l’île Nosy Vé.</strong> Située à
+            3 km du village <strong>d’Anakao,</strong> elle abrite une espèce
+            d’oiseaux propre à la région : les phaétons à queue rouge, plus
+            communément appelés « pailles en queue ». Cette caye est d’ailleurs
+            leur seul lieu de reproduction. Les plages de Nosy Vé sont
+            somptueuses, et les fonds marins se découvrent à marée basse. Les
+            lieux ont leur Histoire ; vous y observerez quelques vestiges des
+            activités économiques des Français du XIXe siècle. Autrefois, elle
+            servait de refuge aux pirates puis aux commerçants. Contactez-nous
+            pour réserver votre <strong>excursion</strong> ainsi que la
+            livraison de votre repas du midi !
+          </p>
+          <a href="contact.html" class="rsv_button" id="scrollto-dmd"
+            >Réserver</a
+          >
+        </section>
+        <section class="nos_img">
+          <img src="img/trajets/nosive.webp" alt="photo de nosy ve" />
+        </section>
+        <section class="dmd_img">
+          <img src="img/trajets/alademande.webp" alt="photos d'une excursion" />
+        </section>
+        <section class="dmd_txt">
+          <h3>Location à la demande</h3>
+          <div class="separate_exc"></div>
+          <p>
+            <strong>Anakao Express</strong> offre la possibilité à tous les
+            visiteurs de planifier l’expédition de leur rêve le long de la
+            <strong>côte sud-ouest de Madagascar.</strong> Pour ce faire, il
+            vous suffit de contacter le bureau pour établir un devis, et prendre
+            note des disponibilités. Les locations sur demande se déroulent
+            cependant aux alentours des villes
+            <strong>à partir de Tuléar ou de Anakao.</strong> À vous de décider
+            des lieux qui vous font le plus envie !
+          </p>
+          <a href="contact.html" class="rsv_button">Réserver</a>
+        </section>
+      </article>
+
+      <!-- FOOTER -->
+    </main>
+
+    <footer>
+      <ul class="adress">
+        <li>Anakao Express</li>
+        <li>rue Marius Jatop <br />Mahavates 2<br />601 Tuléar</li>
+        <li>
+          Odilia : 034 60 072 61-62 <br />
+          Fredo : 034 21 673 20
+        </li>
+        <li>anakaoexpress@gmail.com</li>
+        <li>
+          <a href="index.html">
+            <figure>
+              <img src="img/logo.svg" alt="logo anakao express" />
+            </figure>
+          </a>
+        </li>
+      </ul>
+      <div class="separate_footer"></div>
+      <ul class="summary">
+        <li>Sommaire</li>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="trajets.html">Les trajets</a></li>
+        <li><a href="bateaux.html">Les bateaux</a></li>
+        <li><a href="contact.html">Tarifs & réservations</a></li>
+      </ul>
+      <div class="separate_footer"></div>
+      <ul class="useful_links">
+        <li>Liens utiles</li>
+        <li>
+          <a target="_blank" href="http://amandine-redaction.fr"
+            >Rédactrice Web</a
+          >
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/hugo-woille-developpeur-front-end/"
+            >Développeur WEB</a
+          >
+        </li>
+        <li>Suivez nous !</li>
+        <li>
+          <a href="https://www.facebook.com/anakaoexpress">
+            <figure><img src="img/rs/fbn.svg" alt="logo de facebook" /></figure>
+          </a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="js/navbar.js"></script>
+  </body>
 </html>
