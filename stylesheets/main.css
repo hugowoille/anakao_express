@@ -966,7 +966,7 @@ h2 {
     min-height: 186px;
   }
   .trajets_home section .sidebar-section_home h3,
-.trajets_home section .sidebar-section_home p {
+  .trajets_home section .sidebar-section_home p {
     color: #445061;
     text-align: left;
     padding: 15px 0;
@@ -2313,16 +2313,10 @@ a {
 .contact_content .rsv_trajets_contact .formBloc .formGroupe:nth-child(3) input::-moz-placeholder {
   text-align: right;
 }
-.contact_content .rsv_trajets_contact .formBloc .formGroupe:nth-child(3) input:-ms-input-placeholder {
-  text-align: right;
-}
 .contact_content .rsv_trajets_contact .formBloc .formGroupe:nth-child(3) input::placeholder {
   text-align: right;
 }
 .contact_content .rsv_trajets_contact .formBloc .formGroupe:nth-child(4) input::-moz-placeholder {
-  text-align: right;
-}
-.contact_content .rsv_trajets_contact .formBloc .formGroupe:nth-child(4) input:-ms-input-placeholder {
   text-align: right;
 }
 .contact_content .rsv_trajets_contact .formBloc .formGroupe:nth-child(4) input::placeholder {
@@ -2363,10 +2357,6 @@ a {
   border-radius: 3px;
 }
 .contact_content .rsv_trajets_contact .formBloc .text_area input::-moz-placeholder {
-  font-size: 0.7em;
-  padding-left: 10px;
-}
-.contact_content .rsv_trajets_contact .formBloc .text_area input:-ms-input-placeholder {
   font-size: 0.7em;
   padding-left: 10px;
 }
@@ -2441,11 +2431,6 @@ a {
   border-radius: 3px;
 }
 .contact_content .rsv_excursions_contact .formBloc .text_area input::-moz-placeholder {
-  font-size: 0.7em;
-  padding-left: 10px;
-  color: rgb(255, 241, 204);
-}
-.contact_content .rsv_excursions_contact .formBloc .text_area input:-ms-input-placeholder {
   font-size: 0.7em;
   padding-left: 10px;
   color: rgb(255, 241, 204);

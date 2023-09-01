@@ -2,4 +2,30 @@
 
 # Allow crawling of all content
 User-agent: *
-Disallow:
+Disallow:https://www.anakaoexpress.com/contacts-et-reservations-transfert-anakao-express/
+Disallow:https://www.anakaoexpress.com/transfert-journalier/
+Disallow:https://www.anakaoexpress.com/2018/02/13/ciao-mondo/
+Disallow:https://www.anakaoexpress.com/anakao-express-en-image/
+Disallow:https://www.anakaoexpress.com/themefusion_es_groups/sambokely/
+Disallow:http://www.anakaoexpress.com/tulear-anakao-et-ses-environs/
+Disallow:http://www.anakaoexpress.com/tulear-anakao-et-ses-environs/
+Disallow:http://www.anakaoexpress.com/category/news/
+Disallow:http://www.anakaoexpress.com/author/patrice/
+Disallow:http://www.anakaoexpress.com/transfert-journalier/
+Disallow:http://www.anakaoexpress.com/anakao-express-en-image/
+Disallow:http://www.anakaoexpress.com/galerie/
+Disallow:http://www.anakaoexpress.com/tulear-anakao-et-les-environs/
+Disallow:http://www.anakaoexpress.com/author/andrea/
+Disallow:https://www.anakaoexpress.com/contacts-et-reservations-anakao-express/
+Disallow:https://www.anakaoexpress.com/author/andrea/
+Disallow:http://www.anakaoexpress.com/sambokely-bienvenue-parmi-nous/
+Disallow:http://www.anakaoexpress.com/les-touristes-des-paquebots-debarquent-a-anakao/
+Disallow:http://www.anakaoexpress.com/inauguration-memorable-de-lhotel-mikea-lodge/
+Disallow:http://www.anakaoexpress.com/sambokely-bienvenue-parmi-nous/dsc00140/
+Disallow:http://www.anakaoexpress.com/2015/04/
+Disallow:http://www.anakaoexpress.com/2-moteurs-suzuki-de-140-hp-neufs/
+Disallow:http://www.anakaoexpress.com/baleines-de-madagascar/0717-mada-andelirene-2013/
+Disallow:http://www.anakaoexpress.com/baleines-de-madagascar/0709-mada-andelirene-2013/
+
+
+sitemap:https://anakaoexpress.com/sitemap.xml
